@@ -25,20 +25,20 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   icon?: boolean;
   tertriary?: boolean;
   selector?: boolean;
-  withBorder?: boolean;
+  className?: string;
   children: React.ReactNode;
 }
 
 export const Button: FunctionComponent<ButtonProps> = ({
   secondary = false,
   icon = false,
-  selector = false,
   tertriary = false,
+  selector = false,
   className = '',
   children,
   ...props
 }) => {
-  let classNames = `z-0 relative transition-all duration-300 rounded-full font-serif font-medium text-[16px] md:text-[18px] hover:cursor-pointer opacity-[84] hover:opacity-100 focus:border focus:border-white disabled:bg-white/40 disabled:text-black `;
+  let classNames = `z-0 relative transition-all duration-300 rounded-full font-serif font-medium text-base hover:cursor-pointer opacity-[84] hover:opacity-100 focus:border focus:border-white disabled:bg-white/40 disabled:text-black `;
 
   if (secondary && !icon) {
     // (Create DAO)
@@ -58,7 +58,7 @@ export const Button: FunctionComponent<ButtonProps> = ({
       'py-3 px-7 h-[64px] w-[295px] md:w-[366px] bg-black hover:bg-white hover:text-black active:opacity-70 ';
   } else {
     // primary (Enter App)
-    classNames += `text-black bg-gradient-to-r from-[#00C2FF] via-[#00E4FF] to-[#87F2FF] transition-to-white-background active:opacity-70`;
+    classNames += `w-[208px] text-black bg-gradient-to-r from-[#00C2FF] via-[#00E4FF] to-[#87F2FF] transition-to-white-background active:opacity-70`;
   }
 
   classNames += ` ${className}`;
@@ -74,21 +74,17 @@ export default Button;
 
 export const EnterAppButton = ({ inNavBar = true }) => {
   return (
-    <Button>
+    <Button className={`${!inNavBar ? 'mr-0 md:mr-4' : ''}`}>
       <Link href='/realms'>
         <div
           className={`flex items-center justify-center ${
             inNavBar
               ? 'h-[48px] w-[148px] md:h-[64px] md:w-[208px]'
-              : 'h-[64px] w-[208px]'
+              : 'mr-4 h-[64px] w-[208px]'
           }`}
         >
           <div className='pr-4'>Enter App</div>
-          <img
-            src='/icons/arrow-thin-black.png'
-            className='h-4 w-4'
-            alt='arrow'
-          />
+          <Icon img='arrow-thin-black' className='' alt='Arrow' />
         </div>
       </Link>
     </Button>
