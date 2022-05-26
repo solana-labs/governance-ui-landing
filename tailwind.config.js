@@ -13,7 +13,6 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        // primary: ['Inter', ...fontFamily.sans],
         serif: [
           'p22-mackinac-pro',
           'ui-serif',
@@ -44,55 +43,38 @@ module.exports = {
         primary: ['Inter', 'sans-serif'],
       },
       colors: {
-        primary: {
-          // Customize it on globals.css :root
-          // 50: withOpacityValue('--tw-color-primary-50'),
-          // 100: withOpacityValue('--tw-color-primary-100'),
-          // 200: withOpacityValue('--tw-color-primary-200'),
-          // 300: withOpacityValue('--tw-color-primary-300'),
-          // 400: withOpacityValue('--tw-color-primary-400'),
-          // 500: withOpacityValue('--tw-color-primary-500'),
-          // 600: withOpacityValue('--tw-color-primary-600'),
-          // 700: withOpacityValue('--tw-color-primary-700'),
-          // 800: withOpacityValue('--tw-color-primary-800'),
-          // 900: withOpacityValue('--tw-color-primary-900'),
+        'landing-theme': {
+          background: '#292833',
+          nightgrey: '#292833',
         },
-        dark: '#222222',
-      },
-      keyframes: {
-        flicker: {
-          '0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100%': {
-            opacity: 0.99,
-            filter:
-              'drop-shadow(0 0 1px rgba(252, 211, 77)) drop-shadow(0 0 15px rgba(245, 158, 11)) drop-shadow(0 0 1px rgba(252, 211, 77))',
-          },
-          '20%, 21.999%, 63%, 63.999%, 65%, 69.999%': {
-            opacity: 0.4,
-            filter: 'none',
-          },
-        },
-        shimmer: {
-          '0%': {
-            backgroundPosition: '-700px 0',
-          },
-          '100%': {
-            backgroundPosition: '700px 0',
-          },
-        },
+        background: 'var(--background)',
+        nightgrey: 'var(--nightgrey)',
       },
       animation: {
-        flicker: 'flicker 3s linear infinite',
-        shimmer: 'shimmer 1.3s linear infinite',
+        'connect-wallet-ping':
+          'connect-wallet-ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite',
+        gradient: 'gradient 4s ease-in-out infinite',
+        loader: 'loader 0.6s infinite alternate',
       },
-    },
-  },
-  variants: {
-    extend: {
-      cursor: ['hover', 'focus', 'disabled'],
-      opacity: ['disabled'],
-      backgroundColor: ['disabled'],
-      textColor: ['disabled'],
-      borderWidth: ['last'],
+      keyframes: {
+        loader: {
+          to: {
+            opacity: 0.1,
+            transform: 'translate3d(0, 0, 0)',
+          },
+        },
+        gradient: {
+          '0%': {
+            'background-position': '15% 0%',
+          },
+          '50%': {
+            'background-position': '85% 100%',
+          },
+          '100%': {
+            'background-position': '15% 0%',
+          },
+        },
+      },
     },
   },
   plugins: [require('@tailwindcss/forms')],

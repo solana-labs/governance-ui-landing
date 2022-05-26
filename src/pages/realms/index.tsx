@@ -1,5 +1,11 @@
+import DAOStructures from './components/DAOStructures';
 import ManagingDAO from './components/ManagingDAO';
-import Header from '../../components/Header';
+import Metrics from './components/Metrics';
+import RealmsCommunity from './components/RealmsCommunity';
+import SolanaTooling from './components/SolanaTooling';
+import SPLGov from './components/SPLGov';
+import Footer from '../../components/Footer';
+import NavBar from '../../components/NavBar';
 
 type RealmsProps = {
   bgColor: string;
@@ -7,7 +13,7 @@ type RealmsProps = {
 };
 
 export const Section = ({
-  bgColor = 'bg-[#292833]',
+  bgColor = 'bg-background',
   children,
 }: RealmsProps) => {
   return (
@@ -22,30 +28,20 @@ export const Section = ({
 const Realms = () => {
   return (
     <div className='landing-page relative'>
-      {/* <Navbar /> */}
-      <Section bgColor='bg-[#201f27]'>
+      <NavBar />
+      <Section bgColor='bg-background'>
+        <SolanaTooling />
+      </Section>
+      <Section bgColor='bg-nightgrey'>
+        <Metrics />
         <ManagingDAO />
       </Section>
-      <Header as='h1' className='' withGradient={false}>
-        I am H1
-      </Header>
-      <Header as='h2' className='' withGradient={false}>
-        I am H2
-      </Header>
-      <Header as='h3' className='' withGradient={false}>
-        I am H3
-      </Header>
-      <Header as='h4' className='' withGradient={false}>
-        I am H4
-      </Header>
-      <Header as='h5' className='' withGradient={false}>
-        I am H5
-      </Header>
-      <Header as='h6' className='' withGradient={false}>
-        I am H6
-      </Header>
-
-      {/* <Footer /> */}
+      <Section bgColor='bg-background'>
+        <DAOStructures />
+        <RealmsCommunity />
+        <SPLGov />
+        <Footer />
+      </Section>
     </div>
   );
 };
