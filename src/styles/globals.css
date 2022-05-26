@@ -28,91 +28,84 @@
   /* #endregion  /**======== Primary Color =========== */
 }
 
+/* * {
+  @apply m-0 p-0;
+} */
 @layer base {
-  /* inter var - latin */
-  @font-face {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 100 900;
-    font-display: optional;
-    src: url('/fonts/inter-var-latin.woff2') format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-      U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
-      U+2215, U+FEFF, U+FFFD;
+  .landing-page {
+    @apply font-sans font-light;
   }
 
-  .cursor-newtab {
-    cursor: url('/images/new-tab.png') 10 10, pointer;
+  /* h1, */
+  .heading-xl {
+    font-size: 40px;
+    letter-spacing: -0.5px;
+    line-height: 110%;
+    @apply font-serif md:text-[70px];
   }
 
-  /* #region  /**=========== Typography =========== */
-  .h0 {
-    @apply font-primary text-3xl font-bold md:text-5xl;
+  /* h2, */
+  .heading-lg {
+    font-size: 36px;
+    letter-spacing: -0.5px;
+    line-height: 110%;
+    @apply font-serif md:text-[50px];
   }
 
-  h1,
-  .h1 {
-    @apply font-primary text-2xl font-bold md:text-4xl;
+  /* h3, */
+  .heading-md {
+    font-size: 24px;
+    letter-spacing: -0.5px;
+    line-height: 110%;
+    @apply font-serif md:text-[36px];
   }
 
-  h2,
-  .h2 {
-    @apply font-primary text-xl font-bold md:text-3xl;
+  /* h4, */
+  .heading-sm {
+    font-size: 20px;
+    letter-spacing: -0.5px;
+    line-height: 110%;
+    @apply font-serif md:text-[22px];
   }
 
-  h3,
-  .h3 {
-    @apply font-primary text-lg font-bold md:text-2xl;
+  /* h5, */
+  .heading-xs {
+    font-size: 16px;
+    letter-spacing: -0.5px;
+    line-height: 110%;
+    @apply font-serif md:text-[20px];
   }
 
-  h4,
-  .h4 {
-    @apply font-primary text-base font-bold md:text-lg;
+  /* h6, */
+  .heading-cta {
+    font-size: 16px;
+    letter-spacing: -0.5px;
+    line-height: 110%;
+    @apply font-serif md:text-[18px];
   }
 
-  body,
-  .p {
-    @apply font-primary text-sm md:text-base;
-  }
-  /* #endregion  /**======== Typography =========== */
-
-  .layout {
-    /* 1100px */
-    max-width: 68.75rem;
-    @apply mx-auto w-11/12;
+  .landing-page.text-base {
+    font-size: 18px;
+    letter-spacing: 0pt;
+    line-height: 140%;
   }
 
-  .bg-dark a.custom-link {
-    @apply border-gray-200 hover:border-gray-200/0;
+  .landing-page.text-sm {
+    font-size: 16px;
+    letter-spacing: 0pt;
+    line-height: 140%;
   }
 
-  /* Class to adjust with sticky footer */
-  .min-h-main {
-    @apply min-h-[calc(100vh-56px)];
+  .landing-page.text-sm.font-bold {
+    font-size: 15px;
+    letter-spacing: 0pt;
+    line-height: 140%;
+    @apply md:text-[16px];
   }
-}
 
-@layer utilities {
-  .animated-underline {
-    background-image: linear-gradient(#33333300, #33333300),
-      linear-gradient(
-        to right,
-        var(--color-primary-400),
-        var(--color-primary-500)
-      );
-    background-size: 100% 2px, 0 2px;
-    background-position: 100% 100%, 0 100%;
-    background-repeat: no-repeat;
-  }
-  @media (prefers-reduced-motion: no-preference) {
-    .animated-underline {
-      transition: 0.3s ease;
-      transition-property: background-size, color, background-color,
-        border-color;
-    }
-  }
-  .animated-underline:hover,
-  .animated-underline:focus-visible {
-    background-size: 0 2px, 100% 2px;
+  .landing-page.text-xs {
+    font-size: 12px;
+    letter-spacing: 0pt;
+    line-height: 140%;
   }
 }
