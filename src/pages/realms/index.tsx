@@ -6,10 +6,11 @@ import SolanaTooling from './components/SolanaTooling';
 import SPLGov from './components/SPLGov';
 import Footer from '../../components/Footer';
 import NavBar from '../../components/NavBar';
+import TestComponents from '../../components/TestComponents';
 
 type RealmsProps = {
-  bgColor: string;
-  children: React.ReactNode;
+  bgColor?: string;
+  children?: React.ReactNode;
 };
 
 export const Section = ({
@@ -29,18 +30,19 @@ const Realms = () => {
   return (
     <div className='landing-page relative'>
       <NavBar />
-      <Section bgColor='bg-background'>
+      <Section>
         <SolanaTooling />
       </Section>
       <Section bgColor='bg-nightgrey'>
         <Metrics />
         <ManagingDAO />
       </Section>
-      <Section bgColor='bg-background'>
+      <Section>
         <DAOStructures />
         <RealmsCommunity />
         <SPLGov />
         <Footer />
+        <TestComponents />
       </Section>
     </div>
   );

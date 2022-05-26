@@ -1,10 +1,10 @@
 import { createElement } from 'react';
 
 type HeaderProps = {
-  as: string;
-  withGradient: boolean;
-  className: string;
-  children: React.ReactNode;
+  as?: string;
+  withGradient?: boolean;
+  className?: string;
+  children?: React.ReactNode;
 };
 
 export default function Header({

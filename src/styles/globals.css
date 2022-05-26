@@ -13,81 +13,152 @@
   * {
     /* @apply bg-background; */
   }
+}
 
-  .landing-page {
-    @apply font-sans font-light;
-  }
+.landing-page {
+  @apply font-sans font-light text-white;
+}
 
-  /* h1, */
-  .heading-xl {
-    font-size: 40px;
-    letter-spacing: -0.5px;
-    line-height: 110%;
-    @apply font-serif md:text-[70px];
-  }
+/* h1, */
+.heading-xl {
+  font-size: 40px;
+  letter-spacing: -0.5px;
+  line-height: 110%;
+  @apply font-serif md:text-[70px];
+}
 
-  /* h2, */
-  .heading-lg {
-    font-size: 36px;
-    letter-spacing: -0.5px;
-    line-height: 110%;
-    @apply font-serif md:text-[50px];
-  }
+/* h2, */
+.heading-lg {
+  font-size: 36px;
+  letter-spacing: -0.5px;
+  line-height: 110%;
+  @apply font-serif md:text-[50px];
+}
 
-  /* h3, */
-  .heading-md {
-    font-size: 24px;
-    letter-spacing: -0.5px;
-    line-height: 110%;
-    @apply font-serif md:text-[36px];
-  }
+/* h3, */
+.heading-md {
+  font-size: 24px;
+  letter-spacing: -0.5px;
+  line-height: 110%;
+  @apply font-serif md:text-[36px];
+}
 
-  /* h4, */
-  .heading-sm {
-    font-size: 20px;
-    letter-spacing: -0.5px;
-    line-height: 110%;
-    @apply font-serif md:text-[22px];
-  }
+/* h4, */
+.heading-sm {
+  font-size: 20px;
+  letter-spacing: -0.5px;
+  line-height: 110%;
+  @apply font-serif md:text-[22px];
+}
 
-  /* h5, */
-  .heading-xs {
-    font-size: 16px;
-    letter-spacing: -0.5px;
-    line-height: 110%;
-    @apply font-serif md:text-[20px];
-  }
+/* h5, */
+.heading-xs {
+  font-size: 16px;
+  letter-spacing: -0.5px;
+  line-height: 110%;
+  @apply font-serif md:text-[20px];
+}
 
-  /* h6, */
-  .heading-cta {
-    font-size: 16px;
-    letter-spacing: -0.5px;
-    line-height: 110%;
-    @apply font-serif md:text-[18px];
-  }
+/* h6, */
+.heading-cta {
+  font-size: 16px;
+  letter-spacing: -0.5px;
+  line-height: 110%;
+  @apply font-serif md:text-[18px];
+}
 
-  .landing-page.text-base {
-    font-size: 18px;
-    letter-spacing: 0pt;
-    line-height: 140%;
-  }
+.landing-page.text-base {
+  font-size: 18px;
+  letter-spacing: 0pt;
+  line-height: 140%;
+}
 
-  .landing-page.text-sm {
-    font-size: 16px;
-    letter-spacing: 0pt;
-    line-height: 140%;
-  }
+.landing-page.text-sm {
+  font-size: 16px;
+  letter-spacing: 0pt;
+  line-height: 140%;
+}
 
-  .landing-page.text-sm.font-bold {
-    font-size: 15px;
-    letter-spacing: 0pt;
-    line-height: 140%;
-    @apply md:text-[16px];
-  }
+.landing-page.text-sm.font-bold {
+  font-size: 15px;
+  letter-spacing: 0pt;
+  line-height: 140%;
+  @apply md:text-[16px];
+}
 
-  .landing-page.text-xs {
-    font-size: 12px;
-    letter-spacing: 0pt;
-    line-height: 140%;
-  }
+.landing-page.text-xs {
+  font-size: 12px;
+  letter-spacing: 0pt;
+  line-height: 140%;
+}
+
+.transition-to-gradient-background::before,
+.transition-to-white-background::before,
+.transition-to-white70-background {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+  border-radius: 999px;
+}
+
+.transition-to-gradient-background::before {
+  background: linear-gradient(
+    90.65deg,
+    #00c2ff 0.62%,
+    #00e4ff 50.08%,
+    #87f2ff 99.55%
+  );
+}
+
+.transition-to-white-background::before {
+  background-image: linear-gradient(to bottom, white, white);
+}
+
+.transition-to-gradient-background:hover::before,
+.transition-to-white-background:hover::before {
+  opacity: 1;
+}
+
+.transition-to-white70-background::before {
+  background-image: linear-gradient(to bottom, gray, gray);
+}
+
+.transition-to-white-background:hover::before,
+.transition-to-white70-background:hover::before {
+  opacity: 1;
+}
+
+.transition-to-gradient-background:disabled:hover::before,
+.transition-to-white-background:disabled:hover::before {
+  opacity: 0;
+}
+
+.change-image-on-hover:hover .starting-image {
+  display: none;
+}
+
+.change-image-on-active .active-image {
+  display: none;
+}
+
+.change-image-on-active:active .starting-image {
+  display: none;
+}
+
+.change-image-on-active:active .active-image {
+  display: block;
+}
+
+.change-image-on-hover .hover-image {
+  display: none;
+}
+
+.change-image-on-hover:hover .hover-image {
+  display: block;
 }

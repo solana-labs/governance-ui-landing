@@ -71,7 +71,7 @@ export default function ComponentsPage() {
                     className={clsx(
                       'block max-w-xs rounded',
                       mode === 'dark'
-                        ? 'border border-gray-600 bg-dark'
+                        ? 'bg-dark border border-gray-600'
                         : 'border-gray-300 bg-white',
                       'focus:border-primary-400 focus:ring-primary-400 focus:outline-none focus:ring'
                     )}
