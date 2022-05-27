@@ -7,7 +7,7 @@ type ImgProps = {
   alt: string;
 };
 
-const Icon = ({ img, className, alt }: ImgProps) => {
+export const Icon = ({ img, className, alt }: ImgProps) => {
   return (
     <img
       src={`/icons/${img}.png`}
@@ -38,7 +38,7 @@ export const Button: FunctionComponent<ButtonProps> = ({
   children,
   ...props
 }) => {
-  let classNames = `z-0 relative transition-all duration-300 rounded-full font-serif font-medium text-base hover:cursor-pointer opacity-[84] hover:opacity-100 focus:border focus:border-white disabled:bg-white/40 disabled:text-black `;
+  let classNames = `z-0 relative transition-all duration-300 rounded-full text-base hover:cursor-pointer opacity-[84] hover:opacity-100 focus:border focus:border-white disabled:bg-white/40 disabled:text-black `;
 
   if (secondary && !icon) {
     // (Create DAO)
@@ -74,13 +74,13 @@ export default Button;
 
 export const EnterAppButton = ({ inNavBar = true }) => {
   return (
-    <Button className={`${!inNavBar ? 'mr-0 md:mr-4' : ''}`}>
-      <Link href='/realms'>
+    <Button className={`${!inNavBar ? 'mr-0 mb-3 md:mr-4 md:mb-0' : ''}`}>
+      <Link href=''>
         <div
           className={`flex items-center justify-center ${
             inNavBar
               ? 'h-[48px] w-[148px] md:h-[64px] md:w-[208px]'
-              : 'mr-4 h-[64px] w-[208px]'
+              : 'h-[64px] w-[208px]'
           }`}
         >
           <div className='pr-4'>Enter App</div>
@@ -94,7 +94,7 @@ export const EnterAppButton = ({ inNavBar = true }) => {
 export const CreateDaoButton = () => {
   return (
     <Button secondary>
-      <Link href='/solana/create_dao'>
+      <Link href=''>
         <div className='flex items-center justify-center px-4'>
           <div className='pr-2'>Create DAO</div>
         </div>

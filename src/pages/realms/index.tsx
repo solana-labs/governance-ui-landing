@@ -13,9 +13,7 @@ const Realms = () => {
   return (
     <div className='landing-page relative'>
       <NavBar />
-      {/* <Section> */}
       <SolanaTooling />
-      {/* </Section> */}
       <Section bgColor='bg-nightgrey'>
         <Metrics />
         <ManagingDAO />

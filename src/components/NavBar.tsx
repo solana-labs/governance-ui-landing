@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
 import { EnterAppButton, ReadTheDocsButton } from '@/components/Button';
+// import ReadTheDocsLink from '@/components/Link';
 
 const SCROLL_BREAK_POINT = 200;
 
@@ -20,13 +21,15 @@ function RealmsLogo() {
   );
 }
 
-export const NavContent = () => {
+type NavBarProps = {
+  children: React.ReactNode;
+};
+
+export const NavContent = ({ children }: NavBarProps) => {
   return (
-    <div className='mx-auto flex max-w-[1440px] items-center justify-between px-4'>
+    <div className='mx-auto flex max-w-[1440px] items-center justify-between'>
       <RealmsLogo />
-      <div className='flex items-center space-x-7'>
-        <EnterAppButton />
-      </div>
+      {children}
     </div>
   );
 };
@@ -59,7 +62,9 @@ export default function NavBar() {
       }`}
     >
       <div className={`${scrollY < SCROLL_BREAK_POINT ? 'hidden' : ''}`}>
-        <NavContent />
+        <NavContent>
+          <EnterAppButton />
+        </NavContent>
       </div>
       <div
         className={`mx-auto flex max-w-[1440px] items-center justify-between px-4 ${
