@@ -52,8 +52,11 @@ module.exports = {
       },
       backgroundImage: {
         'spl-gov': "url('/backgrounds/spl-gov.png')",
+        'daotype-multisig': "url('/backgrounds/daotype-multisig.png')",
+        'daotype-nft-community':
+          "url('/backgrounds/daotype-nft-community.png')",
+        'daotype-tokenized': "url('/backgrounds/daotype-tokenized.png')",
         'managing-dao': "url('/backgrounds/managing-dao.png')",
-        'hero-graphic': "url('/img/realms-web/backgrounds/hero-graphic.svg')",
       },
       animation: {
         'connect-wallet-ping':

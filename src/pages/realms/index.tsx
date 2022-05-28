@@ -1,4 +1,4 @@
-import DAOStructures from './components/DAOStructures';
+import DAOStructures2 from './components/DAOStructures2';
 import ManagingDAO from './components/ManagingDAO';
 import Metrics from './components/Metrics';
 import RealmsCommunity from './components/RealmsCommunity';
@@ -7,7 +7,6 @@ import SPLGov from './components/SPLGov';
 import Footer from '../../components/Footer';
 import NavBar from '../../components/NavBar';
 import Section from '../../components/Section';
-import TestComponents from '../../components/TestComponents';
 
 const Realms = () => {
   return (
@@ -19,7 +18,7 @@ const Realms = () => {
       </Section>
       <ManagingDAO />
       <Section>
-        <DAOStructures />
+        <DAOStructures2 />
         <RealmsCommunity />
       </Section>
       <Section bgColor='bg-spl-gov bg-cover md:bg-[#292833] md:bg-none '>
@@ -27,7 +26,6 @@ const Realms = () => {
       </Section>
       <Section>
         <Footer />
-        <TestComponents />
       </Section>
     </div>
   );
