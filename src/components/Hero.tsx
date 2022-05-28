@@ -6,6 +6,7 @@ type HeroProps = {
   backgroundColor?: string;
   backgroundImgSrc?: string;
   height?: string;
+  className?: string;
   children: React.ReactNode;
 };
 
@@ -13,6 +14,7 @@ export default function Hero({
   backgroundColor = 'bg-background',
   backgroundImgSrc = '/backgrounds/landing-hero-desktop.png',
   height = 'h-[560px] md:h-[600px]',
+  className = 'md:pt-50 pt-40',
   children,
 }: HeroProps) {
   return (
@@ -26,7 +28,7 @@ export default function Hero({
           quality={100}
         />
       </div>
-      <div className='md:pt-50 pt-40'>
+      <div className={className}>
         <Section bgColor='bg-transparent'>{children}</Section>
       </div>
     </div>

@@ -50,6 +50,11 @@ module.exports = {
         background: 'var(--background)',
         nightgrey: 'var(--nightgrey)',
       },
+      backgroundImage: {
+        'spl-gov': "url('/backgrounds/spl-gov.png')",
+        'managing-dao': "url('/backgrounds/managing-dao.png')",
+        'hero-graphic': "url('/img/realms-web/backgrounds/hero-graphic.svg')",
+      },
       animation: {
         'connect-wallet-ping':
           'connect-wallet-ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite',

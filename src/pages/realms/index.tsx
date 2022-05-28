@@ -16,12 +16,16 @@ const Realms = () => {
       <SolanaTooling />
       <Section bgColor='bg-nightgrey'>
         <Metrics />
-        <ManagingDAO />
       </Section>
+      <ManagingDAO />
       <Section>
         <DAOStructures />
         <RealmsCommunity />
+      </Section>
+      <Section bgColor='bg-spl-gov bg-cover md:bg-[#292833] md:bg-none '>
         <SPLGov />
+      </Section>
+      <Section>
         <Footer />
         <TestComponents />
       </Section>

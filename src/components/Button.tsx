@@ -47,7 +47,7 @@ export const Button: FunctionComponent<ButtonProps> = ({
   } else if (secondary && icon) {
     // (About SPL)
     classNames +=
-      'py-3 px-2 h-[56px] md:h-[64px] w-[335px] text-white border border-white/30 hover:bg-white hover:text-black active:bg-white/70 active:text-black';
+      'py-3 px-2 h-[56px] md:h-[64px] w-full sm:w-[335px] text-white border border-white/30 hover:bg-white hover:text-black active:bg-white/70 active:text-black';
   } else if (tertriary) {
     // (Read Docs)
     classNames +=
@@ -58,7 +58,7 @@ export const Button: FunctionComponent<ButtonProps> = ({
       'py-3 px-7 h-[64px] w-[295px] md:w-[366px] bg-black hover:bg-white hover:text-black active:opacity-70 ';
   } else {
     // primary (Enter App)
-    classNames += `w-[208px] text-black bg-gradient-to-r from-[#00C2FF] via-[#00E4FF] to-[#87F2FF] transition-to-white-background active:opacity-70`;
+    classNames += `text-black bg-gradient-to-r from-[#00C2FF] via-[#00E4FF] to-[#87F2FF] transition-to-white-background active:opacity-70`;
   }
 
   classNames += ` ${className}`;
@@ -79,7 +79,7 @@ export const EnterAppButton = ({ inNavBar = true }) => {
         <div
           className={`flex items-center justify-center ${
             inNavBar
-              ? 'h-[48px] w-[148px] md:h-[64px] md:w-[208px]'
+              ? 'h-[48px] min-w-[148px] sm:h-[64px] sm:min-w-[208px]'
               : 'h-[64px] w-[208px]'
           }`}
         >

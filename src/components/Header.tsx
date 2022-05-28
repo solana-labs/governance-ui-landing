@@ -2,14 +2,16 @@ import { createElement } from 'react';
 
 type HeaderProps = {
   as?: string;
-  withGradient?: boolean;
+  withGradientBlue?: boolean;
+  withGradientPurple?: boolean;
   className?: string;
   children?: React.ReactNode;
 };
 
 export default function Header({
   as = 'h2',
-  withGradient = false,
+  withGradientBlue = false,
+  withGradientPurple = false,
   className = '',
   children,
 }: HeaderProps) {
@@ -30,8 +32,12 @@ export default function Header({
 
   classNames += ` ${className}`;
 
-  if (withGradient) {
-    classNames += ` bg-gradient-to-r from-[#00C2FF] via-[#00E4FF] to-[#87F2FF] bg-clip-text text-transparent`;
+  if (withGradientBlue) {
+    classNames += ` bg-gradient-to-tr from-[#87F2FF] to-[#00C2FF] bg-clip-text text-transparent`;
+  }
+
+  if (withGradientPurple) {
+    classNames += ` bg-gradient-to-tr from-[#e465b9] to-[#a984f8] bg-clip-text text-transparent`;
   }
 
   return createElement(as, { className: classNames }, children);

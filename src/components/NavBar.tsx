@@ -27,7 +27,7 @@ type NavBarProps = {
 
 export const NavContent = ({ children }: NavBarProps) => {
   return (
-    <div className='mx-auto flex max-w-[1440px] items-center justify-between'>
+    <div className='mx-auto flex max-w-[1440px] items-center justify-between px-5'>
       <RealmsLogo />
       {children}
     </div>
@@ -55,7 +55,7 @@ export default function NavBar() {
 
   return (
     <div
-      className={`fixed top-0 z-10 w-full pt-5 pb-5 transition-all duration-300 ${
+      className={`fixed top-0 z-10 w-full py-5 transition-all duration-300  ${
         scrollY > SCROLL_BREAK_POINT
           ? 'bg-background bg-opacity-90 backdrop-blur-[3px]'
           : ''
@@ -67,7 +67,7 @@ export default function NavBar() {
         </NavContent>
       </div>
       <div
-        className={`mx-auto flex max-w-[1440px] items-center justify-between px-4 ${
+        className={`mx-auto flex max-w-[1440px] items-center justify-between px-5 ${
           scrollY < SCROLL_BREAK_POINT ? '' : 'hidden'
         }`}
       >
