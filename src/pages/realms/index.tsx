@@ -1,4 +1,4 @@
-import DAOStructures2 from './components/DAOStructures2';
+import DAOStructures from './components/DAOStructures';
 import ManagingDAO from './components/ManagingDAO';
 import Metrics from './components/Metrics';
 import RealmsCommunity from './components/RealmsCommunity';
@@ -18,7 +18,7 @@ const Realms = () => {
       </Section>
       <ManagingDAO />
       <Section>
-        <DAOStructures2 />
+        <DAOStructures />
         <RealmsCommunity />
       </Section>
       <Section bgColor='bg-spl-gov bg-cover md:bg-[#292833] md:bg-none '>
