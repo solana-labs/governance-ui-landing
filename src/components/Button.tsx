@@ -74,7 +74,7 @@ export default Button;
 
 export const EnterAppButton = ({ inNavBar = true }) => {
   return (
-    <Button className={`${!inNavBar ? 'mr-0 mb-3 md:mr-4 md:mb-0' : ''}`}>
+    <Button className={`${!inNavBar ? 'mr-0 mb-3 sm:mr-4 md:mb-0' : ''}`}>
       <Link href=''>
         <div
           className={`flex items-center justify-center ${

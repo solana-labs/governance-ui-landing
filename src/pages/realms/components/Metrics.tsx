@@ -12,7 +12,9 @@ const MetricsBox = ({ title, text, children }: MetricsProps) => {
       <Header as='h4' withGradientPurple className=''>
         {title}
       </Header>
-      <div className='py-5'>{children}</div>
+      <div className='justify-left xl:justify-left flex items-center py-5 md:justify-center'>
+        {children}
+      </div>
       <div className='text-sm'>{text}</div>
     </div>
   );
@@ -25,27 +27,27 @@ export const ListOfMetrics = () => {
         title='Growing value'
         text='Grape, UXD, Mango, Monkes & 600+ more DAOs'
       >
-        <div className='flex items-center'>
-          <Header as='h3'>$</Header>
-          <Header>946,355,781</Header>
-        </div>
+        {/* <div className='justify-left xl:justify-left flex items-center md:justify-center'> */}
+        <Header as='h3'>$</Header>
+        <Header>946,355,781</Header>
+        {/* </div> */}
       </MetricsBox>
       <MetricsBox
         title='Communities thriving'
         text='Grape, UXD, Mango, Monkes & 600+ more DAOs'
       >
-        <div className='flex items-center'>
-          <img src='/icons/blue-grape.png' className='h-[40px]' alt='' />
-        </div>
+        {/* <div className='flex items-center'> */}
+        <img src='/icons/blue-grape.png' className='h-[40px]' alt='' />
+        {/* </div> */}
       </MetricsBox>
       <MetricsBox
         title='Deeper integrations'
         text='Staking, Identity, Defi & Notifications'
       >
-        <div className='flex items-center'>
-          <img src='/icons/blue-grape.png' className='h-[40px]' alt='' />
-          <div className='text-xs opacity-70'>& more</div>
-        </div>
+        {/* <div className='flex items-center'> */}
+        <img src='/icons/blue-grape.png' className='h-[40px]' alt='' />
+        <div className='text-xs opacity-70'>& more</div>
+        {/* </div> */}
       </MetricsBox>
     </div>
   );

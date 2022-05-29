@@ -7,8 +7,6 @@ type SmallImageProps = {
 };
 export const SmallImage = ({ src, alt }: SmallImageProps) => (
   <div className='flex items-center justify-center'>
-    {/* <div className='flex items-center justify-center rounded-full border border-[#E465B9]/30 bg-black'> */}
-    {/* NavyBox */}
     <img src={`/icons/${src}.png`} className='h-[40px]' alt={alt} />
   </div>
 );
