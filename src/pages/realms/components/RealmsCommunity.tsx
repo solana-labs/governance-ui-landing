@@ -1,62 +1,110 @@
+import Image from 'next/image';
+
 import Header from '@/components/Header';
 
-type OptionsProps = {
+type TextProps = {
   number: string;
   isBlue: boolean;
   isPurple: boolean;
-  imgSrc: string;
-  imgAlt: string;
   title: string;
   description: string;
+  integration?: string;
+};
+
+export const TextBox = ({
+  number,
+  isBlue,
+  isPurple,
+  title,
+  description,
+  integration,
+}: TextProps) => {
+  return (
+    <div className='w-full px-1 text-left'>
+      <div className='flex items-start space-x-4'>
+        <div className='flex max-h-[32px] max-w-[32px] items-center justify-center rounded-full bg-nightgrey p-[24px] md:min-h-[56px] md:min-w-[56px] md:p-0'>
+          <Header
+            as='h3'
+            withGradientBlue={isBlue}
+            withGradientPurple={isPurple}
+            className=''
+          >
+            {number}
+          </Header>
+        </div>
+        <div>
+          <Header as='h3' className='mb-4'>
+            {title}
+          </Header>
+          <div className='text-base opacity-70'>{description}</div>
+          <div className='text-xs opacity-70'>{integration}</div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+type OptionsProps = {
+  imgSrc: string;
+  imgAlt: string;
   direction?: string;
-  // integrationImg?: string;
+  number: string;
+  isBlue: boolean;
+  isPurple: boolean;
+  title: string;
+  description: string;
   integration?: string;
 };
 
 const OptionsBox = ({
+  imgSrc,
+  imgAlt,
+  direction = 'ltr',
   number,
   isBlue,
   isPurple,
-  imgSrc,
-  imgAlt,
   title,
   description,
-  direction = 'ltr',
   integration,
 }: OptionsProps) => {
   return (
     <div
       className={`flex flex-wrap ${
-        direction === 'rtl' ? 'md:flex-row-reverse' : 'flex-row'
-      } items-center space-y-5`}
+        direction === 'ltr' ? 'md:flex-row-reverse' : 'flex-row'
+      } items-center`}
     >
-      <div className='relative w-full lg:w-1/2'>
-        <img
-          src={`backgrounds/${imgSrc}.png`}
+      <div
+        // className='relative w-full bg-spl-gov lg:w-1/2'
+        className='relative w-full md:w-[60%]'
+      >
+        <Image
+          src={imgSrc}
           alt={imgAlt}
-          className='relative z-[0] w-full rounded'
+          layout='responsive'
+          width={1200}
+          height={916}
+          objectFit='scale-down'
         />
-      </div>
-      <div className='w-full px-1 text-left lg:w-1/2 lg:px-16'>
-        <div className='flex items-start space-x-4'>
-          <div className='flex max-h-[32px] max-w-[32px] items-center justify-center rounded-full bg-nightgrey p-[24px] md:min-h-[56px] md:min-w-[56px] md:p-0'>
-            <Header
-              as='h3'
-              withGradientBlue={isBlue}
-              withGradientPurple={isPurple}
-              className=''
-            >
-              {number}
-            </Header>
-          </div>
-          <div>
-            <Header as='h3' className='mb-4'>
-              {title}
-            </Header>
-            <div className='text-base opacity-70'>{description}</div>
-            <div className='text-xs opacity-70'>{integration}</div>
-          </div>
+        <div className='absolute top-[70%] md:hidden'>
+          <TextBox
+            number={number}
+            isBlue={isBlue}
+            isPurple={isPurple}
+            title={title}
+            description={description}
+            integration={integration}
+          />
         </div>
+      </div>
+      <div className='hidden w-[40%] md:inline'>
+        <TextBox
+          number={number}
+          isBlue={isBlue}
+          isPurple={isPurple}
+          title={title}
+          description={description}
+          integration={integration}
+        />
       </div>
     </div>
   );
@@ -67,8 +115,8 @@ const ListOfPros = [
     number: '1',
     isBlue: false,
     isPurple: true,
-    imgSrc: 'gov-structure',
-    imgAlt: 'Governanve Structure',
+    imgSrc: '/backgrounds/gov-structure.png',
+    imgAlt: 'Governance Structure',
     title: 'Choose your governance structure',
     description:
       'Mint your own token, leverage an NFT collection, lock tokens via veTokens, or choose some other structure.',
@@ -78,7 +126,7 @@ const ListOfPros = [
     number: '2',
     isBlue: true,
     isPurple: false,
-    imgSrc: 'coordinate-members',
+    imgSrc: '/backgrounds/coordinate-members.png',
     imgAlt: 'Coordinate Members',
     title: 'Invite and coordinate your members',
     description:
@@ -90,7 +138,7 @@ const ListOfPros = [
     number: '3',
     isBlue: false,
     isPurple: true,
-    imgSrc: 'engage-proposals',
+    imgSrc: '/backgrounds/engage-proposals.png',
     imgAlt: 'Engage Proposals',
     title: 'Engage with proposals',
     description:
@@ -101,7 +149,7 @@ const ListOfPros = [
     number: '4',
     isBlue: true,
     isPurple: false,
-    imgSrc: 'allocate-treasury',
+    imgSrc: '/backgrounds/allocate-treasury.png',
     imgAlt: 'Allocate Treasury',
     title: 'Fund and allocate the treasury',
     description: `Leverage your DAO's treasury to enable the initiatives and staking / DeFi integrations important to your community.`,
@@ -112,7 +160,7 @@ const ListOfPros = [
     number: '5',
     isBlue: false,
     isPurple: true,
-    imgSrc: 'notify-members',
+    imgSrc: '/backgrounds/notify-members.png',
     imgAlt: 'Notifying Members',
     title: 'Notifying Members',
     description: `Leverage email, text, or wallet notifications to let your community know when it's time to take action.`,
@@ -123,7 +171,7 @@ const ListOfPros = [
     number: '6',
     isBlue: true,
     isPurple: false,
-    imgSrc: 'analytics',
+    imgSrc: '/backgrounds/analytics.png',
     imgAlt: 'Analytics',
     title: 'Analytics',
     description: `Have your DAO's key metrics at your fingertips to aid in your decision making.`,

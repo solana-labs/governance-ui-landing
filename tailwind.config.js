@@ -58,12 +58,6 @@ module.exports = {
         'daotype-tokenized': "url('/backgrounds/daotype-tokenized.png')",
         'managing-dao': "url('/backgrounds/managing-dao.png')",
       },
-      animation: {
-        'connect-wallet-ping':
-          'connect-wallet-ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite',
-        gradient: 'gradient 4s ease-in-out infinite',
-        loader: 'loader 0.6s infinite alternate',
-      },
       keyframes: {
         loader: {
           to: {
