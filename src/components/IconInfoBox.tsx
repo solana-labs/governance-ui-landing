@@ -1,4 +1,5 @@
 import Header from './Header';
+import Text from './Text';
 
 type InfoProps = {
   imgSrc: string;
@@ -18,7 +19,9 @@ export const IconInfoBox = ({ imgSrc, title, children }: InfoProps) => {
         <Header as='h4' className='mb-2 md:mb-4'>
           {title}
         </Header>
-        <div className='pr-8 text-sm opacity-70 md:pr-0'>{children}</div>
+        <Text withOpacity className='pr-8 md:pr-0'>
+          {children}
+        </Text>
       </div>
     </div>
   );

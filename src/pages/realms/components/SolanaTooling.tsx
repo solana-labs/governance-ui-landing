@@ -5,6 +5,7 @@ import {
 } from '@/components/Button';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
+import Text from '@/components/Text';
 
 export default function SolanaTooling() {
   return (
@@ -14,11 +15,13 @@ export default function SolanaTooling() {
           Tooling to help your <br />
           community thrive on Solana
         </Header>
-        <div className='mt-4 mb-11 text-base opacity-70 md:mb-14 md:text-left'>
-          DAO creation, voting, and treasury management, all in one fully
-          on-chain product. Whether managing a multisig or a billion dollar
-          protocol, Realms has the tools and integrations to enable your
-          community to reach its full potential.
+        <div className='mt-4 mb-11 md:mb-14 md:text-left'>
+          <Text as='p1' withOpacity>
+            DAO creation, voting, and treasury management, all in one fully
+            on-chain product. Whether managing a multisig or a billion dollar
+            protocol, Realms has the tools and integrations to enable your
+            community to reach its full potential.
+          </Text>
         </div>
       </div>
       <div className='space-y-4 pb-12 text-center sm:text-left md:pb-24'>

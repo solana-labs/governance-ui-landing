@@ -1,4 +1,5 @@
 import Header from '@/components/Header';
+import Text from '@/components/Text';
 
 type MetricsProps = {
   title: string;
@@ -15,7 +16,7 @@ const MetricsBox = ({ title, text, children }: MetricsProps) => {
       <div className='justify-left xl:justify-left flex items-center py-5 md:justify-center'>
         {children}
       </div>
-      <div className='text-sm'>{text}</div>
+      <Text>{text}</Text>
     </div>
   );
 };
@@ -46,7 +47,9 @@ export const ListOfMetrics = () => {
       >
         {/* <div className='flex items-center'> */}
         <img src='/icons/blue-grape.png' className='h-[40px]' alt='' />
-        <div className='text-xs opacity-70'>& more</div>
+        <Text as='p3' withOpacity>
+          & more
+        </Text>
         {/* </div> */}
       </MetricsBox>
     </div>

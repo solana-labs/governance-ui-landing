@@ -1,6 +1,7 @@
 import Image from 'next/image';
 
 import Header from '@/components/Header';
+import Text from '@/components/Text';
 
 type TextProps = {
   number: string;
@@ -36,8 +37,13 @@ export const TextBox = ({
           <Header as='h3' className='mb-4'>
             {title}
           </Header>
-          <div className='text-base opacity-70'>{description}</div>
-          <div className='text-xs opacity-70'>{integration}</div>
+          <Text as='p1' withOpacity>
+            {description}
+          </Text>
+          <br />
+          <Text as='p3' withOpacity>
+            {integration}
+          </Text>
         </div>
       </div>
     </div>
@@ -73,10 +79,7 @@ const OptionsBox = ({
         direction === 'ltr' ? 'md:flex-row-reverse' : 'flex-row'
       } items-center`}
     >
-      <div
-        // className='relative w-full bg-spl-gov lg:w-1/2'
-        className='relative w-full md:w-[60%]'
-      >
+      <div className='relative w-full md:w-[60%]'>
         <Image
           src={imgSrc}
           alt={imgAlt}

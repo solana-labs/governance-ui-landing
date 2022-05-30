@@ -1,5 +1,6 @@
 import { SelectDaoToCreate } from '@/components/Button';
 import Header from '@/components/Header';
+import Text from '@/components/Text';
 
 type SmallImageProps = {
   src: string;
@@ -41,7 +42,9 @@ export const DAOType = ({
         {headerText}
       </Header>
       {/* YellowBox */}
-      <div className='text-base opacity-70'>{descriptionText}</div>
+      <Text as='p1' withOpacity>
+        {descriptionText}
+      </Text>
       {/* PinkBox*/}
       <div className='my-6 flex flex-row'>
         {/* CoralBox*/}
@@ -56,7 +59,9 @@ export const DAOType = ({
           ))} */}
         </div>
         {/* LimeBox*/}
-        <div className='ml-4 whitespace-pre text-xs opacity-70'>{imgText}</div>
+        <Text as='p3' withOpacity className='ml-4 whitespace-pre'>
+          {imgText}
+        </Text>
       </div>
     </div>
     <div className='xl:px-4'>
