@@ -1,10 +1,7 @@
-import {
-  CreateDaoButton,
-  EnterAppButton,
-  ReadTheDocsButton,
-} from '@/components/Button';
+import { CreateDaoButton, EnterAppButton } from '@/components/Button';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
+import ReadTheDocsLink from '@/components/Link';
 import Text from '@/components/Text';
 
 export default function SolanaTooling() {
@@ -24,14 +21,14 @@ export default function SolanaTooling() {
           </Text>
         </div>
       </div>
-      <div className='space-y-4 pb-12 text-center sm:text-left md:pb-24'>
+      <div className='space-y-7 pb-12 text-center sm:text-left md:pb-24'>
         <div>
           <EnterAppButton inNavBar={false} />
           <br className='sm:hidden' />
           <CreateDaoButton />
         </div>
-        <div className='block sm:hidden'>
-          <ReadTheDocsButton />
+        <div className='flex justify-center sm:hidden'>
+          <ReadTheDocsLink />
         </div>
       </div>
     </Hero>

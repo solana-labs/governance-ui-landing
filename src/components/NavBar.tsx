@@ -1,7 +1,9 @@
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
-import { EnterAppButton, ReadTheDocsButton } from '@/components/Button';
+import { EnterAppButton } from '@/components/Button';
+import ReadTheDocsLink from '@/components/Link';
+import Text from '@/components/Text';
 // import ReadTheDocsLink from '@/components/Link';
 
 const SCROLL_BREAK_POINT = 200;
@@ -15,7 +17,7 @@ function RealmsLogo() {
           className='h-8 w-8'
           alt='Realms Logo'
         />
-        <span>Realms</span>
+        <Text as='p1'>Realms</Text>
       </div>
     </Link>
   );
@@ -27,7 +29,7 @@ type NavBarProps = {
 
 export const NavContent = ({ children }: NavBarProps) => {
   return (
-    <div className='mx-auto flex max-w-[1440px] items-center justify-between px-5'>
+    <div className='mx-auto flex max-w-[1440px] items-center justify-between'>
       <RealmsLogo />
       {children}
     </div>
@@ -61,7 +63,7 @@ export default function NavBar() {
           : ''
       }`}
     >
-      <div className={`${scrollY < SCROLL_BREAK_POINT ? 'hidden' : ''}`}>
+      <div className={`${scrollY < SCROLL_BREAK_POINT ? 'hidden' : 'px-5'}`}>
         <NavContent>
           <EnterAppButton />
         </NavContent>
@@ -73,7 +75,7 @@ export default function NavBar() {
       >
         <RealmsLogo />
         <div>
-          <ReadTheDocsButton />
+          <ReadTheDocsLink />
         </div>
       </div>
     </div>
