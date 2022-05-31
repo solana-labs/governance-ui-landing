@@ -21,7 +21,7 @@ const Realms = () => {
         <DAOStructures />
         <RealmsCommunity />
       </Section>
-      <Section bgColor='bg-spl-gov bg-cover md:bg-[#292833] md:bg-none '>
+      <Section>
         <SPLGov />
       </Section>
       <Section>

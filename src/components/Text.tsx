@@ -16,7 +16,6 @@ export default function Text({
   children,
 }: TextProps) {
   let classNames = 'landing-page';
-  //font-light
   if (as === 'p1') {
     classNames += ` text-base`;
   } else if (as === 'p2') {

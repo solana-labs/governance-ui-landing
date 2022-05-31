@@ -12,7 +12,7 @@ export default function SolanaTooling() {
           Tooling to help your <br />
           community thrive on Solana
         </Header>
-        <div className='mt-4 mb-11 md:mb-14 md:text-left'>
+        <div className='mt-4 mb-11 w-full md:mb-14 md:text-left xl:w-2/3'>
           <Text as='p1' withOpacity>
             DAO creation, voting, and treasury management, all in one fully
             on-chain product. Whether managing a multisig or a billion dollar

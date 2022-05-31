@@ -9,9 +9,7 @@ export default function Footer() {
         <div className='hidden sm:block'>
           <SocialIcons />
         </div>
-        <div>
-          <ReadTheDocsLink />
-        </div>
+        <ReadTheDocsLink />
       </NavContent>
       <div className='my-6 flex items-center justify-center sm:hidden'>
         <SocialIcons />

@@ -10,6 +10,7 @@ type TextProps = {
   title: string;
   description: string;
   integration?: string;
+  children?: React.ReactNode;
 };
 
 export const TextBox = ({
@@ -19,6 +20,7 @@ export const TextBox = ({
   title,
   description,
   integration,
+  children,
 }: TextProps) => {
   return (
     <div className='w-full px-1 text-left'>
@@ -44,6 +46,7 @@ export const TextBox = ({
           <Text as='p3' withOpacity>
             {integration}
           </Text>
+          <div>{children}</div>
         </div>
       </div>
     </div>
@@ -60,6 +63,7 @@ type OptionsProps = {
   title: string;
   description: string;
   integration?: string;
+  children?: React.ReactNode;
 };
 
 const OptionsBox = ({
@@ -72,6 +76,7 @@ const OptionsBox = ({
   title,
   description,
   integration,
+  children,
 }: OptionsProps) => {
   return (
     <div
@@ -96,7 +101,9 @@ const OptionsBox = ({
             title={title}
             description={description}
             integration={integration}
-          />
+          >
+            {children}
+          </TextBox>
         </div>
       </div>
       <div className='hidden w-[40%] md:inline'>
@@ -107,7 +114,9 @@ const OptionsBox = ({
           title={title}
           description={description}
           integration={integration}
-        />
+        >
+          {children}
+        </TextBox>
       </div>
     </div>
   );

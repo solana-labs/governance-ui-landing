@@ -132,7 +132,7 @@ type SelectProps = {
 
 export const SelectDaoToCreate = ({ href, text }: SelectProps) => {
   return (
-    <Button selector className='change-image-on-hover'>
+    <Button selector className='change-image-on-hover text-sm md:text-base'>
       <Link href={href}>
         <div className='flex items-center justify-between'>
           <div className='pr-2'>{text}</div>

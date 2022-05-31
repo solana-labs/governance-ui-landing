@@ -4,22 +4,26 @@ import Text from '@/components/Text';
 
 type SmallImageProps = {
   src: string;
-  alt: string;
+  className?: string;
 };
-export const SmallImage = ({ src, alt }: SmallImageProps) => (
-  <div className='flex items-center justify-center'>
-    <img src={`/icons/${src}.png`} className='h-[40px]' alt={alt} />
-  </div>
+export const SmallImage = ({
+  src,
+  className = 'max-h-[40px] max-w-[40px] ml-[-14px]',
+}: SmallImageProps) => (
+  // <div className='flex items-center justify-center'>
+  <img src={src} className={className} alt='' />
+  // </div>
 );
 
 type DAOProps = {
   bgImage: string;
   headerText: string;
   descriptionText: string;
-  // smallImgSrcs: string;
+  // smallImgSrcs: string[];
   imgText: string;
   buttonText: string;
   buttonHref: string;
+  children: React.ReactNode;
 };
 
 export const DAOType = ({
@@ -31,6 +35,7 @@ export const DAOType = ({
   imgText,
   buttonText,
   buttonHref,
+  children,
 }: DAOProps) => (
   // GreenBox
   <div
@@ -42,21 +47,24 @@ export const DAOType = ({
         {headerText}
       </Header>
       {/* YellowBox */}
-      <Text as='p1' withOpacity>
-        {descriptionText}
-      </Text>
+      <div className='w-full md:w-3/5'>
+        <Text as='p1' withOpacity>
+          {descriptionText}
+        </Text>
+      </div>
       {/* PinkBox*/}
       <div className='my-6 flex flex-row'>
         {/* CoralBox*/}
-        <div className='flex items-center justify-center'>
-          <SmallImage src='mango-dao' alt='mango-dao' />
-          <SmallImage src='mango-dao' alt='mango-dao' />
-          <SmallImage src='mango-dao' alt='mango-dao' />
+        <div className='flex items-center'>
+          {/* <SmallImage src='purple-mango' alt='mango-dao' />
+          <SmallImage src='purple-mango' alt='mango-dao' />
+          <SmallImage src='purple-mango' alt='mango-dao' /> */}
           {/* {smallImgSrcs.map(({ smallSrc, alt }, index) => (
             <div className=''>
               <SmallImage key={`${alt}-${index}`} src={smallSrc} alt={alt} />
             </div>
           ))} */}
+          {children}
         </div>
         {/* LimeBox*/}
         <Text as='p3' withOpacity className='ml-4 whitespace-pre'>
@@ -78,15 +86,17 @@ export const ListOfDAOTypes = () => {
         bgImage='bg-daotype-multisig'
         headerText='Multi-Signature Wallet'
         descriptionText='A “multisig” is a shared wallet, typically with two or more members authorizing transactions.'
-        // smallImgSrcs={[
-        //   { smallSrc: 'mango', alt: 'mango' },
-        //   { smallSrc: 'mango', alt: 'mango' },
-        //   { smallSrc: 'mango', alt: 'mango' },
-        // ]}
         imgText={`The Sanctuary, Ukraine.SOL,\nSPL Governance & more`}
         buttonText='Start Multi-Signature DAO'
         buttonHref='/solana/create_dao/multisig'
-      />
+      >
+        <SmallImage
+          src='/dao/purple-sanctuary.png'
+          className='ml-0 max-h-[40px]'
+        />
+        <SmallImage src='/dao/purple-ukraine.png' />
+        <SmallImage src='/dao/purple-realms.png' />
+      </DAOType>
       <DAOType
         bgImage='bg-daotype-nft-community'
         headerText='NFT Community DAO'
@@ -99,7 +109,11 @@ export const ListOfDAOTypes = () => {
         imgText={`MonkeDAO, The Imperium of Rain,\nThe Sporagers & more`}
         buttonText='Create an NFT Community DAO'
         buttonHref='/solana/create_dao/multisig'
-      />
+      >
+        <SmallImage src='/dao/purple-monke.png' className='ml-0 max-h-[40px]' />
+        <SmallImage src='/dao/purple-imp-rain.png' />
+        <SmallImage src='/dao/purple-sporagers.png' />
+      </DAOType>
       <DAOType
         bgImage='bg-daotype-tokenized'
         headerText='Tokenized DAO'
@@ -112,7 +126,11 @@ export const ListOfDAOTypes = () => {
         imgText={`Mango DAO, Friends & Family DAO,\nGRAPE & more`}
         buttonText='Create a Tokenized DAO'
         buttonHref='/solana/create_dao/multisig'
-      />
+      >
+        <SmallImage src='/dao/purple-mango.png' className='ml-0 max-h-[40px]' />
+        <SmallImage src='/dao/purple-f-a-f.png' />
+        <SmallImage src='/dao/purple-grape.png' />
+      </DAOType>
     </div>
   );
 };

@@ -34,9 +34,7 @@ export default function Header({
 
   if (withGradientBlue) {
     classNames += ` bg-gradient-to-tr from-[#87F2FF] to-[#00C2FF] bg-clip-text text-transparent`;
-  }
-
-  if (withGradientPurple) {
+  } else if (withGradientPurple) {
     classNames += ` bg-gradient-to-tr from-[#e465b9] to-[#a984f8] bg-clip-text text-transparent`;
   }
 
