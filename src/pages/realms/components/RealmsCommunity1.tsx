@@ -42,11 +42,12 @@ export const TextBox = ({
           <Text as='p1' withOpacity>
             {description}
           </Text>
-          <br />
-          <Text as='p3' withOpacity>
-            {integration}
-          </Text>
-          <div>{children}</div>
+          <div className='flex flex-row'>
+            <div className='flex items-center'>{children}</div>
+            <Text as='p3' withOpacity className='ml-4'>
+              {integration}
+            </Text>
+          </div>
         </div>
       </div>
     </div>
@@ -146,53 +147,9 @@ const ListOfPros = [
     direction: 'ltr',
     integration: 'Integrate Twitter with Cardinal',
   },
-  {
-    number: '3',
-    isBlue: false,
-    isPurple: true,
-    imgSrc: '/backgrounds/engage-proposals.png',
-    imgAlt: 'Engage Proposals',
-    title: 'Engage with proposals',
-    description:
-      'Create proposals and use NFTs, tokens, or veTokens alongside delegation to customize voting for your DAO.',
-    direction: 'rtl',
-  },
-  {
-    number: '4',
-    isBlue: true,
-    isPurple: false,
-    imgSrc: '/backgrounds/allocate-treasury.png',
-    imgAlt: 'Allocate Treasury',
-    title: 'Fund and allocate the treasury',
-    description: `Leverage your DAO's treasury to enable the initiatives and staking / DeFi integrations important to your community.`,
-    direction: 'ltr',
-    integration: '',
-  },
-  {
-    number: '5',
-    isBlue: false,
-    isPurple: true,
-    imgSrc: '/backgrounds/notify-members.png',
-    imgAlt: 'Notifying Members',
-    title: 'Notifying Members',
-    description: `Leverage email, text, or wallet notifications to let your community know when it's time to take action.`,
-    direction: 'rtl',
-    integration: 'Integrations include Dialect and Notifi',
-  },
-  {
-    number: '6',
-    isBlue: true,
-    isPurple: false,
-    imgSrc: '/backgrounds/analytics.png',
-    imgAlt: 'Analytics',
-    title: 'Analytics',
-    description: `Have your DAO's key metrics at your fingertips to aid in your decision making.`,
-    direction: 'ltr',
-    integration: '',
-  },
 ];
 
-export default function RealmsCommunity() {
+export default function RealmsCommunity1() {
   return (
     <div className='pb-20 pt-9 md:pt-24'>
       <Header className='text-center'>

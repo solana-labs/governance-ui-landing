@@ -25,7 +25,7 @@ class MyDocument extends Document {
           />
           <link rel='stylesheet' href='https://use.typekit.net/cwm7dgy.css' />
         </Head>
-        <body>
+        <body className='bg-background'>
           <Main />
           <NextScript />
         </body>

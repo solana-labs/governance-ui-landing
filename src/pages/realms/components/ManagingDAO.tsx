@@ -10,7 +10,7 @@ export default function ManagingDAO() {
     >
       <div className='flex flex-wrap'>
         <div className=' w-full text-center md:pr-4 lg:text-left'>
-          <Header as='h2' className='mb-16 px-20 md:mb-16 lg:mb-20'>
+          <Header as='h2' className='mb-16 px-20 md:mb-16 lg:mb-20 xl:px-0'>
             Managing your DAO
             <br className='hidden md:block lg:hidden' /> on Realms
           </Header>

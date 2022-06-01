@@ -39,15 +39,18 @@ export const DAOType = ({
 }: DAOProps) => (
   // GreenBox
   <div
-    className={`flex min-w-[10rem] flex-col ${bgImage} bg-cover px-5 py-16 md:py-12 md:px-[40px] xl:flex-col xl:py-8 xl:px-0`}
+    // className={`flex w-full flex-col ${bgImage} xl:max-w-1/4 xl:flex-col`}
+    className={`flex w-full flex-col ${bgImage} xl:max-w-1/4 px-5 py-16 md:py-12 md:px-[40px] xl:flex-col xl:py-8 xl:px-0`}
   >
     {/* OrangeBox */}
     <div className='xl:px-8'>
-      <Header as='h3' className='mb-4'>
-        {headerText}
-      </Header>
+      <div className='xl:min-h-[80px]'>
+        <Header as='h3' className='mb-4 xl:whitespace-pre'>
+          {headerText}
+        </Header>
+      </div>
       {/* YellowBox */}
-      <div className='w-full md:w-3/5'>
+      <div className='w-full md:w-3/5 xl:w-full'>
         <Text as='p1' withOpacity>
           {descriptionText}
         </Text>
@@ -80,14 +83,13 @@ export const DAOType = ({
 
 export const ListOfDAOTypes = () => {
   return (
-    <div className='mt-16 flex flex-col justify-between space-y-4 md:flex-col xl:flex-row xl:space-y-0 xl:space-x-8'>
-      {/* <div className="flex flex-col justify-between md:flex-col lg:flex-row lg:space-x-8 mt-16"> */}
+    <div className='mt-12 flex flex-col justify-between space-y-4 md:flex-col md:space-y-16 xl:flex-row xl:justify-center xl:space-y-0 xl:space-x-8'>
       <DAOType
         bgImage='bg-daotype-multisig'
         headerText='Multi-Signature Wallet'
         descriptionText='A “multisig” is a shared wallet, typically with two or more members authorizing transactions.'
         imgText={`The Sanctuary, Ukraine.SOL,\nSPL Governance & more`}
-        buttonText='Start Multi-Signature DAO'
+        buttonText='Create Multi-Signature DAO'
         buttonHref='/solana/create_dao/multisig'
       >
         <SmallImage
@@ -99,12 +101,12 @@ export const ListOfDAOTypes = () => {
       </DAOType>
       <DAOType
         bgImage='bg-daotype-nft-community'
-        headerText='NFT Community DAO'
-        descriptionText='NFT Community DAOs leverage NFTs as membership,  giving NFT holders voting power to make decisions.'
+        headerText={`NFT\nCommunity DAO`}
+        descriptionText='NFT Community DAOs leverage NFTs as membership, giving NFT holders voting power to make decisions.'
         // smallImgSrcs={[
-        //   { smallSrc: 'mango', alt: 'mango' },
-        //   { smallSrc: 'mango', alt: 'mango' },
-        //   { smallSrc: 'mango', alt: 'mango' },
+        //   { smallSrc: 'mango' },
+        //   { smallSrc: 'mango' },
+        //   { smallSrc: 'mango' },
         // ]}
         imgText={`MonkeDAO, The Imperium of Rain,\nThe Sporagers & more`}
         buttonText='Create an NFT Community DAO'
@@ -119,9 +121,9 @@ export const ListOfDAOTypes = () => {
         headerText='Tokenized DAO'
         descriptionText='DAO members receive a governance token to denote their membership and allow them to vote on proposals.'
         // smallImgSrcs={[
-        //   { smallSrc: 'mango', alt: 'mango' },
-        //   { smallSrc: 'mango', alt: 'mango' },
-        //   { smallSrc: 'mango', alt: 'mango' },
+        //   { smallSrc: 'mango' },
+        //   { smallSrc: 'mango' },
+        //   { smallSrc: 'mango' },
         // ]}
         imgText={`Mango DAO, Friends & Family DAO,\nGRAPE & more`}
         buttonText='Create a Tokenized DAO'

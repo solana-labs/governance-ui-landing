@@ -55,7 +55,7 @@ export const Button: FunctionComponent<ButtonProps> = ({
   } else if (selector) {
     //  (Select DAO Type)
     classNames +=
-      'py-3 px-7 h-[64px] max-w-[295px] md:max-w-[356px] xl:max-w-none xl:w-full bg-black hover:bg-white hover:text-black active:opacity-70 ';
+      'py-3 px-7 h-[64px] w-full sm:max-w-[290px] md:max-w-[356px] xl:max-w-none xl:w-full bg-black hover:bg-white hover:text-black active:opacity-70 ';
   } else {
     // primary (Enter App)
     classNames += `text-black bg-gradient-to-r from-[#00C2FF] via-[#00E4FF] to-[#87F2FF] transition-to-white-background active:opacity-70`;
