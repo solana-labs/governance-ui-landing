@@ -1,6 +1,20 @@
+import Logo from '@/components/Logo';
+
 import ReadTheDocsLink from './Link';
-import { NavContent } from './NavBar';
 import SocialIcons from './SocialIcons';
+
+type NavBarProps = {
+  children: React.ReactNode;
+};
+
+export const NavContent = ({ children }: NavBarProps) => {
+  return (
+    <div className='mx-auto flex max-w-[1440px] items-center justify-between'>
+      <Logo />
+      {children}
+    </div>
+  );
+};
 
 const Hyperlinks = () => {
   return (

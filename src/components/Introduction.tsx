@@ -2,9 +2,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import * as Anchor from '@/components/Anchor';
+import CenteredContent from '@/components/CenteredContent';
 import Header from '@/components/Header';
 import Icon from '@/components/Icon';
-import CenteredContent from '@/components/layout/CenteredContent';
 import Text from '@/components/Text';
 
 interface Props {
@@ -14,13 +14,14 @@ interface Props {
 export default function Introduction(props: Props) {
   return (
     <CenteredContent className={props.className}>
-      <Image
-        className='-z-10 w-full'
-        alt='hero image'
-        src='/backgrounds/landing-hero-desktop.png'
-        layout='fill'
-        objectFit='cover'
-      />
+      <div className='absolute -top-[275px] left-1/2 -z-10 h-[844px] w-[1800px] -translate-x-[1072px]'>
+        <Image
+          className='w-full'
+          alt='hero image'
+          src='/backgrounds/landing-hero-desktop.png'
+          layout='fill'
+        />
+      </div>
       <article className='pt-[245px] pb-[200px]'>
         <div className='max-w-screen-lg'>
           <Header as='h1'>
