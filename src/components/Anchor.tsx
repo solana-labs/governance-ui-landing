@@ -1,3 +1,5 @@
+import { forwardRef } from 'react';
+
 import { createAnchor } from '@/lib/buttons';
 
 import * as buttonStyles from '@/styles/buttons';
@@ -14,12 +16,14 @@ export const Secondary = createAnchor(buttonStyles.SECONDARY);
 
 const TertiaryWrapper = createAnchor(buttonStyles.TERTIARY_WRAPPER);
 
-export const Tertiary = (props: AnchorProps) => {
-  const { className, children, ...rest } = props;
+export const Tertiary = forwardRef<HTMLAnchorElement, AnchorProps>(
+  (props: AnchorProps, ref) => {
+    const { className, children, ...rest } = props;
 
-  return (
-    <TertiaryWrapper className={className} {...rest}>
-      <div className={buttonStyles.TERTIARY}>{children}</div>
-    </TertiaryWrapper>
-  );
-};
+    return (
+      <TertiaryWrapper className={className} {...rest} ref={ref}>
+        <div className={buttonStyles.TERTIARY}>{children}</div>
+      </TertiaryWrapper>
+    );
+  }
+);

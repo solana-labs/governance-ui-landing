@@ -6,7 +6,6 @@ export const BASE_STYLES = clsxm(
   'font-serif',
   'group',
   'items-center',
-  'opacity-[84]',
   'relative',
   'rounded-full',
   'text-base',
@@ -15,25 +14,27 @@ export const BASE_STYLES = clsxm(
   'disabled:bg-white/40',
   'disabled:text-black',
   'focus:opacity-100',
-  'hover:cursor-pointer',
-  'hover:opacity-100'
+  'hover:cursor-pointer'
 );
 
 export const GRADIENT = clsxm(
   'border-none',
   'bg-gradient-to-r',
   'from-[#00C2FF]',
+  'opacity-[.84]',
   'px-11',
   'py-5',
   'text-black',
   'to-[#87F2FF]',
   'transition-to-white-background',
   'via-[#00E4FF]',
-  'active:opacity-70'
+  'active:opacity-70',
+  'hover:opacity-100'
 );
 
 export const DARK = clsxm(
   'bg-black',
+  'opacity-[.84]',
   'p-6',
   'active:opacity-70',
   'focus:bg-white',
@@ -68,6 +69,7 @@ export const SECONDARY = clsxm(
 );
 
 export const TERTIARY_WRAPPER = clsxm(
+  'group',
   'px-11',
   'py-5',
   'active:opacity-50',

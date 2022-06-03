@@ -78,6 +78,9 @@ export default function NavBar() {
               pageScrollPosition > BUTTON_BREAKPOINT
                 ? 'opacity-100'
                 : 'opacity-0',
+              pageScrollPosition > BUTTON_BREAKPOINT
+                ? 'pointer-events-auto'
+                : 'pointer-events-none',
               'absolute',
               'duration-300',
               'h-full',

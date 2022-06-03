@@ -1,3 +1,5 @@
+import clsxm from '@/lib/clsxm';
+
 interface Props {
   className?: string;
   children?: React.ReactNode;
@@ -5,11 +7,16 @@ interface Props {
 
 export default function CenteredContent(props: Props) {
   return (
-    <div className='relative w-full'>
+    <div className='w-full'>
       <div
-        className={`mx-auto w-full max-w-[1320px] px-5 md:px-10 ${
-          props.className || ''
-        }`}
+        className={clsxm(
+          props.className,
+          'max-w-[1320px]',
+          'md:px-10',
+          'mx-auto',
+          'px-5',
+          'w-full'
+        )}
       >
         {props.children}
       </div>

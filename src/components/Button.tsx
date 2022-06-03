@@ -1,3 +1,5 @@
+import { forwardRef } from 'react';
+
 import { createButton } from '@/lib/buttons';
 
 import * as buttonStyles from '@/styles/buttons';
@@ -14,12 +16,14 @@ export const Secondary = createButton(buttonStyles.SECONDARY);
 
 const TertiaryWrapper = createButton(buttonStyles.TERTIARY_WRAPPER);
 
-export const Tertiary = (props: ButtonProps) => {
-  const { className, children, ...rest } = props;
+export const Tertiary = forwardRef<HTMLButtonElement, ButtonProps>(
+  (props: ButtonProps, ref) => {
+    const { className, children, ...rest } = props;
 
-  return (
-    <TertiaryWrapper className={className} {...rest}>
-      <div className={buttonStyles.TERTIARY}>{children}</div>
-    </TertiaryWrapper>
-  );
-};
+    return (
+      <TertiaryWrapper className={className} {...rest} ref={ref}>
+        <div className={buttonStyles.TERTIARY}>{children}</div>
+      </TertiaryWrapper>
+    );
+  }
+);

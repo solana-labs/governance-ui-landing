@@ -1,8 +1,8 @@
 import Introduction from '@/components/Introduction';
+import Metrics from '@/components/Metrics';
 
 import DAOStructures from './components/DAOStructures';
 import ManagingDAO from './components/ManagingDAO';
-import Metrics from './components/Metrics';
 import RealmsCommunity from './components/RealmsCommunity';
 import RealmsCommunity1 from './components/RealmsCommunity1';
 import SPLGov from './components/SPLGov';

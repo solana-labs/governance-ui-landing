@@ -1,4 +1,5 @@
 import Introduction from '@/components/Introduction';
+import Metrics from '@/components/Metrics';
 import NavBar from '@/components/NavBar';
 
 const Index = () => {
@@ -6,6 +7,7 @@ const Index = () => {
     <main className='landing-page'>
       <NavBar />
       <Introduction />
+      <Metrics />
     </main>
   );
 };
