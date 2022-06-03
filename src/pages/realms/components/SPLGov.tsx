@@ -1,6 +1,7 @@
 import Background from '@/components/Background';
-import { AboutSplButton } from '@/components/Button';
+import * as Button from '@/components/Button';
 import Header from '@/components/Header';
+import Icon from '@/components/Icon';
 import Text from '@/components/Text';
 
 const SplGov = () => {
@@ -37,7 +38,14 @@ const SplGov = () => {
             build any type of DAOs which can own and manage any type of assets.
           </Text>
         </div>
-        <AboutSplButton />
+        <Button.Secondary>
+          <Icon
+            img='external-link-thin-white'
+            className='mr-4 transition-all group-hover:invert group-focus:invert'
+            alt='External link icon'
+          />
+          Read about SPL Governance
+        </Button.Secondary>
       </div>
     </Background>
   );

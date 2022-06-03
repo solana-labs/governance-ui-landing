@@ -1,5 +1,6 @@
-import { SelectDaoToCreate } from '@/components/Button';
+import * as Button from '@/components/Button';
 import Header from '@/components/Header';
+import Icon from '@/components/Icon';
 import Text from '@/components/Text';
 
 type SmallImageProps = {
@@ -34,7 +35,6 @@ export const DAOType = ({
   // smallImgSrcs,
   imgText,
   buttonText,
-  buttonHref,
   children,
 }: DAOProps) => (
   // GreenBox
@@ -76,7 +76,9 @@ export const DAOType = ({
       </div>
     </div>
     <div className='xl:px-4'>
-      <SelectDaoToCreate href={buttonHref} text={buttonText} />
+      <Button.Dark className='w-full justify-between'>
+        {buttonText} <Icon img='arrow-thin-blue' className='ml-4' alt='Arrow' />
+      </Button.Dark>
     </div>
   </div>
 );

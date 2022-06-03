@@ -129,9 +129,19 @@ body {
   background-image: linear-gradient(to bottom, gray, gray);
 }
 
+.transition-to-white-background:focus::before,
+.transition-to-white70-background:focus::before {
+  opacity: 1;
+}
+
 .transition-to-white-background:hover::before,
 .transition-to-white70-background:hover::before {
   opacity: 1;
+}
+
+.transition-to-gradient-background:disabled:focus::before,
+.transition-to-white-background:disabled:focus::before {
+  opacity: 0;
 }
 
 .transition-to-gradient-background:disabled:hover::before,

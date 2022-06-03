@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import { Icon } from './Button';
+import Icon from './Icon';
 import Text from './Text';
 
 export const ReadTheDocsLink = () => {

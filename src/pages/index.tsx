@@ -1,5 +1,11 @@
+import Introduction from '@/components/Introduction';
+
 const Index = () => {
-  return 'hello world';
+  return (
+    <main className='landing-page'>
+      <Introduction />
+    </main>
+  );
 };
 
 export default Index;

@@ -1,10 +1,10 @@
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
-import { EnterAppButton } from '@/components/Button';
+import * as Button from '@/components/Button';
+import Icon from '@/components/Icon';
 import ReadTheDocsLink from '@/components/Link';
 import Text from '@/components/Text';
-// import ReadTheDocsLink from '@/components/Link';
 
 const SCROLL_BREAK_POINT = 200;
 
@@ -65,7 +65,10 @@ export default function NavBar() {
     >
       <div className={`${scrollY < SCROLL_BREAK_POINT ? 'hidden' : 'px-5'}`}>
         <NavContent>
-          <EnterAppButton />
+          <Button.Gradient>
+            Enter App{' '}
+            <Icon className='ml-2' img='arrow-thin-black' alt='Arrow' />
+          </Button.Gradient>
         </NavContent>
       </div>
       <div
