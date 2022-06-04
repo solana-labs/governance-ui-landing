@@ -1,8 +1,8 @@
+import DAOStructures from '@/components/DAOStructures';
 import Introduction from '@/components/Introduction';
 import ManagingDAOs from '@/components/ManagingDAOs';
 import Metrics from '@/components/Metrics';
 
-import DAOStructures from './components/DAOStructures';
 import RealmsCommunity from './components/RealmsCommunity';
 import RealmsCommunity1 from './components/RealmsCommunity1';
 import SPLGov from './components/SPLGov';
@@ -17,10 +17,7 @@ const Realms = () => {
       <Introduction />
       <Metrics />
       <ManagingDAOs />
-      {/* mx-auto w-full max-w-[1440px] px-4 md:px-5 lg:w-5/6 lg:px-0 xl:px-20' */}
-      <Section className='mx-auto w-full max-w-[1440px] px-5 md:px-24 xl:px-8 '>
-        <DAOStructures />
-      </Section>
+      <DAOStructures />
       <Section>
         <RealmsCommunity />
         <hr></hr>

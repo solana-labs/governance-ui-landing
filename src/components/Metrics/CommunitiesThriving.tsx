@@ -6,11 +6,11 @@ import Content from './Content';
 import Section from './Section';
 
 const DAOS = [
-  { src: '/dao/blue-grape.png', title: 'Grape' },
+  { src: '/dao/blue-grape.png', title: 'GRAPE' },
   { src: '/dao/blue-uxd.png', title: 'UXD' },
-  { src: '/dao/blue-mango.png', title: 'Mango' },
-  { src: '/dao/blue-monke.png', title: 'Monke' },
-  { src: '/dao/blue-ukraine.png', title: 'Ukraine' },
+  { src: '/dao/blue-mango.png', title: 'MangoDAO' },
+  { src: '/dao/blue-monke.png', title: 'MonkeDAO' },
+  { src: '/dao/blue-ukraine.png', title: 'Ukraine.SOL' },
   { src: '/dao/blue-ledao.png', title: 'LeDAO' },
 ] as const;
 

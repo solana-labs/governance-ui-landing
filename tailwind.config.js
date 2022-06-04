@@ -79,6 +79,7 @@ module.exports = {
       },
       screens: {
         'md': '834px',
+        '1_5xl': '1312px',
       }
     },
   },

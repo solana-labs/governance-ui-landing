@@ -117,7 +117,7 @@ const CONFIG = [
 export default function ManagingDAOs() {
   return (
     <div className='relative'>
-      <div className='absolute -z-10 h-full w-full'>
+      <div className='absolute -z-10 h-full w-full bg-[#201F27]'>
         <Image
           className='w-full'
           alt='hero image'
@@ -135,7 +135,7 @@ export default function ManagingDAOs() {
               'mb-16',
               'mx-auto',
               'text-center',
-              'sm:max-w-[498px]',
+              'md:max-w-[498px]',
               'lg:mb-20',
               'lg:max-w-full',
               'xl:mb-16',

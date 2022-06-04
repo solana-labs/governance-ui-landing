@@ -1,3 +1,4 @@
+import DAOStructures from '@/components/DAOStructures';
 import Introduction from '@/components/Introduction';
 import ManagingDAOs from '@/components/ManagingDAOs';
 import Metrics from '@/components/Metrics';
@@ -10,6 +11,7 @@ const Index = () => {
       <Introduction />
       <Metrics />
       <ManagingDAOs />
+      <DAOStructures />
     </main>
   );
 };
