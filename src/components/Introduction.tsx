@@ -40,7 +40,7 @@ export default function Introduction() {
                 <Icon className='ml-2' img='arrow-thin-black' alt='Arrow' />
               </Anchor.Gradient>
             </Link>
-            <Link href='' passHref>
+            <Link href='/create-dao' passHref>
               <Anchor.Secondary>Create a DAO</Anchor.Secondary>
             </Link>
             <Link href='' passHref>

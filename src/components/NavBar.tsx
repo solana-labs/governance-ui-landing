@@ -21,7 +21,7 @@ export default function NavBar() {
 
   return (
     <div
-      className={clsxm('fixed', 'w-full', 'z-10', 'backdrop-blur-[3px]')}
+      className={clsxm('fixed', 'w-full', 'z-10')}
       style={{
         background: `rgba(41, 40, 51, ${opacity})`,
         // Let the nav bar scroll up until it "locks" into its final position
