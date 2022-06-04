@@ -10,15 +10,15 @@ import Text from '@/components/Text';
 export default function Introduction() {
   return (
     <div className='relative'>
+      <div className='absolute -top-[275px] left-1/2 -z-10 h-[844px] w-[1800px] -translate-x-[1072px]'>
+        <Image
+          className='w-full'
+          alt='hero image'
+          src='/backgrounds/landing-hero-desktop.png'
+          layout='fill'
+        />
+      </div>
       <CenteredContent>
-        <div className='absolute -top-[275px] left-1/2 -z-10 h-[844px] w-[1800px] -translate-x-[1072px]'>
-          <Image
-            className='w-full'
-            alt='hero image'
-            src='/backgrounds/landing-hero-desktop.png'
-            layout='fill'
-          />
-        </div>
         <article className='pt-[245px] pb-[200px]'>
           <div className='max-w-screen-lg'>
             <Header as='h1'>

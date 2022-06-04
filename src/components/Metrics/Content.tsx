@@ -13,6 +13,7 @@ export default function Content(props: Props) {
         'flex',
         'items-center',
         'justify-start',
+        'sm:justify-center',
         'md:justify-center',
         'xl:justify-start'
       )}

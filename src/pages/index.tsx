@@ -1,4 +1,5 @@
 import Introduction from '@/components/Introduction';
+import ManagingDAOs from '@/components/ManagingDAOs';
 import Metrics from '@/components/Metrics';
 import NavBar from '@/components/NavBar';
 
@@ -8,6 +9,7 @@ const Index = () => {
       <NavBar />
       <Introduction />
       <Metrics />
+      <ManagingDAOs />
     </main>
   );
 };

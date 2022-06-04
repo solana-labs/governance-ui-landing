@@ -5,26 +5,28 @@ import CommunitiesThriving from '@/components/Metrics/CommunitiesThriving';
 import DeeperIntegrations from '@/components/Metrics/DeeperIntegrations';
 import GrowingValue from '@/components/Metrics/GrowingValue';
 
-const ITEM_STYLES = '';
-
 export default function Metrics() {
   return (
     <div className='bg-[#201F27]'>
       <CenteredContent
         className={clsxm(
           'flex-col',
+          'flex-wrap',
           'flex',
-          'py-8',
-          'justify-between',
           'gap-16',
+          'gap-x-16',
+          'gap-y-16',
+          'justify-center',
+          'py-8',
+          'md:flex-row',
           'md:py-[50px]',
-          'xl:flex-row',
-          'xl:py-[40px]'
+          'xl:py-[40px]',
+          'xl:justify-between'
         )}
       >
-        <GrowingValue className={ITEM_STYLES} />
-        <CommunitiesThriving className={ITEM_STYLES} />
-        <DeeperIntegrations className={ITEM_STYLES} />
+        <GrowingValue />
+        <CommunitiesThriving />
+        <DeeperIntegrations />
       </CenteredContent>
     </div>
   );

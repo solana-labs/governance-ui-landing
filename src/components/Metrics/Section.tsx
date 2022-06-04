@@ -11,6 +11,7 @@ export default function Section(props: Props) {
       className={clsxm(
         props.className,
         'text-left',
+        'sm:text-center',
         'md:text-center',
         'xl:text-left'
       )}
