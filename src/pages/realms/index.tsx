@@ -3,8 +3,8 @@ import Introduction from '@/components/Introduction';
 import ManagingDAOs from '@/components/ManagingDAOs';
 import Metrics from '@/components/Metrics';
 import RealmsCommunity from '@/components/RealmsCommunity';
+import SolanaStandard from '@/components/SolanaStandard';
 
-import SPLGov from './components/SPLGov';
 import Footer from '../../components/Footer';
 import NavBar from '../../components/NavBar';
 import Section from '../../components/Section';
@@ -18,9 +18,7 @@ const Realms = () => {
       <ManagingDAOs />
       <DAOStructures />
       <RealmsCommunity />
-      <Section>
-        <SPLGov />
-      </Section>
+      <SolanaStandard />
       <Section>
         <Footer />
       </Section>

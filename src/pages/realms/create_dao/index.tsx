@@ -1,9 +1,7 @@
-// import Hero from 'components_2/Hero'
+import DAOStructures from '@/components/DAOStructures';
 import Header from '@/components/Header';
 import NavBar from '@/components/NavBar';
 import Section from '@/components/Section';
-
-import { ListOfDAOTypes } from '../components/DAOStructures';
 
 export default function CreateDaoPage() {
   return (
@@ -15,7 +13,7 @@ export default function CreateDaoPage() {
             What type of DAO <br />
             would you like to create?
           </Header>
-          <ListOfDAOTypes />
+          <DAOStructures />
         </div>
       </Section>
     </div>

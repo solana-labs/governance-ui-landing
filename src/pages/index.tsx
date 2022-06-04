@@ -4,6 +4,7 @@ import ManagingDAOs from '@/components/ManagingDAOs';
 import Metrics from '@/components/Metrics';
 import NavBar from '@/components/NavBar';
 import RealmsCommunity from '@/components/RealmsCommunity';
+import SolanaStandard from '@/components/SolanaStandard';
 
 const Index = () => {
   return (
@@ -14,6 +15,7 @@ const Index = () => {
       <ManagingDAOs />
       <DAOStructures />
       <RealmsCommunity />
+      <SolanaStandard />
     </main>
   );
 };
