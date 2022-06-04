@@ -45,8 +45,8 @@ export default function RealmsCommunity() {
             'xl:-space-y-8'
           )}
         >
-          {ITEMS.map((item, i) => (
-            <Section {...item} index={i + 1} key={item.image} />
+          {ITEMS.map((item) => (
+            <Section {...item} key={item.image} />
           ))}
         </div>
       </CenteredContent>
