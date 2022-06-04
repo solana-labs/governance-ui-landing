@@ -2,9 +2,8 @@ import DAOStructures from '@/components/DAOStructures';
 import Introduction from '@/components/Introduction';
 import ManagingDAOs from '@/components/ManagingDAOs';
 import Metrics from '@/components/Metrics';
+import RealmsCommunity from '@/components/RealmsCommunity';
 
-import RealmsCommunity from './components/RealmsCommunity';
-import RealmsCommunity1 from './components/RealmsCommunity1';
 import SPLGov from './components/SPLGov';
 import Footer from '../../components/Footer';
 import NavBar from '../../components/NavBar';
@@ -18,11 +17,7 @@ const Realms = () => {
       <Metrics />
       <ManagingDAOs />
       <DAOStructures />
-      <Section>
-        <RealmsCommunity />
-        <hr></hr>
-        <RealmsCommunity1 />
-      </Section>
+      <RealmsCommunity />
       <Section>
         <SPLGov />
       </Section>

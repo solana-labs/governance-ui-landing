@@ -3,6 +3,7 @@ import Introduction from '@/components/Introduction';
 import ManagingDAOs from '@/components/ManagingDAOs';
 import Metrics from '@/components/Metrics';
 import NavBar from '@/components/NavBar';
+import RealmsCommunity from '@/components/RealmsCommunity';
 
 const Index = () => {
   return (
@@ -12,6 +13,7 @@ const Index = () => {
       <Metrics />
       <ManagingDAOs />
       <DAOStructures />
+      <RealmsCommunity />
     </main>
   );
 };

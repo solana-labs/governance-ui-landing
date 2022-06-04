@@ -19,7 +19,7 @@ interface Props {
     icons: string[];
     text: string;
   };
-  title: string;
+  title: React.ReactNode;
 }
 
 export default function Card(props: Props) {
@@ -28,17 +28,17 @@ export default function Card(props: Props) {
       className={clsxm(
         props.className,
         'overflow-hidden',
-        'pb-8',
-        'pt-12',
-        'px-8',
+        'p-8',
         'relative',
         'rounded-md'
       )}
     >
-      <Image alt={props.title} className='-z-10' layout='fill' src={props.bg} />
-      <Header as='h3' className='pb-5 lg:min-h-[98px]'>
-        {props.title}
-      </Header>
+      <div className='absolute top-0 bottom-0 left-0 right-0 -z-10'>
+        <Image alt='background' layout='fill' src={props.bg} />
+      </div>
+      <div className='mb-5 flex items-center lg:min-h-[98px]'>
+        <Header as='h3'>{props.title}</Header>
+      </div>
       <Text withOpacity as='p1' className='block max-w-[489px] pb-8'>
         {props.content}
       </Text>
