@@ -17,15 +17,15 @@ export default function SolanaStandard() {
           'mx-auto',
           'overflow-hidden',
           'relative',
-          'rounded-md',
           'w-full',
           'py-9',
           'px-[20px]',
           'sm:px-16',
           'sm:py-12',
+          'sm:rounded-md',
+          'md:max-w-[1548px]',
           'md:px-24',
           'md:py-16',
-          'md:max-w-[1548px]',
           'lg:px-28',
           'lg:py-20'
         )}

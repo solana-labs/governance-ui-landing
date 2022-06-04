@@ -1,4 +1,5 @@
 import DAOStructures from '@/components/DAOStructures';
+import Footer from '@/components/Footer';
 import Introduction from '@/components/Introduction';
 import ManagingDAOs from '@/components/ManagingDAOs';
 import Metrics from '@/components/Metrics';
@@ -16,6 +17,7 @@ const Index = () => {
       <DAOStructures />
       <RealmsCommunity />
       <SolanaStandard />
+      <Footer className='mt-12 mb-48 sm:mt-48' />
     </main>
   );
 };

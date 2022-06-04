@@ -53,22 +53,20 @@ export default function NavBar() {
               'transition-opacity'
             )}
           >
-            <Link href='' passHref>
-              {/* The buttons come with padding, but that ruins our nice
-                  alignment in the nav bar. We're going to slightly hack around
-                  that using negative margins instead. The left margin on the
-                  button is to maintain the container size. Since the other
-                  button is absolutely positioned, it depends on the container
-                  width to rendered correctly */}
-              <Anchor.Tertiary className='-mr-11 ml-11'>
-                <Icon
-                  img='external-link-thin-white'
-                  className='mr-2'
-                  alt='External link icon'
-                />{' '}
-                Read the docs
-              </Anchor.Tertiary>
-            </Link>
+            {/* The buttons come with padding, but that ruins our nice
+                alignment in the nav bar. We're going to slightly hack around
+                that using negative margins instead. The left margin on the
+                button is to maintain the container size. Since the other
+                button is absolutely positioned, it depends on the container
+                width to rendered correctly */}
+            <Anchor.Tertiary className='-mr-11 ml-11' href=''>
+              <Icon
+                img='external-link-thin-white'
+                className='mr-2'
+                alt='External link icon'
+              />{' '}
+              Read the docs
+            </Anchor.Tertiary>
           </div>
           {/* This button is absolutely positioned over the previous one to
               make for a slicker transition when one button dissapears and the
