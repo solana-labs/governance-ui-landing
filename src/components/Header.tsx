@@ -15,19 +15,19 @@ export default function Header({
   className = '',
   children,
 }: HeaderProps) {
-  let classNames = 'landing-page font-light';
+  let classNames = '';
   if (as === 'h1') {
-    classNames += ` heading-xl`;
+    classNames += ` heading-xl font-light`;
   } else if (as === 'h2') {
-    classNames += ` heading-lg`;
+    classNames += ` heading-lg font-light`;
   } else if (as === 'h3') {
-    classNames += ` heading-md`;
+    classNames += ` heading-md font-light`;
   } else if (as === 'h4') {
-    classNames += ` heading-sm`;
+    classNames += ` heading-sm font-bold`;
   } else if (as === 'h5') {
-    className += ` heading-xs`;
+    className += ` heading-xs font-bold`;
   } else if (as === 'h6') {
-    className += ` heading-cta`;
+    className += ` heading-cta font-bold`;
   }
 
   classNames += ` ${className}`;

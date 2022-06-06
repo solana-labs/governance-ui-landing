@@ -1,81 +1,99 @@
-import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import clsxm from '@/lib/clsxm';
+import usePageScrollPos from '@/hooks/usePageScrollPos';
 
-import { EnterAppButton } from '@/components/Button';
-import ReadTheDocsLink from '@/components/Link';
-import Text from '@/components/Text';
-// import ReadTheDocsLink from '@/components/Link';
+import * as Anchor from '@/components/Anchor';
+import Icon from '@/components/Icon';
+import Logo from '@/components/Logo';
 
-const SCROLL_BREAK_POINT = 200;
+// The navbar doesn't start at the top. Instead, at rest, it is offset. As the
+// user scrolls up, the navbar will lock into place.
+const OFFSET = 40;
 
-function RealmsLogo() {
-  return (
-    <Link href='/'>
-      <div className='flex cursor-pointer items-center space-x-1 hover:brightness-110'>
-        <img
-          src='/icons/realms-logo.svg'
-          className='h-8 w-8'
-          alt='Realms Logo'
-        />
-        <Text as='p1'>Realms</Text>
-      </div>
-    </Link>
-  );
-}
-
-type NavBarProps = {
-  children: React.ReactNode;
-};
-
-export const NavContent = ({ children }: NavBarProps) => {
-  return (
-    <div className='mx-auto flex max-w-[1440px] items-center justify-between'>
-      <RealmsLogo />
-      {children}
-    </div>
-  );
-};
+// As the user scrolls, at some point the CTA in the navbar will switch from
+// "read the docs" to "open app". This is the point at which that happens.
+const BUTTON_BREAKPOINT = 540;
 
 export default function NavBar() {
-  const [scrollY, setScrollY] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-    };
-
-    // just trigger this so that the initial state
-    // is updated as soon as the component is mounted
-    // related: https://stackoverflow.com/a/63408216
-    handleScroll();
-
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  const pageScrollPosition = usePageScrollPos();
+  const opacity = Math.min(OFFSET, pageScrollPosition) / OFFSET;
 
   return (
     <div
-      className={`fixed top-0 z-10 w-full py-5 transition-all duration-300  ${
-        scrollY > SCROLL_BREAK_POINT
-          ? 'bg-background bg-opacity-90 backdrop-blur-[3px]'
-          : ''
-      }`}
+      className={clsxm('fixed', 'w-full', 'z-50')}
+      style={{
+        background: `rgba(41, 40, 51, ${opacity})`,
+        // Let the nav bar scroll up until it "locks" into its final position
+        top: Math.max(-OFFSET, -pageScrollPosition),
+      }}
     >
-      <div className={`${scrollY < SCROLL_BREAK_POINT ? 'hidden' : 'px-5'}`}>
-        <NavContent>
-          <EnterAppButton />
-        </NavContent>
-      </div>
       <div
-        className={`mx-auto flex max-w-[1440px] items-center justify-between px-5 ${
-          scrollY < SCROLL_BREAK_POINT ? '' : 'hidden'
-        }`}
+        className={clsxm(
+          'flex',
+          'items-center',
+          'justify-between',
+          'max-w-[1728px]',
+          'mx-auto',
+          'pb-4',
+          'pt-14',
+          'px-4',
+          'md:px-16',
+          'w-full'
+        )}
       >
-        <RealmsLogo />
-        <div>
-          <ReadTheDocsLink />
+        <Logo />
+        <div className='relative h-full'>
+          <div
+            className={clsxm(
+              pageScrollPosition < BUTTON_BREAKPOINT
+                ? 'opacity-100'
+                : 'opacity-0',
+              'duration-300',
+              'transition-opacity'
+            )}
+          >
+            {/* The buttons come with padding, but that ruins our nice
+                alignment in the nav bar. We're going to slightly hack around
+                that using negative margins instead. The left margin on the
+                button is to maintain the container size. Since the other
+                button is absolutely positioned, it depends on the container
+                width to rendered correctly */}
+            <Anchor.Tertiary
+              className='-mr-11 ml-11'
+              href='https://docs.realms.today/'
+            >
+              <Icon
+                img='external-link-thin-white'
+                className='mr-2'
+                alt='External link icon'
+              />{' '}
+              Read the docs
+            </Anchor.Tertiary>
+          </div>
+          {/* This button is absolutely positioned over the previous one to
+              make for a slicker transition when one button dissapears and the
+              other appears. */}
+          <div
+            className={clsxm(
+              pageScrollPosition > BUTTON_BREAKPOINT
+                ? 'opacity-100'
+                : 'opacity-0',
+              pageScrollPosition > BUTTON_BREAKPOINT
+                ? 'pointer-events-auto'
+                : 'pointer-events-none',
+              'absolute',
+              'duration-300',
+              'h-full',
+              'r-0',
+              'right-0',
+              'top-0',
+              'transition-opacity'
+            )}
+          >
+            <Anchor.Gradient href='https://app.realms.today'>
+              Enter App{' '}
+              <Icon className='ml-2' img='arrow-thin-black' alt='Arrow' />
+            </Anchor.Gradient>
+          </div>
         </div>
       </div>
     </div>
