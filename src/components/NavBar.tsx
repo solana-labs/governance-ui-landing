@@ -5,9 +5,14 @@ import * as Anchor from '@/components/Anchor';
 import Icon from '@/components/Icon';
 import Logo from '@/components/Logo';
 
-// The navbar doesn't start at the top. Instead, at rest, it is offset. As the
-// user scrolls up, the navbar will lock into place.
-const OFFSET = 40;
+// The distance the user needs to scroll in order for the nav bar to go from
+// being transparent to solid.
+const OFFSET = 100;
+
+// The maximum backdrop blur
+const BLUR = 20;
+
+const MAX_OPACITY = 0.8;
 
 // As the user scrolls, at some point the CTA in the navbar will switch from
 // "read the docs" to "open app". This is the point at which that happens.
@@ -15,15 +20,17 @@ const BUTTON_BREAKPOINT = 540;
 
 export default function NavBar() {
   const pageScrollPosition = usePageScrollPos();
-  const opacity = Math.min(OFFSET, pageScrollPosition) / OFFSET;
+  const progress = Math.min(OFFSET, pageScrollPosition) / OFFSET;
+  const opacity = Math.min(progress, MAX_OPACITY);
+  const blur = Math.min(progress * 20, BLUR);
 
   return (
     <div
       className={clsxm('fixed', 'w-full', 'z-50')}
       style={{
         background: `rgba(41, 40, 51, ${opacity})`,
-        // Let the nav bar scroll up until it "locks" into its final position
-        top: Math.max(-OFFSET, -pageScrollPosition),
+        backdropFilter: `blur(${blur}px)`,
+        WebkitBackdropFilter: `blur(${blur}px)`,
       }}
     >
       <div
@@ -33,11 +40,10 @@ export default function NavBar() {
           'justify-between',
           'max-w-[1728px]',
           'mx-auto',
-          'pb-4',
-          'pt-14',
           'px-4',
-          'md:px-16',
-          'w-full'
+          'py-4',
+          'w-full',
+          'md:px-16'
         )}
       >
         <Logo />

@@ -9,6 +9,7 @@ import Text from '@/components/Text';
 
 interface Props {
   bg: string;
+  bgAlignment: 'left' | 'center' | 'right';
   className?: string;
   content: string;
   cta: {
@@ -33,7 +34,19 @@ export default function Card(props: Props) {
         'rounded-md'
       )}
     >
-      <div className='absolute top-0 bottom-0 left-0 right-0 -z-10'>
+      <div
+        className={clsxm(
+          '-z-10',
+          'absolute',
+          'bottom-0',
+          'h-[450px]',
+          'w-[800px]',
+          props.bgAlignment === 'left' && 'left-0',
+          props.bgAlignment === 'right' && 'right-0',
+          props.bgAlignment === 'center' && 'left-1/2',
+          props.bgAlignment === 'center' && '-translate-x-1/2'
+        )}
+      >
         <Image alt='background' layout='fill' src={props.bg} />
       </div>
       <div className='mb-5 flex items-center lg:min-h-[98px]'>
