@@ -2,7 +2,7 @@ import clsxm from '@/lib/clsxm';
 
 import CenteredContent from '@/components/CenteredContent';
 import Card from '@/components/DAOStructures/Card';
-import { ITEMS } from '@/components/DAOStructures/items';
+import ITEMS from '@/components/DAOStructures/items';
 import Header from '@/components/Header';
 import Logo from '@/components/Logo';
 

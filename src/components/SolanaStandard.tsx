@@ -64,7 +64,7 @@ export default function SolanaStandard() {
           build any type of DAOs which can own and manage any type of assets.
         </div>
         <div className='flex'>
-          <Anchor.Secondary>
+          <Anchor.Secondary href='https://solana.com/developers/dao'>
             <Icon
               img='external-link-thin-white'
               className='mr-4 transition-all group-hover:invert group-focus:invert'

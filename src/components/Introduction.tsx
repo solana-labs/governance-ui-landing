@@ -34,25 +34,24 @@ export default function Introduction() {
             </Text>
           </div>
           <div className='flex flex-col items-center gap-4 sm:flex-row'>
-            <Link href='' passHref>
-              <Anchor.Gradient>
-                Enter App{' '}
-                <Icon className='ml-2' img='arrow-thin-black' alt='Arrow' />
-              </Anchor.Gradient>
-            </Link>
+            <Anchor.Gradient href='https://app.realms.today'>
+              Enter App{' '}
+              <Icon className='ml-2' img='arrow-thin-black' alt='Arrow' />
+            </Anchor.Gradient>
             <Link href='/create-dao' passHref>
               <Anchor.Secondary>Create a DAO</Anchor.Secondary>
             </Link>
-            <Link href='' passHref>
-              <Anchor.Tertiary className='block sm:hidden'>
-                <Icon
-                  img='external-link-thin-white'
-                  className='mr-2'
-                  alt='External link icon'
-                />{' '}
-                Read the docs
-              </Anchor.Tertiary>
-            </Link>
+            <Anchor.Tertiary
+              className='block sm:hidden'
+              href='https://docs.realms.today/'
+            >
+              <Icon
+                img='external-link-thin-white'
+                className='mr-2'
+                alt='External link icon'
+              />{' '}
+              Read the docs
+            </Anchor.Tertiary>
           </div>
         </article>
       </CenteredContent>

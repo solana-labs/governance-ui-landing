@@ -15,7 +15,7 @@ export default function Header({
   className = '',
   children,
 }: HeaderProps) {
-  let classNames = 'landing-page';
+  let classNames = '';
   if (as === 'h1') {
     classNames += ` heading-xl font-light`;
   } else if (as === 'h2') {

@@ -4,7 +4,7 @@ import clsxm from '@/lib/clsxm';
 
 import Tooltip from '@/components/Tooltip';
 
-export const CONFIG = [
+const CONFIG = [
   {
     title: 'SPL Governance',
     content:
@@ -108,3 +108,5 @@ export const CONFIG = [
     icon: '/icons/advantage.png',
   },
 ];
+
+export default CONFIG;

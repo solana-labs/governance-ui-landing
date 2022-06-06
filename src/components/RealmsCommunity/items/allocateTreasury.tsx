@@ -1,9 +1,6 @@
 import { Props } from '../Section';
 
-export const ALLOCATE_TREASURY: Omit<
-  Props,
-  'alignment' | 'className' | 'index'
-> = {
+const ALLOCATE_TREASURY: Omit<Props, 'alignment' | 'className' | 'index'> = {
   image: '/backgrounds/allocate-treasury.png',
   text: "Leverage your DAO's treasury to enable the initiatives and staking / DeFi integrations important to your community.",
   title: (
@@ -43,3 +40,5 @@ export const ALLOCATE_TREASURY: Omit<
     </div>
   ),
 };
+
+export default ALLOCATE_TREASURY;

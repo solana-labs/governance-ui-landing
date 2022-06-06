@@ -1,10 +1,10 @@
-export const ITEMS = [
+const ITEMS = [
   {
     bg: '/backgrounds/daotype-multisig.png',
     content:
       'A “multisig” is a shared wallet, typically with two or more members authorizing transactions.',
     cta: {
-      href: '',
+      href: 'https://app.realms.today/realms/new/multisig',
       text: 'Create a Multisig Wallet',
     },
     daos: {
@@ -27,7 +27,7 @@ export const ITEMS = [
     content:
       'NFT Community DAOs leverage NFTs as membership,  giving NFT holders voting power to make decisions.',
     cta: {
-      href: '',
+      href: 'https://app.realms.today/realms/new/nft',
       text: 'Create an NFT Community DAO',
     },
     daos: {
@@ -50,7 +50,7 @@ export const ITEMS = [
     content:
       'DAO members receive a governance token to denote their membership and allow them to vote on proposals.',
     cta: {
-      href: '',
+      href: 'https://app.realms.today/realms/new/tokenized',
       text: 'Create a Tokenized DAO',
     },
     daos: {
@@ -64,3 +64,5 @@ export const ITEMS = [
     title: 'Tokenized DAO',
   },
 ];
+
+export default ITEMS;

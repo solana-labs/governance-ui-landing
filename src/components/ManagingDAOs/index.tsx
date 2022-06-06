@@ -5,7 +5,7 @@ import clsxm from '@/lib/clsxm';
 import CenteredContent from '@/components/CenteredContent';
 import Header from '@/components/Header';
 
-import { CONFIG } from './config';
+import CONFIG from './config';
 import Section from './Section';
 
 export default function ManagingDAOs() {

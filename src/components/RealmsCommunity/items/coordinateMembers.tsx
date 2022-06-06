@@ -1,9 +1,6 @@
 import { Props } from '../Section';
 
-export const COORDINATE_MEMBERS: Omit<
-  Props,
-  'alignment' | 'className' | 'index'
-> = {
+const COORDINATE_MEMBERS: Omit<Props, 'alignment' | 'className' | 'index'> = {
   image: '/backgrounds/coordinate-members.png',
   text: 'Bring members of your community onboard to participate in your DAO’s activity.',
   title: (
@@ -24,3 +21,5 @@ export const COORDINATE_MEMBERS: Omit<
     </div>
   ),
 };
+
+export default COORDINATE_MEMBERS;

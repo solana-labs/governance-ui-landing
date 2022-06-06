@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 import clsxm from '@/lib/clsxm';
 import usePageScrollPos from '@/hooks/usePageScrollPos';
 
@@ -59,7 +57,10 @@ export default function NavBar() {
                 button is to maintain the container size. Since the other
                 button is absolutely positioned, it depends on the container
                 width to rendered correctly */}
-            <Anchor.Tertiary className='-mr-11 ml-11' href=''>
+            <Anchor.Tertiary
+              className='-mr-11 ml-11'
+              href='https://docs.realms.today/'
+            >
               <Icon
                 img='external-link-thin-white'
                 className='mr-2'
@@ -88,12 +89,10 @@ export default function NavBar() {
               'transition-opacity'
             )}
           >
-            <Link href='' passHref>
-              <Anchor.Gradient>
-                Enter App{' '}
-                <Icon className='ml-2' img='arrow-thin-black' alt='Arrow' />
-              </Anchor.Gradient>
-            </Link>
+            <Anchor.Gradient href='https://app.realms.today'>
+              Enter App{' '}
+              <Icon className='ml-2' img='arrow-thin-black' alt='Arrow' />
+            </Anchor.Gradient>
           </div>
         </div>
       </div>

@@ -9,7 +9,7 @@ import SolanaStandard from '@/components/SolanaStandard';
 
 const Index = () => {
   return (
-    <main className='landing-page'>
+    <main>
       <NavBar />
       <Introduction />
       <Metrics />

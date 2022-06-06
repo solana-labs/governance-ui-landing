@@ -4,7 +4,7 @@ import CenteredContent from '@/components/CenteredContent';
 import Header from '@/components/Header';
 
 import Card from './Card';
-import { ITEMS } from './items';
+import ITEMS from './items';
 
 export default function DAOStructures() {
   return (
@@ -32,14 +32,23 @@ export default function DAOStructures() {
           'gap-x-4',
           'gap-y-4',
           'items-start',
-          'md:flex-wrap',
-          'lg:flex-row',
-          'lg:justify-center',
+          '1_5xl:flex-wrap',
+          '1_5xl:flex-row',
+          '1_5xl:justify-center',
           '1_5xl:justify-between'
         )}
       >
         {ITEMS.map((item) => (
-          <Card {...item} className='w-full lg:max-w-[400px]' key={item.bg} />
+          <Card
+            {...item}
+            className={clsxm(
+              '1_5xl:max-w-[400px]',
+              'md:max-w-[700px]',
+              'md:mx-auto',
+              'w-full'
+            )}
+            key={item.bg}
+          />
         ))}
       </div>
     </CenteredContent>

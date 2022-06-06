@@ -5,7 +5,7 @@ import clsxm from '@/lib/clsxm';
 import CenteredContent from '@/components/CenteredContent';
 import Header from '@/components/Header';
 
-import { ITEMS } from './items';
+import ITEMS from './items';
 import Section from './Section';
 
 export default function RealmsCommunity() {

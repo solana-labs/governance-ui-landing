@@ -11,7 +11,7 @@ interface Props {
 
 export default function Footer(props: Props) {
   return (
-    <div className={clsxm(props.className, 'w-full')}>
+    <div className={props.className}>
       <footer
         className={clsxm(
           'flex-wrap',
@@ -48,15 +48,15 @@ export default function Footer(props: Props) {
           <div className='flex flex-wrap justify-center space-x-2 text-sm opacity-70'>
             <a href=''>© 2022 Realms</a>
             <span>|</span>
-            <a href=''>Your Privacy</a>
+            <a href='https://solana.com/disclaimer'>Your Privacy</a>
             <span>|</span>
-            <a href=''>Terms</a>
+            <a href='https://solana.com/disclaimer'>Terms</a>
           </div>
         </div>
         {/* The buttons come with padding, but that ruins our nice
             alignment in the nav bar. We're going to slightly hack around
             that using negative margins instead.*/}
-        <Anchor.Tertiary className='-mr-11' href=''>
+        <Anchor.Tertiary className='-mr-11' href='https://docs.realms.today/'>
           <Icon
             img='external-link-thin-white'
             className='mr-2'
