@@ -66,5 +66,9 @@
     "*.{json,css,scss,md}": [
       "prettier -w"
     ]
+  },
+  "volta": {
+    "node": "16.15.1",
+    "yarn": "1.22.18"
   }
 }
