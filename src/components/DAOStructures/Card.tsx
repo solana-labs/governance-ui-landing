@@ -8,6 +8,7 @@ import Icon from '@/components/Icon';
 import Text from '@/components/Text';
 
 export declare type AlignType = 'left' | 'center' | 'right';
+
 interface Props {
   bg: string;
   bgAlignment: AlignType;
