@@ -9,8 +9,11 @@ import Text from '@/components/Text';
 
 export default function Introduction() {
   return (
-    <div className='relative'>
-      <div className='absolute -top-[275px] left-1/2 -z-10 h-[844px] w-[1800px] -translate-x-[1072px]'>
+    // The page gets sized by the overflowing hero image. To keep the page
+    // width from being affected by the hero, we need to add an
+    // 'overflow-hidden' to the container div
+    <div className='relative overflow-hidden'>
+      <div className='absolute -top-[275px] left-1/2 -z-10 h-[844px] w-[1800px] -translate-x-1/2'>
         <Image
           className='w-full'
           alt='hero image'
