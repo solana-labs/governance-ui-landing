@@ -57,15 +57,19 @@ export default function Footer(props: Props) {
         </div>
         {/* The buttons come with padding, but that ruins our nice
             alignment in the nav bar. We're going to slightly hack around
-            that using negative margins instead.*/}
-        <Anchor.Tertiary className='-mr-11' href='https://docs.realms.today/'>
-          <Icon
-            img='external-link-thin-white'
-            className='mr-2'
-            alt='External link icon'
-          />{' '}
-          Read the docs
-        </Anchor.Tertiary>
+            that using negative margins instead. To prevent these margins from
+            introducing overflow and affecting the parent width, we're going
+            to wrap it in a div and set overflow to be hidden. */}
+        <div className='overflow-hidden'>
+          <Anchor.Tertiary className='-mr-11' href='https://docs.realms.today/'>
+            <Icon
+              img='external-link-thin-white'
+              className='mr-2'
+              alt='External link icon'
+            />{' '}
+            Read the docs
+          </Anchor.Tertiary>
+        </div>
       </footer>
     </div>
   );
