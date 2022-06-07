@@ -35,7 +35,7 @@ export default function Introduction() {
           </div>
           <div className='flex flex-col items-center gap-4 sm:flex-row'>
             <Anchor.Gradient href='https://app.realms.today'>
-              Enter App{' '}
+              Enter App
               <Icon className='ml-2' img='arrow-thin-black' alt='Arrow' />
             </Anchor.Gradient>
             <Link href='/create-dao' passHref>

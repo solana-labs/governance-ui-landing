@@ -7,7 +7,7 @@ import GrowingValue from '@/components/Metrics/GrowingValue';
 
 export default function Metrics() {
   return (
-    <div className='bg-[#201F27]'>
+    <div className='bg-nightgrey'>
       <CenteredContent
         className={clsxm(
           'flex-col',

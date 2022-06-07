@@ -45,7 +45,7 @@ module.exports = {
       colors: {
         'landing-theme': {
           background: '#292833',
-          nightgrey: '#292833',
+          nightgrey: '#201f27',
         },
         background: 'var(--background)',
         nightgrey: 'var(--nightgrey)',

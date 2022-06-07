@@ -29,7 +29,7 @@ export default function DAOStructures() {
         className={clsxm(
           'flex-col',
           'flex',
-          'gap-x-4',
+          'gap-x-2',
           'gap-y-4',
           'items-start',
           '1_5xl:flex-wrap',
