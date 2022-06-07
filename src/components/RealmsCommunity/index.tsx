@@ -10,7 +10,7 @@ import Section from './Section';
 
 export default function RealmsCommunity() {
   return (
-    <div className='relative'>
+    <div className='relative overflow-hidden'>
       <div
         className={clsxm(
           '-translate-x-1/2',
