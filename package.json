@@ -63,8 +63,12 @@
       "eslint --max-warnings=0",
       "prettier -w"
     ],
-    "*.{json,css,scss,md}": [
+    "*.{json,css,scss,md,yaml, yml}": [
       "prettier -w"
     ]
+  },
+  "volta": {
+    "node": "16.15.1",
+    "yarn": "1.22.18"
   }
 }

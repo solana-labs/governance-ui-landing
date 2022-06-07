@@ -7,9 +7,11 @@ import Header from '@/components/Header';
 import Icon from '@/components/Icon';
 import Text from '@/components/Text';
 
+export declare type AlignType = 'left' | 'center' | 'right';
+
 interface Props {
   bg: string;
-  bgAlignment: 'left' | 'center' | 'right';
+  bgAlignment: AlignType;
   className?: string;
   content: string;
   cta: {

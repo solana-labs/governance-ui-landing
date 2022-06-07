@@ -1,53 +1,62 @@
-name: PR Source Code Check
+name: Code check
 
 on:
-  - push
+  pull_request:
+    branches:
+      - '*'
+  push:
+    branches:
+      - '*'
+
+concurrency:
+  group: ${{ github.head_ref || github.ref_name }}
+  cancel-in-progress: true
 
 jobs:
   lint:
-    name: Run ESLint
+    name: ESLint
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
-          node-version: '14'
+          node-version: '16'
           cache: 'yarn'
       - run: yarn
       - run: yarn lint:strict
 
   tsc:
-    name: Run Type Check
+    name: Type Check
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
-          node-version: '14'
+          node-version: '16'
           cache: 'yarn'
       - run: yarn
       - run: yarn typecheck
 
   prettier:
-    name: Run Prettier Check
+    name: Prettier
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
-          node-version: '14'
+          node-version: '16'
           cache: 'yarn'
       - run: yarn
       - run: yarn format:check
 
   test:
-    name: Run Test
+    name: Test
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
-          node-version: '14'
+          node-version: '16'
           cache: 'yarn'
       - run: yarn
       - run: yarn test

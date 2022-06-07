@@ -1,0 +1,8 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+git stash
+
+yarn typecheck && yarn lint:strict && yarn format:check && yarn test
+
+git stash pop || exit 0
