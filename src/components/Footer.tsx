@@ -18,15 +18,14 @@ export default function Footer(props: Props) {
           'flex',
           'gap-x-10',
           'items-center',
-          'justify-center',
+          'justify-between',
           'max-w-[1728px]',
           'mx-auto',
           'px-4',
           'relative',
           'w-full',
           'sm:gap-x-40',
-          'md:px-16',
-          'md:justify-between'
+          'md:px-16'
         )}
       >
         <Logo />
@@ -41,14 +40,17 @@ export default function Footer(props: Props) {
             'top-1/2',
             '-translate-x-1/2',
             'translate-y-[60px]',
-            'md:-translate-y-1/2'
+            'sm:-translate-y-1/2'
           )}
         >
           <SocialIcons className='mb-5 sm:mb-10' />
           <div className='flex flex-wrap justify-center space-x-2 text-sm opacity-70'>
             <a href=''>© 2022 Realms</a>
-            <span>|</span>
-            <a href='https://solana.com/disclaimer'>Your Privacy</a>
+            {/**
+             * We aren't going to include the privacy policy for now
+             * <span>|</span>
+             * <a href='https://solana.com/disclaimer'>Your Privacy</a>
+             */}
             <span>|</span>
             <a href='https://solana.com/disclaimer'>Terms</a>
           </div>

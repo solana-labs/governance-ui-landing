@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 import clsxm from '@/lib/clsxm';
 
 import Tooltip from '@/components/Tooltip';
@@ -11,25 +9,24 @@ const CONFIG = [
       'Powering Realms, SPL Governance is an asset and DAO type agnostic standard for building DAOs on Solana.',
     icon: '/icons/solana-logo.png',
     footer: (
-      <Link href='' passHref>
-        <a
-          className={clsxm(
-            'inline-block',
-            'mt-3',
-            'opacity-50',
-            'text-xs',
-            'underline',
-            'transition',
-            'active:text-white',
-            'focus:opacity-90',
-            'focus:text-realms-theme-blue',
-            'hover:opacity-90',
-            'hover:text-realms-theme-blue'
-          )}
-        >
-          Learn More
-        </a>
-      </Link>
+      <a
+        className={clsxm(
+          'inline-block',
+          'mt-3',
+          'opacity-50',
+          'text-xs',
+          'underline',
+          'transition',
+          'active:text-white',
+          'focus:opacity-90',
+          'focus:text-realms-theme-blue',
+          'hover:opacity-90',
+          'hover:text-realms-theme-blue'
+        )}
+        href='https://solana.com/developers/dao'
+      >
+        Learn More
+      </a>
     ),
   },
   {

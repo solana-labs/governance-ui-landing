@@ -1,6 +1,7 @@
 const ITEMS = [
   {
     bg: '/backgrounds/daotype-multisig.png',
+    bgAlignment: 'right',
     content:
       'A “multisig” is a shared wallet, typically with two or more members authorizing transactions.',
     cta: {
@@ -24,6 +25,7 @@ const ITEMS = [
   },
   {
     bg: '/backgrounds/daotype-nft-community.png',
+    bgAlignment: 'left',
     content:
       'NFT Community DAOs leverage NFTs as membership,  giving NFT holders voting power to make decisions.',
     cta: {
@@ -47,6 +49,7 @@ const ITEMS = [
   },
   {
     bg: '/backgrounds/daotype-tokenized.png',
+    bgAlignment: 'center',
     content:
       'DAO members receive a governance token to denote their membership and allow them to vote on proposals.',
     cta: {

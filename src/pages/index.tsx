@@ -17,7 +17,7 @@ const Index = () => {
       <DAOStructures />
       <RealmsCommunity />
       <SolanaStandard />
-      <Footer className='mt-12 mb-48 sm:mt-48' />
+      <Footer className='mt-12 mb-48 w-full sm:mt-48' />
     </main>
   );
 };
