@@ -56,7 +56,7 @@ export default function Footer(props: Props) {
           </div>
         </div>
         {/* The buttons come with padding, but that ruins our nice
-            alignment in the nav bar. We're going to slightly hack around
+            alignment in the footer. We're going to slightly hack around
             that using negative margins instead. To prevent these margins from
             introducing overflow and affecting the parent width, we're going
             to wrap it in a div and set overflow to be hidden. */}
