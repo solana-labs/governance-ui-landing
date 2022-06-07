@@ -1,4 +1,8 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-git stash && yarn typecheck || git stash pop
+git stash
+
+yarn lint:strict || yarn typecheck || yarn format:check || yarn test
+
+git stash pop || exit 0
