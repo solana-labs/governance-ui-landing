@@ -1,4 +1,5 @@
 import clsxm from '@/lib/clsxm';
+import trackClick from '@/lib/trackClick';
 import usePageScrollPos from '@/hooks/usePageScrollPos';
 
 import * as Anchor from '@/components/Anchor';
@@ -66,6 +67,7 @@ export default function NavBar() {
             <Anchor.Tertiary
               className='-mr-11 ml-11'
               href='https://docs.realms.today/'
+              onClick={() => trackClick('read_docs', 'nav_bar')}
             >
               <Icon
                 img='external-link-thin-white'
@@ -95,7 +97,10 @@ export default function NavBar() {
               'transition-opacity'
             )}
           >
-            <Anchor.Gradient href='https://app.realms.today'>
+            <Anchor.Gradient
+              href='https://app.realms.today'
+              onClick={() => trackClick('enter_app', 'nav_bar')}
+            >
               Enter App{' '}
               <Icon className='ml-2' img='arrow-thin-black' alt='Arrow' />
             </Anchor.Gradient>

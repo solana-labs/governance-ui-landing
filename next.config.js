@@ -31,4 +31,25 @@ module.exports = {
 
     return config;
   },
+
+  async rewrites() {
+    return [
+      {
+        source: '/api/mp/lib.min.js',
+        destination: 'https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js',
+      },
+      {
+        source: '/api/mp/lib.js',
+        destination: 'https://cdn.mxpnl.com/libs/mixpanel-2-latest.js',
+      },
+      {
+        source: '/api/mp/decide',
+        destination: 'https://decide.mixpanel.com/decide',
+      },
+      {
+        source: '/api/mp/:slug',
+        destination: 'https://api.mixpanel.com/:slug',
+      },
+    ];
+  },
 };

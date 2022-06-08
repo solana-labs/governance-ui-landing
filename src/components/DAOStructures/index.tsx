@@ -6,7 +6,11 @@ import Header from '@/components/Header';
 import Card from './Card';
 import ITEMS from './items';
 
-export default function DAOStructures() {
+interface Props {
+  trackingContext: string;
+}
+
+export default function DAOStructures(props: Props) {
   return (
     <CenteredContent className='py-16 sm:py-20'>
       <Header
@@ -48,6 +52,7 @@ export default function DAOStructures() {
               'w-full'
             )}
             key={item.bg}
+            trackingContext={props.trackingContext}
           />
         ))}
       </div>

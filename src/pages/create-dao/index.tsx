@@ -1,4 +1,5 @@
 import clsxm from '@/lib/clsxm';
+import usePageViewTracking from '@/hooks/usePageViewTracking';
 
 import CenteredContent from '@/components/CenteredContent';
 import Card from '@/components/DAOStructures/Card';
@@ -7,6 +8,8 @@ import Header from '@/components/Header';
 import Logo from '@/components/Logo';
 
 export default function CreateDaoPage() {
+  usePageViewTracking('create');
+
   return (
     <div className='landing-page bg-background'>
       <div className={clsxm('bg-background', 'fixed', 'w-full', 'z-20')}>
@@ -60,6 +63,7 @@ export default function CreateDaoPage() {
               {...item}
               className='z-10 w-full lg:max-w-[400px]'
               key={item.bg}
+              trackingContext='create_dao_structures'
             />
           ))}
         </div>

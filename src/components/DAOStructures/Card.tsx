@@ -1,6 +1,7 @@
 import Image from 'next/image';
 
 import clsxm from '@/lib/clsxm';
+import trackClick from '@/lib/trackClick';
 
 import * as Anchor from '@/components/Anchor';
 import Header from '@/components/Header';
@@ -23,6 +24,8 @@ interface Props {
     text: string;
   };
   title: React.ReactNode;
+  trackingContext: string;
+  trackingLabel: string;
 }
 
 export default function Card(props: Props) {
@@ -70,6 +73,7 @@ export default function Card(props: Props) {
       <Anchor.Dark
         className='w-full max-w-[356px] justify-between'
         href={props.cta.href}
+        onClick={() => trackClick(props.trackingLabel, props.trackingContext)}
       >
         {props.cta.text}{' '}
         <Icon
