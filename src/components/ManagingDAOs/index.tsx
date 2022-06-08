@@ -40,14 +40,12 @@ export default function ManagingDAOs() {
           </Header>
           <div
             className={clsxm(
-              'flex-wrap',
-              'flex',
-              'flex-row',
-              'gap-x-8',
+              'grid',
+              'place-items-center',
+              'gap-x-24',
               'gap-y-16',
-              'items-start',
-              'justify-center',
-              'xl:justify-between'
+              'md:grid-cols-2',
+              'xl:grid-cols-3'
             )}
           >
             {CONFIG.map((section) => (
