@@ -24,8 +24,8 @@ export default function Introduction() {
           layout='fill'
         />
       </div>
-      <CenteredContent>
-        <article className='pt-[245px] pb-[200px]'>
+      <CenteredContent className='px-5'>
+        <article className='pt-[100px] pb-[50px] sm:pt-[200px] sm:pb-[155px]'>
           <div className='max-w-screen-lg'>
             <Header as='h1'>
               Tooling to help your community thrive on Solana
@@ -35,8 +35,8 @@ export default function Introduction() {
             <Text as='p1' withOpacity>
               DAO creation, voting, and treasury management, all in one fully
               on-chain product. Whether managing a multisig or a billion dollar
-              protocol, Realms has the tools and integrations to enable your
-              community to reach its full potential.
+              protocol, Realms has the tools to enable your community to reach
+              its full potential.
             </Text>
           </div>
           <div className='flex flex-col items-center gap-4 sm:flex-row'>

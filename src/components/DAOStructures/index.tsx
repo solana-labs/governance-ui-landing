@@ -12,7 +12,7 @@ interface Props {
 
 export default function DAOStructures(props: Props) {
   return (
-    <CenteredContent className='py-16 sm:py-20'>
+    <CenteredContent className='px-5 py-16 sm:py-20'>
       <Header
         as='h2'
         className={clsxm(
@@ -38,7 +38,6 @@ export default function DAOStructures(props: Props) {
           'items-start',
           '1_5xl:flex-wrap',
           '1_5xl:flex-row',
-          '1_5xl:justify-center',
           '1_5xl:justify-between'
         )}
       >
@@ -46,10 +45,10 @@ export default function DAOStructures(props: Props) {
           <Card
             {...item}
             className={clsxm(
-              '1_5xl:max-w-[400px]',
+              'w-full',
               'md:max-w-[700px]',
               'md:mx-auto',
-              'w-full'
+              '1_5xl:w-[calc(33%-16px)]'
             )}
             key={item.bg}
             trackingContext={props.trackingContext}

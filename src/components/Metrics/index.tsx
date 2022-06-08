@@ -17,6 +17,7 @@ export default function Metrics() {
           'gap-x-16',
           'gap-y-16',
           'justify-center',
+          'px-5',
           'py-8',
           'md:flex-row',
           'md:py-[50px]',

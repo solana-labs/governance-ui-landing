@@ -54,7 +54,7 @@ export default function Card(props: Props) {
       >
         <Image alt='background' layout='fill' src={props.bg} />
       </div>
-      <div className='mb-5 flex items-center lg:min-h-[98px]'>
+      <div className='mb-5 flex items-center lg:min-h-[98px] 1_5xl:max-w-[360px]'>
         <Header as='h3'>{props.title}</Header>
       </div>
       <Text withOpacity as='p1' className='block max-w-[489px] pb-8'>
