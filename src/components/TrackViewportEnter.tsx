@@ -22,7 +22,7 @@ export default function TrackViewportEnter(props: Props) {
         (entries: IntersectionObserverEntry[]) => {
           // The IntersectionObserver's callback is modelled after a single
           // observer watching multiple entries. For our purposes, this is
-          // hard to fit into a react model, so instead we create a new observer
+          // hard to fit into how we're using it; we create a new observer
           // with each component. Regardless, the callback will still return an
           // array of entries, so we need to handle that.
           for (const entry of entries) {
