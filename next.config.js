@@ -35,19 +35,19 @@ module.exports = {
   async rewrites() {
     return [
       {
-        source: '/api/events/lib.min.js',
+        source: '/api/mp/lib.min.js',
         destination: 'https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js',
       },
       {
-        source: '/api/events/lib.js',
+        source: '/api/mp/lib.js',
         destination: 'https://cdn.mxpnl.com/libs/mixpanel-2-latest.js',
       },
       {
-        source: '/api/events/decide',
+        source: '/api/mp/decide',
         destination: 'https://decide.mixpanel.com/decide',
       },
       {
-        source: '/api/events/:slug',
+        source: '/api/mp/:slug',
         destination: 'https://api.mixpanel.com/:slug',
       },
     ];
