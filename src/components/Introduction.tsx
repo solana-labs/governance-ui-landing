@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+import trackClick from '@/lib/trackClick';
+
 import * as Anchor from '@/components/Anchor';
 import CenteredContent from '@/components/CenteredContent';
 import Header from '@/components/Header';
@@ -15,6 +17,7 @@ export default function Introduction() {
     <div className='relative overflow-hidden'>
       <div className='absolute -top-[275px] left-1/2 -z-10 h-[844px] w-[1800px] -translate-x-1/2'>
         <Image
+          priority
           className='w-full'
           alt='hero image'
           src='/backgrounds/landing-hero-desktop.png'
@@ -37,16 +40,24 @@ export default function Introduction() {
             </Text>
           </div>
           <div className='flex flex-col items-center gap-4 sm:flex-row'>
-            <Anchor.Gradient href='https://app.realms.today'>
+            <Anchor.Gradient
+              href='https://app.realms.today'
+              onClick={() => trackClick('enter_app', 'index_introduction')}
+            >
               Enter App{' '}
               <Icon className='ml-2' img='arrow-thin-black' alt='Arrow' />
             </Anchor.Gradient>
-            <Link href='/create-dao' passHref>
-              <Anchor.Secondary>Create a DAO</Anchor.Secondary>
+            <Link passHref href='/create-dao'>
+              <Anchor.Secondary
+                onClick={() => trackClick('create_dao', 'index_introduction')}
+              >
+                Create a DAO
+              </Anchor.Secondary>
             </Link>
             <Anchor.Tertiary
               className='block sm:hidden'
               href='https://docs.realms.today/'
+              onClick={() => trackClick('read_docs', 'index_introduction')}
             >
               <Icon
                 img='external-link-thin-white'
