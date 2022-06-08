@@ -57,7 +57,11 @@ export default function Card(props: Props) {
       <div className='mb-5 flex items-center lg:min-h-[98px] 1_5xl:max-w-[360px]'>
         <Header as='h3'>{props.title}</Header>
       </div>
-      <Text withOpacity as='p1' className='block max-w-[489px] pb-8'>
+      <Text
+        withOpacity
+        as='p1'
+        className='block max-w-[489px] pb-8 lg:min-h-[104px]'
+      >
         {props.content}
       </Text>
       <div className='mb-6 flex items-center gap-3'>
