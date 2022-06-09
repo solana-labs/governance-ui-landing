@@ -11,10 +11,9 @@ export default function CenteredContent(props: Props) {
       <div
         className={clsxm(
           props.className,
-          'max-w-[1320px]',
+          'max-w-[1440px]',
           'md:px-10',
           'mx-auto',
-          'px-5',
           'w-full'
         )}
       >

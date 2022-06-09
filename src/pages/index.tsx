@@ -35,7 +35,7 @@ const Index = () => {
         <SolanaStandard />
       </TrackViewportEnter>
       <TrackViewportEnter name='footer'>
-        <Footer className='mt-12 mb-48 w-full sm:mt-48' />
+        <Footer className='mt-12 mb-36 w-full px-[20px] sm:my-24 sm:gap-x-40 md:px-24 lg:px-24' />
       </TrackViewportEnter>
     </main>
   );

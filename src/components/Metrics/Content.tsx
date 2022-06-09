@@ -13,9 +13,9 @@ export default function Content(props: Props) {
         'flex',
         'items-center',
         'justify-start',
-        'sm:justify-center',
-        'md:justify-center',
-        'xl:justify-start'
+        'sm:justify-center'
+        // Re-enable once we can display integrations
+        // 'xl:justify-start'
       )}
     >
       {props.children}

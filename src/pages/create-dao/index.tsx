@@ -30,7 +30,7 @@ export default function CreateDaoPage() {
           <Logo />
         </div>
       </div>
-      <CenteredContent className='pt-52'>
+      <CenteredContent className='px-5 pt-52'>
         <Header
           as='h2'
           className={clsxm(

@@ -20,13 +20,10 @@ export default function Footer(props: Props) {
           'gap-x-10',
           'items-center',
           'justify-between',
-          'max-w-[1728px]',
           'mx-auto',
-          'px-4',
           'relative',
           'w-full',
-          'sm:gap-x-40',
-          'md:px-16'
+          'md:max-w-[1548px]'
         )}
       >
         <Logo />

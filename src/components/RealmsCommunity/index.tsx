@@ -31,7 +31,10 @@ export default function RealmsCommunity() {
         />
       </div>
       <CenteredContent className='py-24'>
-        <Header as='h1' className='mx-auto mb-20 max-w-[875px] text-center'>
+        <Header
+          as='h1'
+          className='mx-auto mb-20 max-w-[875px] px-5 text-center'
+        >
           Using Realms to power your community
         </Header>
         <div

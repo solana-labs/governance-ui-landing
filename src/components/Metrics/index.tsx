@@ -2,7 +2,7 @@ import clsxm from '@/lib/clsxm';
 
 import CenteredContent from '@/components/CenteredContent';
 import CommunitiesThriving from '@/components/Metrics/CommunitiesThriving';
-import DeeperIntegrations from '@/components/Metrics/DeeperIntegrations';
+// import DeeperIntegrations from '@/components/Metrics/DeeperIntegrations';
 import GrowingValue from '@/components/Metrics/GrowingValue';
 
 export default function Metrics() {
@@ -17,16 +17,18 @@ export default function Metrics() {
           'gap-x-16',
           'gap-y-16',
           'justify-center',
+          'px-5',
           'py-8',
           'md:flex-row',
           'md:py-[50px]',
           'xl:py-[40px]',
-          'xl:justify-between'
+          'xl:justify-around'
         )}
       >
         <GrowingValue />
         <CommunitiesThriving />
-        <DeeperIntegrations />
+        {/* We're going to disable displaying integrations for the time being */}
+        {/* <DeeperIntegrations /> */}
       </CenteredContent>
     </div>
   );
