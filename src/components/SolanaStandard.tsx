@@ -24,7 +24,7 @@ export default function SolanaStandard() {
           'sm:px-16',
           'sm:py-12',
           'sm:rounded-md',
-          'md:max-w-[1548px]',
+          'md:max-w-[1538px]',
           'md:px-24',
           'md:py-16',
           'lg:px-28',
@@ -56,9 +56,9 @@ export default function SolanaStandard() {
           <span className='inline-block'>SPL Governance</span>
         </Header>
         <div className='mb-9 block max-w-[806px] text-sm sm:text-base'>
-          SPL Governance is a program the chief purpose of which is to provide
-          core building blocks and primitives to create Decentralized Autonomous
-          Organizations (DAOs) on Solana blockchain.
+          SPL Governance is a program which provides core building blocks and
+          primitives to create Decentralized Autonomous Organizations (DAOs) on
+          the Solana blockchain.
           <br />
           <br />
           The program is DAO type and asset type agnostic and can be used to

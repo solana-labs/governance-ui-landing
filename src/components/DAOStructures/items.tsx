@@ -33,7 +33,7 @@ const ITEMS = [
       'NFT Community DAOs leverage NFTs as membership,  giving NFT holders voting power to make decisions.',
     cta: {
       href: 'https://app.realms.today/realms/new/nft',
-      text: 'Create an NFT Community DAO',
+      text: 'Create NFT Community DAO',
     },
     daos: {
       icons: [

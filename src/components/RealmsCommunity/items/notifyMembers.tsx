@@ -3,7 +3,7 @@ import { Props } from '../Section';
 const NOTIFY_MEMBERS: Omit<Props, 'alignment' | 'className' | 'index'> = {
   image: '/backgrounds/notify-members.png',
   text: "Leverage email, text, or wallet notifications to let your community know when it's time to take action.",
-  title: 'Notifying Members',
+  title: 'Notify Members',
   // Re-enable once we can display integrations
   // extra: (
   //   <div className='flex items-center gap-1'>

@@ -35,7 +35,10 @@ export const GRADIENT = clsxm(
 export const DARK = clsxm(
   'bg-black',
   'opacity-[.84]',
-  'p-6',
+  'py-4',
+  'px-5',
+  'sm:py-5',
+  'sm:px-6',
   'active:opacity-70',
   'focus:bg-white',
   'focus:text-black',

@@ -59,7 +59,7 @@ export default function Section(props: Props) {
           'gap-x-3',
           '-mt-20',
           'px-5',
-          'sm:-mt-40',
+          'sm:-mt-48',
           'xl:mt-24',
           props.alignment === 'right' ? 'xl:-ml-8' : 'xl:-mr-8'
         )}

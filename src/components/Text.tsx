@@ -17,9 +17,9 @@ export default function Text({
 }: TextProps) {
   let classNames = '';
   if (as === 'p1') {
-    classNames += ` text-base`;
+    classNames += ` text-lg`;
   } else if (as === 'p2') {
-    classNames += ` text-sm`;
+    classNames += ` text-base`;
   } else if (as === 'p3') {
     classNames += ` text-xs`;
   }
