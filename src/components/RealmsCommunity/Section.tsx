@@ -94,8 +94,7 @@ export default function Section(props: Props) {
               'mt-4',
               'opacity-50',
               'pr-16',
-              'text-xs',
-              'sm:text-base',
+              'text-base',
               'sm:pr-0'
             )}
           >
