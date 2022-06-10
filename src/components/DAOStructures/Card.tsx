@@ -34,9 +34,11 @@ export default function Card(props: Props) {
       className={clsxm(
         props.className,
         'overflow-hidden',
-        'p-8',
+        'px-5',
+        'py-8',
         'relative',
-        'rounded-md'
+        'rounded-md',
+        'sm:p-8'
       )}
     >
       <div
