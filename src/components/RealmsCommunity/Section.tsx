@@ -46,6 +46,7 @@ export default function Section(props: Props) {
             'left-1/2',
             'top-1/2',
             'w-[445px]',
+            '-z-10',
             'sm:h-[672px]',
             'sm:w-[799px]'
           )}
@@ -93,9 +94,7 @@ export default function Section(props: Props) {
               'max-w-[500px]',
               'mt-4',
               'opacity-50',
-              'pr-16',
-              'text-base',
-              'sm:pr-0'
+              'text-base'
             )}
           >
             {props.text}

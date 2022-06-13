@@ -45,7 +45,7 @@ export default function RealmsCommunity() {
             'gap-8',
             'items-center',
             'space-y-12',
-            'xl:-space-y-8'
+            'xl:-space-y-0'
           )}
         >
           {ITEMS.map((item) => (

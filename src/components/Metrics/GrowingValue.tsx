@@ -18,9 +18,9 @@ export default function GrowingValue(props: Props) {
       </div>
       <Content className='mb-3'>
         <Header as='h3'>$</Header>
-        <Header>946,355,781</Header>
+        <Header>682,065,578</Header>
       </Content>
-      <Text>Total USD amount across DAO treasuries</Text>
+      <Text>Total USD amount across DAO treasuries as of Jun 13, 2022</Text>
     </Section>
   );
 }
