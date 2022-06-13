@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { useMediaQuery } from 'react-responsive';
 
 import * as Anchor from '@/components/Anchor';
 import CenteredContent from '@/components/CenteredContent';
@@ -8,9 +9,14 @@ import Icon from '@/components/Icon';
 import Text from '@/components/Text';
 
 export default function Introduction() {
+  const isNarrow = useMediaQuery({ query: `(max-width: 834px)` });
+  const imgClass = isNarrow
+    ? 'absolute -top-[295px] left-1/2 -z-10 h-[844px] w-[1800px] -translate-x-[640px]'
+    : 'absolute -top-[275px] left-1/2 -z-10 h-[844px] w-[1800px] -translate-x-[1072px]';
+
   return (
     <div className='relative'>
-      <div className='absolute -top-[275px] left-1/2 -z-10 h-[844px] w-[1800px] -translate-x-[1072px]'>
+      <div className={imgClass}>
         <Image
           className='w-full'
           alt='hero image'
