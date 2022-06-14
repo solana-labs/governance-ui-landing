@@ -24,17 +24,41 @@ export default function Section(props: Props) {
         props.alignment === 'right' ? 'xl:flex-row' : 'xl:flex-row-reverse'
       )}
     >
-      <img
-        alt='background'
-        className={clsxm('block', 'w-[445px]', 'sm:w-[799px]')}
-        src={props.image}
-      />
+      <div
+        className={clsxm(
+          'w-full',
+          'h-[375px]',
+          'relative',
+          'sm:mx-0',
+          'sm:h-[610px]',
+          'sm:w-[799px]'
+        )}
+      >
+        <div
+          className={clsxm(
+            '-translate-y-1/2',
+            '-translate-x-1/2',
+            'absolute',
+            'bg-center',
+            'bg-cover',
+            'block',
+            'h-[375px]',
+            'left-1/2',
+            'top-1/2',
+            'w-[445px]',
+            'sm:h-[672px]',
+            'sm:w-[799px]'
+          )}
+          style={{ backgroundImage: `url(${props.image})` }}
+        />
+      </div>
       <div
         className={clsxm(
           'flex',
           'items-start',
           'gap-x-3',
           '-mt-20',
+          'px-5',
           'sm:-mt-40',
           'xl:mt-24',
           props.alignment === 'right' ? 'xl:-ml-8' : 'xl:-mr-8'

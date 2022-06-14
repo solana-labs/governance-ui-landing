@@ -24,6 +24,7 @@ const ITEMS = [
         <span className='inline-block'>Signature Wallet</span>
       </>
     ),
+    trackingLabel: 'multi_sig_wallet',
   },
   {
     bg: '/backgrounds/daotype-nft-community.png',
@@ -48,6 +49,7 @@ const ITEMS = [
         <span className='inline-block'>Community DAO</span>
       </>
     ),
+    trackingLabel: 'nft_community_dao',
   },
   {
     bg: '/backgrounds/daotype-tokenized.png',
@@ -67,6 +69,7 @@ const ITEMS = [
       text: 'Mango DAO, Friends & Family DAO, GRAPE & more',
     },
     title: 'Tokenized DAO',
+    trackingLabel: 'tokenized_dao',
   },
 ];
 

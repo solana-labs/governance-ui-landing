@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { useMediaQuery } from 'react-responsive';
 
 import clsxm from '@/lib/clsxm';
+import trackClick from '@/lib/trackClick';
 
 import * as Anchor from '@/components/Anchor';
 import Header from '@/components/Header';
@@ -64,7 +65,10 @@ export default function SolanaStandard() {
           build any type of DAOs which can own and manage any type of assets.
         </div>
         <div className='flex'>
-          <Anchor.Secondary href='https://solana.com/developers/dao'>
+          <Anchor.Secondary
+            href='https://solana.com/developers/dao'
+            onClick={() => trackClick('about_spl', 'index_solana_standard')}
+          >
             <Icon
               img='external-link-thin-white'
               className='mr-4 transition-all group-hover:invert group-focus:invert'

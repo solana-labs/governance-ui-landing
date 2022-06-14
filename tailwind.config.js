@@ -40,7 +40,7 @@ module.exports = {
           '"Noto Color Emoji"',
         ],
         display: ['PT Mono', 'monospace'],
-        primary: ['Inter', 'sans-serif'],
+        primary: ['sans-serif'],
       },
       colors: {
         'landing-theme': {

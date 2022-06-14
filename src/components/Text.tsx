@@ -15,7 +15,7 @@ export default function Text({
   withOpacity = false,
   children,
 }: TextProps) {
-  let classNames = 'landing-page';
+  let classNames = '';
   if (as === 'p1') {
     classNames += ` text-base`;
   } else if (as === 'p2') {

@@ -10,7 +10,7 @@ import Section from './Section';
 
 export default function RealmsCommunity() {
   return (
-    <div className='relative'>
+    <div className='relative overflow-hidden'>
       <div
         className={clsxm(
           '-translate-x-1/2',
@@ -31,7 +31,10 @@ export default function RealmsCommunity() {
         />
       </div>
       <CenteredContent className='py-24'>
-        <Header as='h1' className='mx-auto mb-20 max-w-[875px] text-center'>
+        <Header
+          as='h1'
+          className='mx-auto mb-20 max-w-[875px] px-5 text-center'
+        >
           Using Realms to power your community
         </Header>
         <div

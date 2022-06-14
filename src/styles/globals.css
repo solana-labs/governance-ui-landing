@@ -16,7 +16,7 @@
 }
 
 body {
-  @apply font-sans font-light text-white;
+  @apply font-sans text-white;
 }
 
 /* h1, */

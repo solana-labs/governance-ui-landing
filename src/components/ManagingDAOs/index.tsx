@@ -20,8 +20,8 @@ export default function ManagingDAOs() {
           objectFit='cover'
         />
       </div>
-      <CenteredContent>
-        <article className='py-32'>
+      <CenteredContent className='px-5'>
+        <article className='xm:py-36 py-24'>
           <Header
             as='h2'
             className={clsxm(
@@ -40,14 +40,14 @@ export default function ManagingDAOs() {
           </Header>
           <div
             className={clsxm(
-              'flex-wrap',
-              'flex',
-              'flex-row',
-              'gap-x-8',
-              'gap-y-16',
+              'grid',
               'items-start',
-              'justify-center',
-              'xl:justify-between'
+              'place-items-center',
+              'gap-y-16',
+              'md:grid-cols-2',
+              'md:gap-x-24',
+              'xl:grid-cols-3',
+              '1_5xl:gap-x-40'
             )}
           >
             {CONFIG.map((section) => (
