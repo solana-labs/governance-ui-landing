@@ -17,6 +17,13 @@ class MyDocument extends Document {
       <Html lang='en'>
         <Head>
           <link rel='stylesheet' href='https://use.typekit.net/cwm7dgy.css' />
+          <link rel='manifest' href='/manifest.json' />
+          <meta name='msapplication-TileColor' content='#ffffff' />
+          <meta
+            name='msapplication-TileImage'
+            content='/favicons/ms-icon-144x144.png'
+          />
+          <meta name='theme-color' content='#ffffff' />
         </Head>
         <body className='bg-background'>
           <Main />

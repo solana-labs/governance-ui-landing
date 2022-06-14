@@ -55,7 +55,7 @@ const ITEMS = [
     bg: '/backgrounds/daotype-tokenized.png',
     bgAlignment: 'center' as AlignType,
     content:
-      'DAO members receive a governance token to denote their membership and allow them to vote on proposals.',
+      'DAO members receive a community token to denote their membership and allow them to vote on proposals.',
     cta: {
       href: 'https://app.realms.today/realms/new/tokenized',
       text: 'Create a Tokenized DAO',
@@ -68,7 +68,7 @@ const ITEMS = [
       ],
       text: 'Mango DAO, Friends & Family DAO, GRAPE & more',
     },
-    title: 'Tokenized DAO',
+    title: 'Community Token DAO',
     trackingLabel: 'tokenized_dao',
   },
 ];
