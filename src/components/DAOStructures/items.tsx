@@ -57,8 +57,8 @@ const ITEMS = [
     content:
       'DAO members receive a community token to denote their membership and allow them to vote on proposals.',
     cta: {
-      href: 'https://app.realms.today/realms/new/tokenized',
-      text: 'Create a Tokenized DAO',
+      href: 'https://app.realms.today/realms/new/community-token',
+      text: 'Create a Community Token DAO',
     },
     daos: {
       icons: [
@@ -74,7 +74,7 @@ const ITEMS = [
         <span className='inline-block'>Token DAO</span>
       </>
     ),
-    trackingLabel: 'tokenized_dao',
+    trackingLabel: 'community_token_dao',
   },
 ];
 
