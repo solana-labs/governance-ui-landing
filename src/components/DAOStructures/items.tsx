@@ -68,7 +68,12 @@ const ITEMS = [
       ],
       text: 'Mango DAO, Friends & Family DAO, GRAPE & more',
     },
-    title: 'Community Token DAO',
+    title: (
+      <>
+        <span className='inline-block'>Community&nbsp;</span>
+        <span className='inline-block'>Token DAO</span>
+      </>
+    ),
     trackingLabel: 'tokenized_dao',
   },
 ];
