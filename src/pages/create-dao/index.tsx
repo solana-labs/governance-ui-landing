@@ -12,7 +12,14 @@ export default function CreateDaoPage() {
 
   return (
     <div className='landing-page bg-background'>
-      <div className={clsxm('bg-background', 'fixed', 'w-full', 'z-20')}>
+      <div
+        className={clsxm('fixed', 'w-full', 'z-20')}
+        style={{
+          background: `rgba(41, 40, 51, 0.8)`,
+          backdropFilter: `blur(20px)`,
+          WebkitBackdropFilter: `blur(20px)`,
+        }}
+      >
         <div
           className={clsxm(
             'flex',
@@ -30,7 +37,7 @@ export default function CreateDaoPage() {
           <Logo />
         </div>
       </div>
-      <CenteredContent className='px-5 pt-52'>
+      <CenteredContent className='px-5 pt-52 pb-6'>
         <Header
           as='h2'
           className={clsxm(
@@ -52,16 +59,21 @@ export default function CreateDaoPage() {
             'gap-x-4',
             'gap-y-4',
             'items-start',
-            'md:flex-wrap',
-            'lg:flex-row',
-            'lg:justify-center',
+            '1_5xl:flex-wrap',
+            '1_5xl:flex-row',
             '1_5xl:justify-between'
           )}
         >
           {ITEMS.map((item) => (
             <Card
               {...item}
-              className='z-10 w-full lg:max-w-[400px]'
+              className={clsxm(
+                'w-full',
+                'z-10',
+                'md:max-w-[700px]',
+                'md:mx-auto',
+                '1_5xl:w-[calc(33%-16px)]'
+              )}
               key={item.bg}
               trackingContext='create_dao_structures'
             />

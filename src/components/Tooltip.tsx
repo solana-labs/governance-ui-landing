@@ -29,6 +29,7 @@ export default function Tooltip(props: Props) {
       'after:rounded',
       'after:text-white',
       'after:top-0',
+      'after:whitespace-pre',
       'after:z-20',
       'before:-mt-[20px]',
       'before:-translate-x-1/2',

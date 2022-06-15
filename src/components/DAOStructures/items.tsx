@@ -33,7 +33,7 @@ const ITEMS = [
       'NFT Community DAOs leverage NFTs as membership,  giving NFT holders voting power to make decisions.',
     cta: {
       href: 'https://app.realms.today/realms/new/nft',
-      text: 'Create an NFT Community DAO',
+      text: 'Create NFT Community DAO',
     },
     daos: {
       icons: [
@@ -55,10 +55,10 @@ const ITEMS = [
     bg: '/backgrounds/daotype-tokenized.png',
     bgAlignment: 'center' as AlignType,
     content:
-      'DAO members receive a governance token to denote their membership and allow them to vote on proposals.',
+      'DAO members receive a community token to denote their membership and allow them to vote on proposals.',
     cta: {
-      href: 'https://app.realms.today/realms/new/tokenized',
-      text: 'Create a Tokenized DAO',
+      href: 'https://app.realms.today/realms/new/community-token',
+      text: 'Create a Community Token DAO',
     },
     daos: {
       icons: [
@@ -68,8 +68,13 @@ const ITEMS = [
       ],
       text: 'Mango DAO, Friends & Family DAO, GRAPE & more',
     },
-    title: 'Tokenized DAO',
-    trackingLabel: 'tokenized_dao',
+    title: (
+      <>
+        <span className='inline-block'>Community&nbsp;</span>
+        <span className='inline-block'>Token DAO</span>
+      </>
+    ),
+    trackingLabel: 'community_token_dao',
   },
 ];
 

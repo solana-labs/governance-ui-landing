@@ -41,6 +41,7 @@ export default function Introduction() {
           </div>
           <div className='flex flex-col items-center gap-4 sm:flex-row'>
             <Anchor.Gradient
+              className='w-full justify-center sm:w-auto'
               href='https://app.realms.today'
               onClick={() => trackClick('enter_app', 'index_introduction')}
             >
@@ -49,13 +50,14 @@ export default function Introduction() {
             </Anchor.Gradient>
             <Link passHref href='/create-dao'>
               <Anchor.Secondary
+                className='w-full justify-center sm:w-auto'
                 onClick={() => trackClick('create_dao', 'index_introduction')}
               >
                 Create a DAO
               </Anchor.Secondary>
             </Link>
             <Anchor.Tertiary
-              className='block sm:hidden'
+              className='block w-full justify-center sm:hidden sm:w-auto'
               href='https://docs.realms.today/'
               onClick={() => trackClick('read_docs', 'index_introduction')}
             >

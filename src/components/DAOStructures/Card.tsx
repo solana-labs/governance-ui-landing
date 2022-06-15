@@ -34,9 +34,11 @@ export default function Card(props: Props) {
       className={clsxm(
         props.className,
         'overflow-hidden',
-        'p-8',
+        'px-5',
+        'py-8',
         'relative',
-        'rounded-md'
+        'rounded-md',
+        'sm:p-8'
       )}
     >
       <div
@@ -57,15 +59,11 @@ export default function Card(props: Props) {
       <div className='mb-5 flex items-center lg:min-h-[98px] 1_5xl:max-w-[360px]'>
         <Header as='h3'>{props.title}</Header>
       </div>
-      <Text
-        withOpacity
-        as='p1'
-        className='block max-w-[489px] pb-8 lg:min-h-[104px]'
-      >
+      <Text withOpacity className='block max-w-[489px] pb-8 lg:min-h-[104px]'>
         {props.content}
       </Text>
       <div className='mb-6 flex items-center gap-3'>
-        <div className='flex -space-x-3'>
+        <div className='flex shrink-0 -space-x-3'>
           {props.daos.icons.map((src) => (
             <img alt='icon' className='h-10 w-10' key={src} src={src} />
           ))}

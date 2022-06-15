@@ -7,11 +7,11 @@ import Section from './Section';
 
 const DAOS = [
   { src: '/dao/blue-grape.png', title: 'GRAPE' },
-  { src: '/dao/blue-uxd.png', title: 'UXD' },
-  { src: '/dao/blue-mango.png', title: 'MangoDAO' },
+  { src: '/dao/blue-uxd.png', title: 'UXDProtocol' },
+  { src: '/dao/blue-mango.png', title: 'Mango DAO' },
   { src: '/dao/blue-monke.png', title: 'MonkeDAO' },
   { src: '/dao/blue-ukraine.png', title: 'Ukraine.SOL' },
-  { src: '/dao/blue-ledao.png', title: 'LeDAO' },
+  { src: '/dao/blue-ledao.png', title: 'Le DAO' },
 ] as const;
 
 interface Props {

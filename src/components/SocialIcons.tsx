@@ -29,7 +29,7 @@ const SocialIcons = (props: Props) => {
         <a
           rel='noreferrer'
           target='_blank'
-          href='https://twitter.com/solana'
+          href='https://twitter.com/Realms_DAOs'
           className='shadow-sm duration-500 hover:scale-125 focus:scale-125'
           onClick={() => trackClick('twitter', props.trackingContext)}
         >

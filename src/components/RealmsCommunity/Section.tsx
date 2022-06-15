@@ -46,6 +46,7 @@ export default function Section(props: Props) {
             'left-1/2',
             'top-1/2',
             'w-[445px]',
+            '-z-10',
             'sm:h-[672px]',
             'sm:w-[799px]'
           )}
@@ -59,7 +60,7 @@ export default function Section(props: Props) {
           'gap-x-3',
           '-mt-20',
           'px-5',
-          'sm:-mt-40',
+          'sm:-mt-48',
           'xl:mt-24',
           props.alignment === 'right' ? 'xl:-ml-8' : 'xl:-mr-8'
         )}
@@ -93,10 +94,7 @@ export default function Section(props: Props) {
               'max-w-[500px]',
               'mt-4',
               'opacity-50',
-              'pr-16',
-              'text-xs',
-              'sm:text-base',
-              'sm:pr-0'
+              'text-base'
             )}
           >
             {props.text}
