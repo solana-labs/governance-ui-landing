@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { useMediaQuery } from 'react-responsive';
 
 import clsxm from '@/lib/clsxm';
 
@@ -9,15 +10,19 @@ import CONFIG from './config';
 import Section from './Section';
 
 export default function ManagingDAOs() {
+  const isNarrow = useMediaQuery({ query: `(max-width: 834px)` });
+  const imgClass = isNarrow
+    ? 'absolute -z-10 top-0 -left-[800px] bottom-0 -right-60 bg-[#201F27]'
+    : 'absolute -z-10 h-full w-full bg-[#201F27]';
+
   return (
-    <div className='relative'>
-      <div className='absolute -z-10 h-full w-full bg-[#201F27]'>
+    <div className='relative overflow-hidden'>
+      <div className={imgClass}>
         <Image
           className='w-full'
           alt='hero image'
           src='/backgrounds/managing-dao.png'
           layout='fill'
-          objectFit='cover'
         />
       </div>
       <CenteredContent className='px-5'>

@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { useMediaQuery } from 'react-responsive';
 
-// import { useMediaQuery } from 'react-responsive';
 import trackClick from '@/lib/trackClick';
 
 import * as Anchor from '@/components/Anchor';
@@ -11,19 +11,17 @@ import Icon from '@/components/Icon';
 import Text from '@/components/Text';
 
 export default function Introduction() {
-  // const isNarrow = useMediaQuery({ query: `(max-width: 834px)` });
-  // const imgClass = isNarrow
-  //   ? 'absolute -top-[295px] left-1/2 -z-10 h-[844px] w-[1800px] -translate-x-[640px]'
-  //   : 'absolute -top-[275px] left-1/2 -z-10 h-[844px] w-[1800px] -translate-x-[1072px]';
+  const isNarrow = useMediaQuery({ query: `(max-width: 834px)` });
+  const imgClass = isNarrow
+    ? 'absolute -top-[295px] left-1/2 -z-10 h-[844px] w-[1800px] -translate-x-[640px]'
+    : 'absolute -top-[275px] left-1/2 -z-10 h-[844px] w-[1800px] -translate-x-[1072px]';
 
   return (
-    // <div className='relative'>
-    //   <div className={imgClass}>
     // The page gets sized by the overflowing hero image. To keep the page
     // width from being affected by the hero, we need to add an
     // 'overflow-hidden' to the container div
     <div className='relative overflow-hidden'>
-      <div className='absolute -top-[275px] left-1/2 -z-10 h-[844px] w-[1800px] -translate-x-1/2'>
+      <div className={imgClass}>
         <Image
           priority
           className='w-full'
