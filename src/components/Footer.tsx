@@ -41,7 +41,10 @@ export default function Footer(props: Props) {
             'sm:-translate-y-1/2'
           )}
         >
-          <SocialIcons className='mb-5 sm:mb-10' trackingContext='footer' />
+          <SocialIcons
+            className='mb-5 mt-0 sm:mt-16 sm:mb-10'
+            trackingContext='footer'
+          />
           <div className='flex flex-wrap justify-center space-x-2 text-sm opacity-70'>
             <div>© 2022 Realms</div>
             {/**
