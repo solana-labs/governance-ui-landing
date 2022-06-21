@@ -36,8 +36,8 @@ export default function SolanaStandard() {
             alt='background'
             src={
               isNarrow
-                ? '/backgrounds/spl-gov-mobile.png'
-                : '/backgrounds/spl-gov-desktop.png'
+                ? '/assets/backgrounds/spl-gov-mobile.png'
+                : '/assets/backgrounds/spl-gov-desktop.png'
             }
             layout='fill'
           />

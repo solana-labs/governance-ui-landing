@@ -20,7 +20,7 @@ export default function Introduction() {
           priority
           className='w-full'
           alt='hero image'
-          src='/backgrounds/landing-hero-desktop.png'
+          src='/assets/backgrounds/landing-hero-desktop.png'
           layout='fill'
         />
       </div>

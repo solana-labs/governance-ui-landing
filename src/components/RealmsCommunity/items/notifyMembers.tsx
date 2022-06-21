@@ -1,7 +1,7 @@
 import { Props } from '../Section';
 
 const NOTIFY_MEMBERS: Omit<Props, 'alignment' | 'className' | 'index'> = {
-  image: '/backgrounds/notify-members.png',
+  image: '/assets/backgrounds/notify-members.png',
   text: "Use email, text, or wallet notifications to let your community know when it's time to take action.",
   title: 'Notify your members',
   // Re-enable once we can display integrations
@@ -11,12 +11,12 @@ const NOTIFY_MEMBERS: Omit<Props, 'alignment' | 'className' | 'index'> = {
   //       <img
   //         alt='Dialect'
   //         className='h-[38px] w-[38px]'
-  //         src='/dao/integration-dialect.png'
+  //         src='/assets/dao/integration-dialect.png'
   //       />
   //       <img
   //         alt='Notifi'
   //         className='h-[38px] w-[38px]'
-  //         src='/dao/integration-notifi.png'
+  //         src='/assets/dao/integration-notifi.png'
   //       />
   //     </div>
   //     <div className='max-w-[245px] text-xs opacity-50'>

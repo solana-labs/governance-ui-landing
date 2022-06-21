@@ -6,14 +6,14 @@ import Content from './Content';
 import Section from './Section';
 
 const INTEGRATIONS = [
-  { src: '/dao/integration-mango.png', title: 'Mango' },
-  { src: '/dao/integration-marinade.png', title: 'Marinade' },
-  { src: '/dao/integration-solend.png', title: 'Solend' },
-  { src: '/dao/integration-cardinal.png', title: 'Cardinal' },
-  { src: '/dao/integration-serum.png', title: 'Serum' },
-  { src: '/dao/integration-friktion.png', title: 'Friktion' },
-  { src: '/dao/integration-notifi.png', title: 'Notifi' },
-  { src: '/dao/integration-dialect.png', title: 'Dialect' },
+  { src: '/assets/dao/integration-mango.png', title: 'Mango' },
+  { src: '/assets/dao/integration-marinade.png', title: 'Marinade' },
+  { src: '/assets/dao/integration-solend.png', title: 'Solend' },
+  { src: '/assets/dao/integration-cardinal.png', title: 'Cardinal' },
+  { src: '/assets/dao/integration-serum.png', title: 'Serum' },
+  { src: '/assets/dao/integration-friktion.png', title: 'Friktion' },
+  { src: '/assets/dao/integration-notifi.png', title: 'Notifi' },
+  { src: '/assets/dao/integration-dialect.png', title: 'Dialect' },
 ] as const;
 
 interface Props {

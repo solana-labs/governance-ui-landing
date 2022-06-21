@@ -15,7 +15,7 @@ export default function ManagingDAOs() {
         <Image
           className='w-full'
           alt='hero image'
-          src='/backgrounds/managing-dao.png'
+          src='/assets/backgrounds/managing-dao.png'
           layout='fill'
           objectFit='cover'
         />
