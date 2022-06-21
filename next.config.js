@@ -52,4 +52,19 @@ module.exports = {
       },
     ];
   },
+
+  async redirects() {
+    return [
+      {
+        source: '/realms/:page*',
+        destination: 'https://app.realms.today/realms/:page*',
+        permanent: true,
+      },
+      {
+        source: '/dao/:page*',
+        destination: 'https://app.realms.today/dao/:page*',
+        permanent: true,
+      },
+    ];
+  },
 };

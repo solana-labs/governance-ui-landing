@@ -1,7 +1,7 @@
 import { Props } from '../Section';
 
 const GOV_STRUCTURE: Omit<Props, 'alignment' | 'className' | 'index'> = {
-  image: '/backgrounds/gov-structure.png',
+  image: '/assets/backgrounds/gov-structure.png',
   text: 'Mint your own token, leverage an NFT collection, lock tokens via veTokens, or choose another structure.',
   title: (
     <>

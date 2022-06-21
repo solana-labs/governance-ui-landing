@@ -25,7 +25,7 @@ export default function RealmsCommunity() {
         <Image
           className='w-full'
           alt='divider'
-          src='/backgrounds/divider-glow.png'
+          src='/assets/backgrounds/divider-glow.png'
           layout='fill'
           objectFit='cover'
         />

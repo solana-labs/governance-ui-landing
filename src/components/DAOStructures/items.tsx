@@ -2,7 +2,7 @@ import { AlignType } from '@/components/DAOStructures/Card';
 
 const ITEMS = [
   {
-    bg: '/backgrounds/daotype-multisig.png',
+    bg: '/assets/backgrounds/daotype-multisig.png',
     bgAlignment: 'right' as AlignType,
     content:
       'A “multisig” is a shared wallet, typically with two or more members authorizing transactions.',
@@ -12,9 +12,9 @@ const ITEMS = [
     },
     daos: {
       icons: [
-        '/dao/purple-sanctuary.png',
-        '/dao/purple-ukraine.png',
-        '/dao/purple-realms.png',
+        '/assets/dao/purple-sanctuary.png',
+        '/assets/dao/purple-ukraine.png',
+        '/assets/dao/purple-realms.png',
       ],
       text: 'The Sanctuary, Ukraine.SOL, SPL Governance & more',
     },
@@ -27,7 +27,7 @@ const ITEMS = [
     trackingLabel: 'multi_sig_wallet',
   },
   {
-    bg: '/backgrounds/daotype-nft-community.png',
+    bg: '/assets/backgrounds/daotype-nft-community.png',
     bgAlignment: 'left' as AlignType,
     content:
       'NFT Community DAOs leverage NFTs as membership,  giving NFT holders voting power to make decisions.',
@@ -37,9 +37,9 @@ const ITEMS = [
     },
     daos: {
       icons: [
-        '/dao/purple-monke.png',
-        '/dao/purple-imp-rain.png',
-        '/dao/purple-sporagers.png',
+        '/assets/dao/purple-monke.png',
+        '/assets/dao/purple-imp-rain.png',
+        '/assets/dao/purple-sporagers.png',
       ],
       text: 'MonkeDAO, The Imperium of Rain, The Sporagers & more',
     },
@@ -52,7 +52,7 @@ const ITEMS = [
     trackingLabel: 'nft_community_dao',
   },
   {
-    bg: '/backgrounds/daotype-tokenized.png',
+    bg: '/assets/backgrounds/daotype-tokenized.png',
     bgAlignment: 'center' as AlignType,
     content:
       'DAO members receive a community token to denote their membership and allow them to vote on proposals.',
@@ -62,9 +62,9 @@ const ITEMS = [
     },
     daos: {
       icons: [
-        '/dao/purple-mango.png',
-        '/dao/purple-f-a-f.png',
-        '/dao/purple-grape.png',
+        '/assets/dao/purple-mango.png',
+        '/assets/dao/purple-f-a-f.png',
+        '/assets/dao/purple-grape.png',
       ],
       text: 'Mango DAO, Friends & Family DAO, GRAPE & more',
     },

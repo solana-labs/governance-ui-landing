@@ -51,12 +51,12 @@ module.exports = {
         nightgrey: 'var(--nightgrey)',
       },
       backgroundImage: {
-        'spl-gov': "url('/backgrounds/spl-gov.png')",
-        'daotype-multisig': "url('/backgrounds/daotype-multisig.png')",
+        'spl-gov': "url('/assets/backgrounds/spl-gov.png')",
+        'daotype-multisig': "url('/assets/backgrounds/daotype-multisig.png')",
         'daotype-nft-community':
-          "url('/backgrounds/daotype-nft-community.png')",
-        'daotype-tokenized': "url('/backgrounds/daotype-tokenized.png')",
-        'managing-dao': "url('/backgrounds/managing-dao.png')",
+          "url('/assets/backgrounds/daotype-nft-community.png')",
+        'daotype-tokenized': "url('/assets/backgrounds/daotype-tokenized.png')",
+        'managing-dao': "url('/assets/backgrounds/managing-dao.png')",
       },
       keyframes: {
         loader: {

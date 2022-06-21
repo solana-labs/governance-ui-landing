@@ -57,9 +57,9 @@ const CONFIG = [
   //     <div className='md:flex md:items-center'>
   //       <div className='-ml-2 flex -space-x-6'>
   //         {[
-  //           { src: '/dao/integration-mango.png', title: 'Mango' },
-  //           { src: '/dao/integration-marinade.png', title: 'Marinade' },
-  //           { src: '/dao/integration-serum.png', title: 'Serum' },
+  //           { src: '/assets/dao/integration-mango.png', title: 'Mango' },
+  //           { src: '/assets/dao/integration-marinade.png', title: 'Marinade' },
+  //           { src: '/assets/dao/integration-serum.png', title: 'Serum' },
   //         ].map((integration) => (
   //           <Tooltip text={integration.title} key={integration.src}>
   //             {/* Tooltips rely on :before and :after pseudo-elements to
