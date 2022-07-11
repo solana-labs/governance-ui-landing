@@ -2,7 +2,7 @@ import clsxm from '@/lib/clsxm';
 
 import CenteredContent from '@/components/CenteredContent';
 import CommunitiesThriving from '@/components/Metrics/CommunitiesThriving';
-// import DeeperIntegrations from '@/components/Metrics/DeeperIntegrations';
+import DeeperIntegrations from '@/components/Metrics/DeeperIntegrations';
 import GrowingValue from '@/components/Metrics/GrowingValue';
 
 export default function Metrics() {
@@ -27,8 +27,7 @@ export default function Metrics() {
       >
         <GrowingValue />
         <CommunitiesThriving />
-        {/* We're going to disable displaying integrations for the time being */}
-        {/* <DeeperIntegrations /> */}
+        <DeeperIntegrations />
       </CenteredContent>
     </div>
   );

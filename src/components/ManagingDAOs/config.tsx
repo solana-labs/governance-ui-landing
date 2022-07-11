@@ -1,6 +1,6 @@
 import clsxm from '@/lib/clsxm';
 
-// import Tooltip from '@/components/Tooltip';
+import Tooltip from '@/components/Tooltip';
 
 const CONFIG = [
   {
@@ -41,46 +41,45 @@ const CONFIG = [
       'Earn yield, stake your treasury, and decide as a community on resource allocation.',
     icon: '/icons/treasury.png',
   },
-  // Don't display integrations for now
-  // {
-  //   title: (
-  //     <>
-  //       3rd Party
-  //       <br />
-  //       Integrations
-  //     </>
-  //   ),
-  //   content:
-  //     'Leverage 10+ integrations across notifications, DeFi / staking, and identity to enhance your DAO.',
-  //   icon: '/icons/integrations.png',
-  //   footer: (
-  //     <div className='md:flex md:items-center'>
-  //       <div className='-ml-2 flex -space-x-6'>
-  //         {[
-  //           { src: '/assets/dao/integration-mango.png', title: 'Mango' },
-  //           { src: '/assets/dao/integration-marinade.png', title: 'Marinade' },
-  //           { src: '/assets/dao/integration-serum.png', title: 'Serum' },
-  //         ].map((integration) => (
-  //           <Tooltip text={integration.title} key={integration.src}>
-  //             {/* Tooltips rely on :before and :after pseudo-elements to
-  //                 render. Unforunately, those don't seem to work on image tags,
-  //                 so we need to wrap each image in a div */}
-  //             <div>
-  //               <img
-  //                 alt={integration.title}
-  //                 className='h-[60px] w-[60px]'
-  //                 src={integration.src}
-  //               />
-  //             </div>
-  //           </Tooltip>
-  //         ))}
-  //       </div>
-  //       <div className='max-w-[202px] text-xs opacity-70'>
-  //         Integrations include Cardinal, Marinade, Friktion, Solend & more
-  //       </div>
-  //     </div>
-  //   ),
-  // },
+  {
+    title: (
+      <>
+        3rd Party
+        <br />
+        Integrations
+      </>
+    ),
+    content:
+      'Leverage 10+ integrations across notifications, DeFi / staking, and identity to enhance your DAO.',
+    icon: '/icons/integrations.png',
+    footer: (
+      <div className='md:flex md:items-center'>
+        <div className='-ml-2 flex -space-x-6'>
+          {[
+            { src: '/assets/dao/integration-mango.png', title: 'Mango' },
+            { src: '/assets/dao/integration-marinade.png', title: 'Marinade' },
+            { src: '/assets/dao/integration-serum.png', title: 'Serum' },
+          ].map((integration) => (
+            <Tooltip text={integration.title} key={integration.src}>
+              {/* Tooltips rely on :before and :after pseudo-elements to
+                  render. Unforunately, those don't seem to work on image tags,
+                  so we need to wrap each image in a div */}
+              <div>
+                <img
+                  alt={integration.title}
+                  className='h-[60px] w-[60px]'
+                  src={integration.src}
+                />
+              </div>
+            </Tooltip>
+          ))}
+        </div>
+        <div className='max-w-[202px] text-xs opacity-70'>
+          Integrations include Cardinal, Marinade, Friktion, Solend & more
+        </div>
+      </div>
+    ),
+  },
   {
     title: 'Fully Customizable',
     content:

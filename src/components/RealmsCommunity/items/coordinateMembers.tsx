@@ -10,17 +10,16 @@ const COORDINATE_MEMBERS: Omit<Props, 'alignment' | 'className' | 'index'> = {
       your members
     </>
   ),
-  // Re-enable once we can display integrations
-  // extra: (
-  //   <div className='flex items-center gap-1'>
-  //     <img
-  //       alt='Cardinal'
-  //       className='-ml-2 h-[38px] w-[38px]'
-  //       src='/assets/dao/integration-cardinal.png'
-  //     />
-  //     <div className='text-xs opacity-50'>Integrate Twitter with Cardinal</div>
-  //   </div>
-  // ),
+  extra: (
+    <div className='flex items-center gap-1'>
+      <img
+        alt='Cardinal'
+        className='-ml-2 h-[38px] w-[38px]'
+        src='/assets/dao/integration-cardinal.png'
+      />
+      <div className='text-xs opacity-50'>Integrate Twitter with Cardinal</div>
+    </div>
+  ),
 };
 
 export default COORDINATE_MEMBERS;
