@@ -54,7 +54,7 @@ export default function CommunitiesThriving(props: Props) {
           ))}
         </div>
       </Content>
-      <Text>Grape, UXD, Mango, Monkes & 600+ more DAOs</Text>
+      <Text>Grape, UXD, Mango, Monkes & 800+ more DAOs</Text>
     </Section>
   );
 }

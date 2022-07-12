@@ -112,6 +112,7 @@ export default function NavBar() {
               pageScrollPosition > BUTTON_BREAKPOINT
                 ? 'pointer-events-auto'
                 : 'pointer-events-none',
+              pageScrollPosition > BUTTON_BREAKPOINT ? 'z-50' : '-z-50',
               'absolute',
               'duration-300',
               'right-0',

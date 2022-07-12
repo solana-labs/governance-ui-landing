@@ -66,7 +66,7 @@ export default function SolanaStandard() {
         </div>
         <div className='flex'>
           <Anchor.Secondary
-            href='https://solana.com/developers/dao'
+            href='https://github.com/solana-labs/solana-program-library/tree/master/governance'
             onClick={() => trackClick('about_spl', 'index_solana_standard')}
           >
             <Icon
