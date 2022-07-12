@@ -42,7 +42,6 @@ export default function RealmsCommunity() {
             '-mb-8',
             'flex-col',
             'flex',
-            'gap-8',
             'items-center',
             'space-y-12',
             'xl:-space-y-0'
