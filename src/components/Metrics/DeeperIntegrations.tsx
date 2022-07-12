@@ -29,7 +29,7 @@ export default function DeeperIntegrations(props: Props) {
         </Header>
       </div>
       <Content className='mb-3'>
-        <div className='-ml-2 flex -space-x-8'>
+        <div className='-ml-2 flex -space-x-6'>
           {INTEGRATIONS.map((integration) => (
             <Tooltip text={integration.title} key={integration.src}>
               {/* Tooltips rely on :before and :after pseudo-elements to

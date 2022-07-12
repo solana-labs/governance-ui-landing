@@ -9,12 +9,12 @@ const NOTIFY_MEMBERS: Omit<Props, 'alignment' | 'className' | 'index'> = {
       <div className='-ml-2 flex items-center -space-x-4'>
         <img
           alt='Dialect'
-          className='h-[38px] w-[38px]'
+          className='h-[50px] w-[50px]'
           src='/assets/dao/integration-dialect.png'
         />
         <img
           alt='Notifi'
-          className='h-[38px] w-[38px]'
+          className='h-[50px] w-[50px]'
           src='/assets/dao/integration-notifi.png'
         />
       </div>
