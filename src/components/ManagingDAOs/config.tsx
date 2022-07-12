@@ -23,7 +23,7 @@ const CONFIG = [
           'hover:opacity-90',
           'hover:text-realms-theme-blue'
         )}
-        href='https://solana.com/developers/dao'
+        href='https://github.com/solana-labs/solana-program-library/tree/master/governance'
       >
         Learn More
       </a>
@@ -38,7 +38,7 @@ const CONFIG = [
       </>
     ),
     content:
-      'Earn yield, stake your treasury, and decide as a community on resource allocation.',
+      'Manage your staking and yield-generating initiatives, and decide as a community on resource allocation.',
     icon: '/icons/treasury.png',
   },
   {

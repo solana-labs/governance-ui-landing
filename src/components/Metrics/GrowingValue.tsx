@@ -13,7 +13,7 @@ export default function GrowingValue(props: Props) {
     <Section className={props.className}>
       <div className='mb-5'>
         <Header className='bold' as='h4' withGradientPurple>
-          Growing Value
+          Growing value
         </Header>
       </div>
       <Content className='mb-3'>
