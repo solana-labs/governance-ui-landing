@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 import clsxm from '@/lib/clsxm';
 import trackClick from '@/lib/trackClick';
 
@@ -50,12 +52,9 @@ export default function Footer(props: Props) {
              * <a href='https://solana.com/disclaimer'>Your Privacy</a>
              */}
             <span>|</span>
-            <a
-              href='https://solana.com/disclaimer'
-              onClick={() => trackClick('terms', 'footer')}
-            >
-              Terms
-            </a>
+            <Link href='/terms' passHref>
+              <a onClick={() => trackClick('terms', 'footer')}>Terms</a>
+            </Link>
           </div>
         </div>
         {/* The buttons come with padding, but that ruins our nice
