@@ -38,7 +38,7 @@ export default function Terms() {
               <strong>Terms of Service</strong>
             </p>
             <p className='text-center'>
-              <strong>Last Updated: June 25, 2022</strong>
+              <strong>Last Updated: July 25, 2022</strong>
             </p>
           </div>
           <p>
