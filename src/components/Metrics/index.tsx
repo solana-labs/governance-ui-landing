@@ -2,8 +2,7 @@ import clsxm from '@/lib/clsxm';
 
 import CenteredContent from '@/components/CenteredContent';
 import CommunitiesThriving from '@/components/Metrics/CommunitiesThriving';
-// import DeeperIntegrations from '@/components/Metrics/DeeperIntegrations';
-import GrowingValue from '@/components/Metrics/GrowingValue';
+import DeeperIntegrations from '@/components/Metrics/DeeperIntegrations';
 
 export default function Metrics() {
   return (
@@ -25,10 +24,9 @@ export default function Metrics() {
           'xl:justify-around'
         )}
       >
-        <GrowingValue />
+        {/* <GrowingValue /> */}
         <CommunitiesThriving />
-        {/* We're going to disable displaying integrations for the time being */}
-        {/* <DeeperIntegrations /> */}
+        <DeeperIntegrations />
       </CenteredContent>
     </div>
   );

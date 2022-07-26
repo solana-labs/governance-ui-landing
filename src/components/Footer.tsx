@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 import clsxm from '@/lib/clsxm';
 import trackClick from '@/lib/trackClick';
 
@@ -32,30 +34,44 @@ export default function Footer(props: Props) {
             'absolute',
             'flex-col',
             'flex',
+            'gap-2',
             'items-center',
             'justify-center',
             'left-1/2',
+            'pb-4',
             'top-1/2',
             '-translate-x-1/2',
             'translate-y-[60px]',
+            'sm:pb-0',
             'sm:-translate-y-1/2'
           )}
         >
-          <SocialIcons className='mb-5 sm:mb-10' trackingContext='footer' />
-          <div className='flex flex-wrap justify-center space-x-2 text-sm opacity-70'>
-            <div>© 2022 Realms</div>
-            {/**
-             * We aren't going to include the privacy policy for now
-             * <span>|</span>
-             * <a href='https://solana.com/disclaimer'>Your Privacy</a>
-             */}
-            <span>|</span>
-            <a
-              href='https://solana.com/disclaimer'
-              onClick={() => trackClick('terms', 'footer')}
-            >
-              Terms
-            </a>
+          <div
+            className={clsxm(
+              'flex',
+              'flex-col',
+              'items-center',
+              'justify-center'
+            )}
+          >
+            <SocialIcons className='mb-5' trackingContext='footer' />
+            <div className='flex justify-center space-x-2 text-sm opacity-70'>
+              <div className='whitespace-nowrap'>
+                © 2022 Solana Technology Services LLC
+              </div>
+              {/**
+               * We aren't going to include the privacy policy for now
+               * <span>|</span>
+               * <a href='https://solana.com/disclaimer'>Your Privacy</a>
+               */}
+              <span>|</span>
+              <Link href='/terms' passHref>
+                <a onClick={() => trackClick('terms', 'footer')}>Terms</a>
+              </Link>
+            </div>
+          </div>
+          <div className='opacity-70'>
+            Powered by <span className='font-bold'>Solana</span>
           </div>
         </div>
         {/* The buttons come with padding, but that ruins our nice

@@ -13,7 +13,6 @@ export default function Section(props: Props) {
         'text-left',
         'sm:text-center',
         'md:text-center'
-        // Re-enable once we can display integrations
         // 'xl:text-left'
       )}
     >

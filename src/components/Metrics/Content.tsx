@@ -14,7 +14,6 @@ export default function Content(props: Props) {
         'items-center',
         'justify-start',
         'sm:justify-center'
-        // Re-enable once we can display integrations
         // 'xl:justify-start'
       )}
     >
