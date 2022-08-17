@@ -39,9 +39,8 @@ export default function PrivacyPolicy() {
           </p>
           <p>
             <span className='font-bold'>Last Updated:</span>
-            <span>&nbsp;August 15, 2022</span>
+            <span>&nbsp;August 17, 2022</span>
           </p>
-
           <p>
             <span>
               This Privacy Notice is designed to help you understand how Solana
@@ -66,115 +65,87 @@ export default function PrivacyPolicy() {
             <span></span>
           </p>
           <a id='id.gjdgxs'></a>
-          <p>
-            <span>
-              <a href='#h.30j0zll'>
-                1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SCOPE AND
-                UPDATES TO THIS PRIVACY NOTICE
-              </a>
-            </span>
-          </p>
-          <p>
-            <span>
-              <a href='#h.1fob9te'>
-                2.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PERSONAL
-                INFORMATION WE COLLECT
-              </a>
-            </span>
-          </p>
-          <p>
-            <span>
-              <a href='#h.4d34og8'>
-                3.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HOW WE USE
-                YOUR PERSONAL INFORMATION
-              </a>
-            </span>
-          </p>
-          <p>
-            <span>
-              <a href='#h.2jxsxqh'>
-                4.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HOW WE
-                DISCLOSE YOUR PERSONAL INFORMATION
-              </a>
-            </span>
-          </p>
-          <p>
-            <span>
-              <a href='#h.2xcytpi'>
-                5.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;YOUR PRIVACY
-                CHOICES AND RIGHTS
-              </a>
-            </span>
-          </p>
-          <p>
-            <span>
-              <a href='#h.147n2zr'>
-                6.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SECURITY OF
-                YOUR INFORMATION
-              </a>
-            </span>
-          </p>
-          <p>
-            <span>
-              <a href='#h.1hmsyys'>
-                7.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INTERNATIONAL
-                DATA TRANSFERS
-              </a>
-            </span>
-          </p>
-          <p>
-            <span>
-              <a href='#h.2grqrue'>
-                8.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RETENTION OF
-                PERSONAL INFORMATION
-              </a>
-            </span>
-          </p>
-          <p>
-            <span>
-              <a href='#h.3fwokq0'>
-                9.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SUPPLEMENTAL
-                NOTICE FOR CALIFORNIA RESIDENTS
-              </a>
-            </span>
-          </p>
-          <p>
-            <span>
-              <a href='#h.1v1yuxt'>
-                10.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SUPPLEMENTAL
-                NOTICE FOR NEVADA RESIDENTS
-              </a>
-            </span>
-          </p>
-          <p>
-            <span>
-              <a href='#h.2u6wntf'>
-                11.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CHILDREN&rsquo;S
-                INFORMATION
-              </a>
-            </span>
-          </p>
-          <p>
-            <span>
-              <a href='#h.19c6y18'>
-                12.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OTHER
-                PROVISIONS
-              </a>
-            </span>
-          </p>
-          <p>
-            <span>
-              <a href='#h.1mrcu09'>
-                13.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CONTACT US
-              </a>
-            </span>
-          </p>
+          <ol className='list-decimal space-y-2'>
+            <li>
+              <span>
+                <a href='#h.30j0zll'>
+                  SCOPE AND UPDATES TO THIS PRIVACY NOTICE
+                </a>
+              </span>
+            </li>
+            <li>
+              <span>
+                <a href='#h.1fob9te'>PERSONAL INFORMATION WE COLLECT</a>
+              </span>
+            </li>
+            <li>
+              <span>
+                <a href='#h.4d34og8'>HOW WE USE YOUR PERSONAL INFORMATION</a>
+              </span>
+            </li>
+            <li>
+              <span>
+                <a href='#h.2jxsxqh'>
+                  HOW WE DISCLOSE YOUR PERSONAL INFORMATION
+                </a>
+              </span>
+            </li>
+            <li>
+              <span>
+                <a href='#h.2xcytpi'>YOUR PRIVACY CHOICES AND RIGHTS</a>
+              </span>
+            </li>
+            <li>
+              <span>
+                <a href='#h.147n2zr'>SECURITY OF YOUR INFORMATION</a>
+              </span>
+            </li>
+            <li>
+              <span>
+                <a href='#h.1hmsyys'>INTERNATIONAL DATA TRANSFERS</a>
+              </span>
+            </li>
+            <li>
+              <span>
+                <a href='#h.2grqrue'>RETENTION OF PERSONAL INFORMATION</a>
+              </span>
+            </li>
+            <li>
+              <span>
+                <a href='#h.3fwokq0'>
+                  SUPPLEMENTAL NOTICE FOR CALIFORNIA RESIDENTS
+                </a>
+              </span>
+            </li>
+            <li>
+              <span>
+                <a href='#h.1v1yuxt'>
+                  SUPPLEMENTAL NOTICE FOR NEVADA RESIDENTS
+                </a>
+              </span>
+            </li>
+            <li>
+              <span>
+                <a href='#h.2u6wntf'>CHILDREN&rsquo;S INFORMATION</a>
+              </span>
+            </li>
+            <li>
+              <span>
+                <a href='#h.19c6y18'>OTHER PROVISIONS</a>
+              </span>
+            </li>
+            <li>
+              <span>
+                <a href='#h.1mrcu09'>CONTACT US</a>
+              </span>
+            </li>
+          </ol>
           <p id='h.30j0zll'>
             <span>
               <br />
             </span>
           </p>
-          <ol start={1}>
+          <ol className='list-decimal' start={1}>
             <li>
               <h1 className='font-bold' style={{ display: 'inline' }}>
                 <span>SCOPE AND UPDATES TO THIS PRIVACY NOTICE</span>
@@ -247,7 +218,7 @@ export default function PrivacyPolicy() {
             <span></span>
           </p>
           <a id='id.3znysh7'></a>
-          <ol start={2}>
+          <ol className='list-decimal' start={2}>
             <li>
               <h1
                 className='font-bold'
@@ -275,298 +246,313 @@ export default function PrivacyPolicy() {
             <span></span>
           </p>
           <a id='id.2et92p0'></a>
-          <ol start={1}>
-            <li>
+          <div className='space-y-8 pl-4'>
+            <ol className='list-[lower-alpha]' start={1}>
+              <li>
+                <span className='font-bold'>
+                  Personal Information You Provide to Us Directly
+                </span>
+              </li>
+            </ol>
+            <p>
+              <span></span>
+            </p>
+            <p>
+              <span>
+                We may collect personal information that you provide to us.
+              </span>
+            </p>
+            <p>
+              <span></span>
+            </p>
+            <ul className='list-disc'>
+              <li>
+                <span className='font-bold'>DAO Creation</span>
+                <span>
+                  . We may collect personal information when you create a
+                  decentralized autonomous organization (&ldquo;
+                </span>
+                <span className='font-bold'>DAO</span>
+                <span>
+                  &rdquo;), such as your cryptocurrency wallet address (which
+                  may be considered personal information in some legal
+                  jurisdictions).
+                </span>
+              </li>
+            </ul>
+            <p>
+              <span></span>
+            </p>
+            <ul className='list-disc'>
+              <li>
+                <span className='font-bold'>Your Communications with Us</span>
+                <span>
+                  . We may collect personal information, such as cryptocurrency
+                  wallet address, email address, phone number, or mailing
+                  address when you request information about our Services,
+                  request customer or technical support, or otherwise
+                  communicate with us.{' '}
+                </span>
+              </li>
+            </ul>
+            <p>
+              <span></span>
+            </p>
+            <ul className='list-disc'>
+              <li>
+                <span className='font-bold'>Interactive Features</span>
+                <span>
+                  . We and others who use our Services may collect personal
+                  information that you submit or make available through our
+                  interactive features (e.g., DAO creation and blockchain
+                  transactions, commenting functionalities, etc). Any
+                  information you provide using the public sharing features of
+                  the Services will be considered &ldquo;public,&rdquo; unless
+                  otherwise required by applicable law, and is not subject to
+                  the privacy protections referenced herein. Please exercise
+                  caution before revealing any information that may identify you
+                  in the real world to other users.
+                </span>
+              </li>
+            </ul>
+            <p>
+              <span></span>
+            </p>
+            <ul className='list-disc'>
+              <li>
+                <span className='font-bold'>
+                  Business Development and Strategic Partnerships
+                </span>
+                <span>
+                  . We may collect personal information from individuals and
+                  third parties to assess and pursue potential business
+                  opportunities.{' '}
+                </span>
+              </li>
+            </ul>
+            <p>
+              <span></span>
+            </p>
+            <ol className='list-[lower-alpha]' start={2}>
+              <li>
+                <span className='font-bold'>
+                  Personal Information Collected Automatically{' '}
+                </span>
+              </li>
+            </ol>
+            <p>
+              <span></span>
+            </p>
+            <p>
+              <span>
+                We may collect personal information automatically when you use
+                our Services.
+              </span>
+            </p>
+            <p>
+              <span></span>
+            </p>
+            <ul className='list-disc'>
+              <li>
+                <span className='font-bold'>
+                  Automatic Collection of Personal Information
+                </span>
+                <span>
+                  . We may collect certain information automatically when you
+                  use our Services, such as your Internet protocol (IP) address,
+                  user settings, MAC address, cookie identifiers, mobile
+                  carrier, mobile advertising and other unique identifiers,
+                  browser or device information, location information (including
+                  approximate location derived from IP address), and Internet
+                  service provider. We may also automatically collect
+                  information regarding your use of our Services, such as pages
+                  that you visit before, during and after using our Services,
+                  information about the links you click, the types of content
+                  you interact with, the frequency and duration of your
+                  activities, and other information about how you use our
+                  Services.{' '}
+                </span>
+              </li>
+            </ul>
+            <p>
+              <span></span>
+            </p>
+            <ul className='list-disc'>
+              <li>
+                <span className='font-bold'>
+                  Cookie Policy (and Other Technologies).
+                </span>
+                <span>
+                  &nbsp;We, as well as third parties that provide content,
+                  advertising, or other functionality on our Services, may use
+                  cookies, pixel tags, and other technologies (&ldquo;
+                </span>
+                <span className='font-bold'>Technologies</span>
+                <span>
+                  &rdquo;) to automatically collect information through your use
+                  of our Services.{' '}
+                </span>
+              </li>
+            </ul>
+            <p>
+              <span></span>
+            </p>
+            <div className='space-y-8 pl-4'>
+              <ul className='list-disc'>
+                <li>
+                  <span className='font-bold'>Cookies</span>
+                  <span>
+                    . Cookies are small text files placed in device browsers
+                    that store preferences and facilitate and enhance your
+                    experience.
+                  </span>
+                </li>
+              </ul>
+              <p>
+                <span></span>
+              </p>
+              <ul className='list-disc'>
+                <li>
+                  <span className='font-bold'>Pixel Tags/Web Beacons</span>
+                  <span>
+                    . A pixel tag (also known as a web beacon) is a piece of
+                    code embedded in our Services that collects information
+                    about engagement on our Services. The use of a pixel tag
+                    allows us to record, for example, that a user has visited a
+                    particular web page or clicked on a particular
+                    advertisement. We may also include web beacons in e-mails to
+                    understand whether messages have been opened, acted on, or
+                    forwarded.
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <p>
+              <span></span>
+            </p>
+            <p>
+              <span>
+                Our uses of these Technologies fall into the following general
+                categories:{' '}
+              </span>
+            </p>
+            <p>
+              <span></span>
+            </p>
+            <ul className='list-disc'>
+              <li>
+                <span className='font-bold'>Operationally Necessary</span>
+                <span>
+                  . This includes Technologies that allow you access to our
+                  Services, applications, and tools that are required to
+                  identify irregular website behavior, prevent fraudulent
+                  activity, improve security, or allow you to make use of our
+                  functionality;
+                </span>
+              </li>
+            </ul>
+            <p>
+              <span></span>
+            </p>
+            <ul className='list-disc'>
+              <li>
+                <span className='font-bold'>Performance-Related</span>
+                <span>
+                  . We may use Technologies to assess the performance of our
+                  Services, including as part of our analytic practices to help
+                  us understand how individuals use our Services (
+                </span>
+                <span>see Analytics below</span>
+                <span>);</span>
+              </li>
+            </ul>
+            <p>
+              <span></span>
+            </p>
+            <ul className='list-disc'>
+              <li>
+                <span className='font-bold'>Functionality-Related</span>
+                <span>
+                  . We may use Technologies that allow us to offer you enhanced
+                  functionality when accessing or using our Services. This may
+                  include identifying you when you sign into our Services or
+                  keeping track of your specified preferences, interests, or
+                  past items viewed;
+                </span>
+              </li>
+            </ul>
+            <p>
+              <span></span>
+            </p>
+            <ul className='list-disc'>
+              <li>
+                <span className='font-bold'>
+                  Advertising- or Targeting-Related
+                </span>
+                <span>
+                  . We may use first party or third-party Technologies to
+                  deliver content, including ads relevant to your interests, on
+                  our Services or on third-party digital properties.{' '}
+                </span>
+              </li>
+            </ul>
+            <p>
+              <span></span>
+            </p>
+            <p>
+              <span>See &ldquo;</span>
+              <span className='text-blue-400'>
+                <a href='#id.4i7ojhp'>Your Privacy Choices and Rights</a>
+              </span>
+              <span>
+                &rdquo; below to understand your choices regarding these
+                Technologies.
+              </span>
+            </p>
+            <p>
+              <span></span>
+            </p>
+            <ul className='list-disc'>
+              <li id='h.tyjcwt'>
+                <span className='font-bold'>Analytics</span>
+                <span>
+                  . We may use Technologies and other third-party tools to
+                  process analytics information on our Services. These
+                  Technologies allow us to better understand how our digital
+                  Services are used and to continually improve and personalize
+                  our Services.{' '}
+                </span>
+              </li>
+            </ul>
+            <p>
+              <span></span>
+            </p>
+            <ol className='list-[lower-alpha]' start={3}>
+              <li>
+                <span className='font-bold'>
+                  Personal Information Collected from Other Sources
+                </span>
+              </li>
+            </ol>
+            <p>
+              <span></span>
+            </p>
+            <p>
               <span className='font-bold'>
-                Personal Information You Provide to Us Directly
-              </span>
-            </li>
-          </ol>
-          <p>
-            <span></span>
-          </p>
-          <p>
-            <span>
-              We may collect personal information that you provide to us.
-            </span>
-          </p>
-          <p>
-            <span></span>
-          </p>
-          <ul>
-            <li>
-              <span className='font-bold'>DAO Creation</span>
-              <span>
-                . We may collect personal information when you create a
-                decentralized autonomous organization (&ldquo;
-              </span>
-              <span className='font-bold'>DAO</span>
-              <span>
-                &rdquo;), such as your cryptocurrency wallet address (which may
-                be considered personal information in some legal jurisdictions).
-              </span>
-            </li>
-          </ul>
-          <p>
-            <span></span>
-          </p>
-          <ul>
-            <li>
-              <span className='font-bold'>Your Communications with Us</span>
-              <span>
-                . We may collect personal information, such as cryptocurrency
-                wallet address, email address, phone number, or mailing address
-                when you request information about our Services, request
-                customer or technical support, or otherwise communicate with us.{' '}
-              </span>
-            </li>
-          </ul>
-          <p>
-            <span></span>
-          </p>
-          <ul>
-            <li>
-              <span className='font-bold'>Interactive Features</span>
-              <span>
-                . We and others who use our Services may collect personal
-                information that you submit or make available through our
-                interactive features (e.g., DAO creation and blockchain
-                transactions, commenting functionalities, etc). Any information
-                you provide using the public sharing features of the Services
-                will be considered &ldquo;public,&rdquo; unless otherwise
-                required by applicable law, and is not subject to the privacy
-                protections referenced herein. Please exercise caution before
-                revealing any information that may identify you in the real
-                world to other users.
-              </span>
-            </li>
-          </ul>
-          <p>
-            <span></span>
-          </p>
-          <ul>
-            <li>
-              <span className='font-bold'>
-                Business Development and Strategic Partnerships
+                Third-Party Services and Sources
               </span>
               <span>
-                . We may collect personal information from individuals and third
-                parties to assess and pursue potential business opportunities.{' '}
+                . We may obtain personal information about you from other
+                sources, including through third-party services and
+                organizations. &nbsp;
               </span>
-            </li>
-          </ul>
-          <p>
-            <span></span>
-          </p>
-          <ol start={2}>
-            <li>
-              <span className='font-bold'>
-                Personal Information Collected Automatically{' '}
-              </span>
-            </li>
-          </ol>
-          <p>
-            <span></span>
-          </p>
-          <p>
-            <span>
-              We may collect personal information automatically when you use our
-              Services.
-            </span>
-          </p>
-          <p>
-            <span></span>
-          </p>
-          <ul>
-            <li>
-              <span className='font-bold'>
-                Automatic Collection of Personal Information
-              </span>
-              <span>
-                . We may collect certain information automatically when you use
-                our Services, such as your Internet protocol (IP) address, user
-                settings, MAC address, cookie identifiers, mobile carrier,
-                mobile advertising and other unique identifiers, browser or
-                device information, location information (including approximate
-                location derived from IP address), and Internet service
-                provider. We may also automatically collect information
-                regarding your use of our Services, such as pages that you visit
-                before, during and after using our Services, information about
-                the links you click, the types of content you interact with, the
-                frequency and duration of your activities, and other information
-                about how you use our Services.{' '}
-              </span>
-            </li>
-          </ul>
-          <p>
-            <span></span>
-          </p>
-          <ul>
-            <li>
-              <span className='font-bold'>
-                Cookie Policy (and Other Technologies).
-              </span>
-              <span>
-                &nbsp;We, as well as third parties that provide content,
-                advertising, or other functionality on our Services, may use
-                cookies, pixel tags, and other technologies (&ldquo;
-              </span>
-              <span className='font-bold'>Technologies</span>
-              <span>
-                &rdquo;) to automatically collect information through your use
-                of our Services.{' '}
-              </span>
-            </li>
-          </ul>
-          <p>
-            <span></span>
-          </p>
-          <ul>
-            <li>
-              <span className='font-bold'>Cookies</span>
-              <span>
-                . Cookies are small text files placed in device browsers that
-                store preferences and facilitate and enhance your experience.
-              </span>
-            </li>
-          </ul>
-          <p>
-            <span></span>
-          </p>
-          <ul>
-            <li>
-              <span className='font-bold'>Pixel Tags/Web Beacons</span>
-              <span>
-                . A pixel tag (also known as a web beacon) is a piece of code
-                embedded in our Services that collects information about
-                engagement on our Services. The use of a pixel tag allows us to
-                record, for example, that a user has visited a particular web
-                page or clicked on a particular advertisement. We may also
-                include web beacons in e-mails to understand whether messages
-                have been opened, acted on, or forwarded.
-              </span>
-            </li>
-          </ul>
-          <p>
-            <span></span>
-          </p>
-          <p>
-            <span>
-              Our uses of these Technologies fall into the following general
-              categories:{' '}
-            </span>
-          </p>
-          <p>
-            <span></span>
-          </p>
-          <ul>
-            <li>
-              <span className='font-bold'>Operationally Necessary</span>
-              <span>
-                . This includes Technologies that allow you access to our
-                Services, applications, and tools that are required to identify
-                irregular website behavior, prevent fraudulent activity, improve
-                security, or allow you to make use of our functionality;
-              </span>
-            </li>
-          </ul>
-          <p>
-            <span></span>
-          </p>
-          <ul>
-            <li>
-              <span className='font-bold'>Performance-Related</span>
-              <span>
-                . We may use Technologies to assess the performance of our
-                Services, including as part of our analytic practices to help us
-                understand how individuals use our Services (
-              </span>
-              <span>see Analytics below</span>
-              <span>);</span>
-            </li>
-          </ul>
-          <p>
-            <span></span>
-          </p>
-          <ul>
-            <li>
-              <span className='font-bold'>Functionality-Related</span>
-              <span>
-                . We may use Technologies that allow us to offer you enhanced
-                functionality when accessing or using our Services. This may
-                include identifying you when you sign into our Services or
-                keeping track of your specified preferences, interests, or past
-                items viewed;
-              </span>
-            </li>
-          </ul>
-          <p>
-            <span></span>
-          </p>
-          <ul>
-            <li>
-              <span className='font-bold'>
-                Advertising- or Targeting-Related
-              </span>
-              <span>
-                . We may use first party or third-party Technologies to deliver
-                content, including ads relevant to your interests, on our
-                Services or on third-party digital properties.{' '}
-              </span>
-            </li>
-          </ul>
-          <p>
-            <span></span>
-          </p>
-          <p>
-            <span>See &ldquo;</span>
-            <span className='text-blue-400'>
-              <a href='#id.4i7ojhp'>Your Privacy Choices and Rights</a>
-            </span>
-            <span>
-              &rdquo; below to understand your choices regarding these
-              Technologies.
-            </span>
-          </p>
-          <p>
-            <span></span>
-          </p>
-          <ul>
-            <li id='h.tyjcwt'>
-              <span className='font-bold'>Analytics</span>
-              <span>
-                . We may use Technologies and other third-party tools to process
-                analytics information on our Services. These Technologies allow
-                us to better understand how our digital Services are used and to
-                continually improve and personalize our Services.{' '}
-              </span>
-            </li>
-          </ul>
-          <p>
-            <span></span>
-          </p>
-          <ol start={3}>
-            <li>
-              <span className='font-bold'>
-                Personal Information Collected from Other Sources
-              </span>
-            </li>
-          </ol>
-          <p>
-            <span></span>
-          </p>
-          <p>
-            <span className='font-bold'>Third-Party Services and Sources</span>
-            <span>
-              . We may obtain personal information about you from other sources,
-              including through third-party services and organizations. &nbsp;
-            </span>
-          </p>
+            </p>
+          </div>
           <p id='h.3dy6vkm'>
             <span></span>
           </p>
           <a id='id.1t3h5sf'></a>
-          <ol start={3}>
+          <ol className='list-decimal' start={3}>
             <li>
               <h1
                 className='font-bold'
@@ -591,7 +577,7 @@ export default function PrivacyPolicy() {
           <p>
             <span></span>
           </p>
-          <ol start={1}>
+          <ol className='list-[lower-alpha]' start={1}>
             <li>
               <span className='font-bold'>Provide Our Services</span>
             </li>
@@ -610,7 +596,7 @@ export default function PrivacyPolicy() {
           <p>
             <span></span>
           </p>
-          <ul>
+          <ul className='list-disc'>
             <li>
               <span>
                 Providing access to certain areas, functionalities, and features
@@ -635,7 +621,7 @@ export default function PrivacyPolicy() {
               </span>
             </li>
           </ul>
-          <ol start={2}>
+          <ol className='list-[lower-alpha]' start={2}>
             <li>
               <span className='font-bold'>Administrative Purposes</span>
             </li>
@@ -652,7 +638,7 @@ export default function PrivacyPolicy() {
           <p>
             <span></span>
           </p>
-          <ul>
+          <ul className='list-disc'>
             <li>
               <span>
                 Pursuing our legitimate interests such as direct marketing,
@@ -680,7 +666,7 @@ export default function PrivacyPolicy() {
               <span>Ensuring internal quality control and safety;</span>
             </li>
           </ul>
-          <ul>
+          <ul className='list-disc'>
             <li>
               <span>
                 Authenticating and verifying individual identities, including
@@ -717,7 +703,7 @@ export default function PrivacyPolicy() {
           <p>
             <span></span>
           </p>
-          <ol start={3}>
+          <ol className='list-[lower-alpha]' start={3}>
             <li>
               <span className='font-bold'>
                 Marketing and Advertising our Products and Services
@@ -755,7 +741,7 @@ export default function PrivacyPolicy() {
           <p>
             <span></span>
           </p>
-          <ol start={4}>
+          <ol className='list-[lower-alpha]' start={4}>
             <li>
               <span className='font-bold'>Other Purposes</span>
             </li>
@@ -772,7 +758,7 @@ export default function PrivacyPolicy() {
           <p id='h.3rdcrjn'>
             <span></span>
           </p>
-          <ul>
+          <ul className='list-disc'>
             <li>
               <span className='font-bold'>With Your Consent. </span>
               <span>
@@ -786,7 +772,7 @@ export default function PrivacyPolicy() {
             <span></span>
           </p>
           <a id='id.26in1rg'></a>
-          <ul>
+          <ul className='list-disc'>
             <li id='h.lnxbz9'>
               <span className='font-bold'>
                 De-identified and Aggregated Information
@@ -807,7 +793,7 @@ export default function PrivacyPolicy() {
           <a id='id.35nkun2'></a>
           <a id='id.3j2qqm3'></a>
           <a id='id.44sinio'></a>
-          <ol start={4}>
+          <ol className='list-decimal' start={4}>
             <li>
               <h1
                 className='font-bold'
@@ -833,7 +819,7 @@ export default function PrivacyPolicy() {
           <p>
             <span></span>
           </p>
-          <ol start={1}>
+          <ol className='list-[lower-alpha]' start={1}>
             <li>
               <span className='font-bold'>
                 Disclosures to Provide our Services
@@ -852,7 +838,7 @@ export default function PrivacyPolicy() {
           <p>
             <span></span>
           </p>
-          <ul>
+          <ul className='list-disc'>
             <li>
               <span className='font-bold'>Service Providers</span>
               <span>
@@ -867,7 +853,7 @@ export default function PrivacyPolicy() {
           <p>
             <span></span>
           </p>
-          <ul>
+          <ul className='list-disc'>
             <li>
               <span className='font-bold'>Business Partners</span>
               <span>
@@ -881,7 +867,7 @@ export default function PrivacyPolicy() {
           <p>
             <span></span>
           </p>
-          <ul>
+          <ul className='list-disc'>
             <li>
               <span className='font-bold'>Affiliates</span>
               <span>
@@ -893,7 +879,7 @@ export default function PrivacyPolicy() {
           <p>
             <span></span>
           </p>
-          <ul>
+          <ul className='list-disc'>
             <li>
               <span className='font-bold'>Advertising Partners</span>
               <span>
@@ -914,7 +900,7 @@ export default function PrivacyPolicy() {
           <p>
             <span></span>
           </p>
-          <ul>
+          <ul className='list-disc'>
             <li>
               <span className='font-bold'>APIs/SDKs</span>
               <span>
@@ -937,7 +923,7 @@ export default function PrivacyPolicy() {
           <p>
             <span></span>
           </p>
-          <ol start={2}>
+          <ol className='list-[lower-alpha]' start={2}>
             <li>
               <span className='font-bold'>
                 Disclosures to Protect Us or Others
@@ -962,7 +948,7 @@ export default function PrivacyPolicy() {
           <p>
             <span></span>
           </p>
-          <ol start={3}>
+          <ol className='list-[lower-alpha]' start={3}>
             <li>
               <span className='font-bold'>
                 Disclosure in the Event of Merger, Sale, or Other Asset
@@ -987,7 +973,7 @@ export default function PrivacyPolicy() {
           </p>
           <a id='id.1ci93xb'></a>
           <a id='id.4i7ojhp'></a>
-          <ol start={5}>
+          <ol className='list-decimal' start={5}>
             <li>
               <h1
                 className='font-bold'
@@ -1014,131 +1000,133 @@ export default function PrivacyPolicy() {
           <p>
             <span></span>
           </p>
-          <ul>
-            <li>
-              <span className='font-bold'>&ldquo;Do Not Track</span>
-              <span>.</span>
-              <span>&rdquo;</span>
-              <span>&nbsp;Do Not Track (&ldquo;</span>
-              <span className='font-bold'>DNT</span>
+          <div className='space-y-8 pl-4'>
+            <ul className='list-disc'>
+              <li>
+                <span className='font-bold'>&ldquo;Do Not Track</span>
+                <span>.</span>
+                <span>&rdquo;</span>
+                <span>&nbsp;Do Not Track (&ldquo;</span>
+                <span className='font-bold'>DNT</span>
+                <span>
+                  &rdquo;) is a privacy preference that users can set in certain
+                  web browsers. Please note that we do not respond to or honor
+                  DNT signals or similar mechanisms transmitted by web browsers.
+                </span>
+              </li>
+            </ul>
+            <p>
+              <span></span>
+            </p>
+            <a id='id.3as4poj'></a>
+            <ul className='list-disc'>
+              <li id='h.1pxezwc'>
+                <span className='font-bold'>
+                  Cookies and Personalized Advertising
+                </span>
+                <span>
+                  . You may stop or restrict the placement of Technologies on
+                  your device or remove them by adjusting your preferences as
+                  your browser or device permits. However, if you adjust your
+                  preferences, our Services may not work properly. Please note
+                  that cookie-based opt-outs are not effective on mobile
+                  applications. However, you may opt-out of personalized
+                  advertisements on some mobile applications by following the
+                  instructions for{' '}
+                </span>
+                <span>
+                  <a
+                    className='text-blue-400'
+                    href='https://www.google.com/url?q=https://support.google.com/googleplay/android-developer/answer/6048248?hl%3Den&amp;sa=D&amp;source=editors&amp;ust=1660758789219806&amp;usg=AOvVaw3snyC1Es5Oc32XrBIF-jj6'
+                  >
+                    Android
+                  </a>
+                </span>
+                <span>, </span>
+                <span>
+                  <a
+                    className='text-blue-400'
+                    href='https://www.google.com/url?q=https://support.apple.com/en-us/HT202074&amp;sa=D&amp;source=editors&amp;ust=1660758789220443&amp;usg=AOvVaw1PAD5eQt3FZ1yAIL0IhM5x'
+                  >
+                    iOS
+                  </a>
+                </span>
+                <span>,</span>
+                <span>&nbsp;and </span>
+                <span>
+                  <a
+                    className='text-blue-400'
+                    href='https://www.google.com/url?q=https://www.networkadvertising.org/mobile-choice/&amp;sa=D&amp;source=editors&amp;ust=1660758789220803&amp;usg=AOvVaw1KdsrKI-j8JAnIM6fHvWa4'
+                  >
+                    others
+                  </a>
+                </span>
+                <span>.</span>
+              </li>
+            </ul>
+            <p>
+              <span></span>
+            </p>
+            <p>
+              <span>The online advertising industry may &nbsp;also provid</span>
+              <span>e</span>
               <span>
-                &rdquo;) is a privacy preference that users can set in certain
-                web browsers. Please note that we do not respond to or honor DNT
-                signals or similar mechanisms transmitted by web browsers.
-              </span>
-            </li>
-          </ul>
-          <p>
-            <span></span>
-          </p>
-          <a id='id.3as4poj'></a>
-          <ul>
-            <li id='h.1pxezwc'>
-              <span className='font-bold'>
-                Cookies and Personalized Advertising
-              </span>
-              <span>
-                . You may stop or restrict the placement of Technologies on your
-                device or remove them by adjusting your preferences as your
-                browser or device permits. However, if you adjust your
-                preferences, our Services may not work properly. Please note
-                that cookie-based opt-outs are not effective on mobile
-                applications. However, you may opt-out of personalized
-                advertisements on some mobile applications by following the
-                instructions for{' '}
+                &nbsp;websites from which you may opt out of receiving targeted
+                ads from data partners and other advertising partners that
+                participate in self-regulatory programs. You can access these
+                and learn more about targeted advertising and consumer choice
+                and privacy by visiting the{' '}
               </span>
               <span>
                 <a
                   className='text-blue-400'
-                  href='https://www.google.com/url?q=https://support.google.com/googleplay/android-developer/answer/6048248?hl%3Den&amp;sa=D&amp;source=editors&amp;ust=1660758789219806&amp;usg=AOvVaw3snyC1Es5Oc32XrBIF-jj6'
+                  href='https://www.google.com/url?q=http://www.networkadvertising.org/managing/opt_out.asp&amp;sa=D&amp;source=editors&amp;ust=1660758789221455&amp;usg=AOvVaw2RSqYTgpuggJSuXqbLaTkY'
                 >
-                  Android
+                  Network Advertising Initiative
                 </a>
               </span>
               <span>, </span>
               <span>
                 <a
                   className='text-blue-400'
-                  href='https://www.google.com/url?q=https://support.apple.com/en-us/HT202074&amp;sa=D&amp;source=editors&amp;ust=1660758789220443&amp;usg=AOvVaw1PAD5eQt3FZ1yAIL0IhM5x'
+                  href='https://www.google.com/url?q=http://www.aboutads.info/choices/&amp;sa=D&amp;source=editors&amp;ust=1660758789221711&amp;usg=AOvVaw0OTXomvSioV2bT5OeL-K4V'
                 >
-                  iOS
+                  the Digital Advertising Alliance
                 </a>
               </span>
-              <span>,</span>
-              <span>&nbsp;and </span>
+              <span>, </span>
               <span>
                 <a
                   className='text-blue-400'
-                  href='https://www.google.com/url?q=https://www.networkadvertising.org/mobile-choice/&amp;sa=D&amp;source=editors&amp;ust=1660758789220803&amp;usg=AOvVaw1KdsrKI-j8JAnIM6fHvWa4'
+                  href='https://www.google.com/url?q=https://www.youronlinechoices.eu/&amp;sa=D&amp;source=editors&amp;ust=1660758789221968&amp;usg=AOvVaw2oz2LU6DL6wahRBu1kK7DZ'
                 >
-                  others
+                  the European Digital Advertising Alliance
                 </a>
               </span>
-              <span>.</span>
-            </li>
-          </ul>
-          <p>
-            <span></span>
-          </p>
-          <p>
-            <span>The online advertising industry may &nbsp;also provid</span>
-            <span>e</span>
-            <span>
-              &nbsp;websites from which you may opt out of receiving targeted
-              ads from data partners and other advertising partners that
-              participate in self-regulatory programs. You can access these and
-              learn more about targeted advertising and consumer choice and
-              privacy by visiting the{' '}
-            </span>
-            <span>
-              <a
-                className='text-blue-400'
-                href='https://www.google.com/url?q=http://www.networkadvertising.org/managing/opt_out.asp&amp;sa=D&amp;source=editors&amp;ust=1660758789221455&amp;usg=AOvVaw2RSqYTgpuggJSuXqbLaTkY'
-              >
-                Network Advertising Initiative
-              </a>
-            </span>
-            <span>, </span>
-            <span>
-              <a
-                className='text-blue-400'
-                href='https://www.google.com/url?q=http://www.aboutads.info/choices/&amp;sa=D&amp;source=editors&amp;ust=1660758789221711&amp;usg=AOvVaw0OTXomvSioV2bT5OeL-K4V'
-              >
-                the Digital Advertising Alliance
-              </a>
-            </span>
-            <span>, </span>
-            <span>
-              <a
-                className='text-blue-400'
-                href='https://www.google.com/url?q=https://www.youronlinechoices.eu/&amp;sa=D&amp;source=editors&amp;ust=1660758789221968&amp;usg=AOvVaw2oz2LU6DL6wahRBu1kK7DZ'
-              >
-                the European Digital Advertising Alliance
-              </a>
-            </span>
-            <span>, and </span>
-            <span>
-              <a
-                className='text-blue-400'
-                href='https://www.google.com/url?q=https://youradchoices.ca/choices/&amp;sa=D&amp;source=editors&amp;ust=1660758789222285&amp;usg=AOvVaw1raXUU0Gigmk2atyq94g9_'
-              >
-                the Digital Advertising Alliance of Canada
-              </a>
-            </span>
-            <span>. </span>
-          </p>
-          <p>
-            <span></span>
-          </p>
-          <p>
-            <span>
-              Please note you must separately opt out in each browser and on
-              each device.{' '}
-            </span>
-          </p>
-          <p>
-            <span></span>
-          </p>
+              <span>, and </span>
+              <span>
+                <a
+                  className='text-blue-400'
+                  href='https://www.google.com/url?q=https://youradchoices.ca/choices/&amp;sa=D&amp;source=editors&amp;ust=1660758789222285&amp;usg=AOvVaw1raXUU0Gigmk2atyq94g9_'
+                >
+                  the Digital Advertising Alliance of Canada
+                </a>
+              </span>
+              <span>. </span>
+            </p>
+            <p>
+              <span></span>
+            </p>
+            <p>
+              <span>
+                Please note you must separately opt out in each browser and on
+                each device.{' '}
+              </span>
+            </p>
+            <p>
+              <span></span>
+            </p>
+          </div>
           <a id='id.49x2ik5'></a>
           <p>
             <span className='font-bold'>Your Privacy Rights</span>
@@ -1149,116 +1137,120 @@ export default function PrivacyPolicy() {
           <p>
             <span></span>
           </p>
-          <ul>
-            <li>
-              <span className='font-bold'>Access Personal Information</span>
-              <span>
-                &nbsp;about you, including: (i) confirming whether we are
-                processing your personal information; (ii) obtaining access to
-                or a copy of your personal information;{' '}
-              </span>
-            </li>
-          </ul>
-          <p>
-            <span></span>
-          </p>
-          <ul>
-            <li>
-              <span className='font-bold'>Request Correction </span>
-              <span>
-                of your personal information where it is inaccurate, incomplete,
-                or outdated. In some cases, we may provide self-service tools
-                that enable you to update your personal information;
-              </span>
-            </li>
-          </ul>
-          <p>
-            <span></span>
-          </p>
-          <ul>
-            <li>
-              <span className='font-bold'>
-                Request Deletion, Anonymization or Blocking{' '}
-              </span>
-              <span>
-                of your personal information when processing is based on your
-                consent or when processing is unnecessary, excessive or
-                noncompliant;{' '}
-              </span>
-            </li>
-          </ul>
-          <p>
-            <span></span>
-          </p>
-          <ul>
-            <li>
-              <span className='font-bold'>
-                Request Restriction of or Object to{' '}
-              </span>
-              <span>our</span>
-              <span>&nbsp;</span>
-              <span>
-                processing of your personal information when processing is
-                noncompliant;{' '}
-              </span>
-            </li>
-          </ul>
-          <p>
-            <span></span>
-          </p>
-          <ul>
-            <li>
-              <span className='font-bold'>Withdraw your Consent</span>
-              <span>
-                &nbsp;to our processing of your personal information. Please
-                note that your withdrawal will only take effect for future
-                processing and will not affect the lawfulness of processing
-                before the withdrawal. If you refrain from providing personal
-                information or withdraw your consent to processing, some
-                features of our Service may not be available;
-              </span>
-            </li>
-          </ul>
-          <p>
-            <span></span>
-          </p>
-          <ul>
-            <li>
-              <span className='font-bold'>Request data portability</span>
-              <span>&nbsp;and</span>
-              <span className='font-bold'>
-                receive an electronic copy of personal information that you have
-                provided to us;
-              </span>
-            </li>
-          </ul>
-          <p>
-            <span></span>
-          </p>
-          <ul>
-            <li>
-              <span className='font-bold'>Be informed</span>
-              <span>
-                &nbsp;about third parties with which your personal information
-                has been shared; and
-              </span>
-            </li>
-          </ul>
-          <p>
-            <span></span>
-          </p>
-          <ul>
-            <li>
-              <span className='font-bold'>Request the review</span>
-              <span>&nbsp;</span>
-              <span className='font-bold'>
-                of decisions taken exclusively based on automated processing
-              </span>
-              <span>
-                &nbsp;if these decisions could affect your data subject rights.
-              </span>
-            </li>
-          </ul>
+          <div className='space-y-8 pl-4'>
+            <ul className='list-disc'>
+              <li>
+                <span className='font-bold'>Access Personal Information</span>
+                <span>
+                  &nbsp;about you, including: (i) confirming whether we are
+                  processing your personal information; (ii) obtaining access to
+                  or a copy of your personal information;{' '}
+                </span>
+              </li>
+            </ul>
+            <p>
+              <span></span>
+            </p>
+            <ul className='list-disc'>
+              <li>
+                <span className='font-bold'>Request Correction </span>
+                <span>
+                  of your personal information where it is inaccurate,
+                  incomplete, or outdated. In some cases, we may provide
+                  self-service tools that enable you to update your personal
+                  information;
+                </span>
+              </li>
+            </ul>
+            <p>
+              <span></span>
+            </p>
+            <ul className='list-disc'>
+              <li>
+                <span className='font-bold'>
+                  Request Deletion, Anonymization or Blocking{' '}
+                </span>
+                <span>
+                  of your personal information when processing is based on your
+                  consent or when processing is unnecessary, excessive or
+                  noncompliant;{' '}
+                </span>
+              </li>
+            </ul>
+            <p>
+              <span></span>
+            </p>
+            <ul className='list-disc'>
+              <li>
+                <span className='font-bold'>
+                  Request Restriction of or Object to{' '}
+                </span>
+                <span>our</span>
+                <span>&nbsp;</span>
+                <span>
+                  processing of your personal information when processing is
+                  noncompliant;{' '}
+                </span>
+              </li>
+            </ul>
+            <p>
+              <span></span>
+            </p>
+            <ul className='list-disc'>
+              <li>
+                <span className='font-bold'>Withdraw your Consent</span>
+                <span>
+                  &nbsp;to our processing of your personal information. Please
+                  note that your withdrawal will only take effect for future
+                  processing and will not affect the lawfulness of processing
+                  before the withdrawal. If you refrain from providing personal
+                  information or withdraw your consent to processing, some
+                  features of our Service may not be available;
+                </span>
+              </li>
+            </ul>
+            <p>
+              <span></span>
+            </p>
+            <ul className='list-disc'>
+              <li>
+                <span className='font-bold'>Request data portability</span>
+                <span>&nbsp;and</span>
+                <span className='font-bold'>
+                  receive an electronic copy of personal information that you
+                  have provided to us;
+                </span>
+              </li>
+            </ul>
+            <p>
+              <span></span>
+            </p>
+            <ul className='list-disc'>
+              <li>
+                <span className='font-bold'>Be informed</span>
+                <span>
+                  &nbsp;about third parties with which your personal information
+                  has been shared; and
+                </span>
+              </li>
+            </ul>
+            <p>
+              <span></span>
+            </p>
+            <ul className='list-disc'>
+              <li>
+                <span className='font-bold'>Request the review</span>
+                <span>&nbsp;</span>
+                <span className='font-bold'>
+                  of decisions taken exclusively based on automated processing
+                </span>
+                <span>
+                  &nbsp;if these decisions could affect your data subject
+                  rights.
+                </span>
+              </li>
+            </ul>
+          </div>
           <p>
             <span></span>
           </p>
@@ -1282,7 +1274,7 @@ export default function PrivacyPolicy() {
           </p>
           <a id='id.3o7alnk'></a>
           <a id='id.2p2csry'></a>
-          <ol start={6}>
+          <ol className='list-decimal' start={6}>
             <li>
               <h1
                 className='font-bold'
@@ -1328,7 +1320,7 @@ export default function PrivacyPolicy() {
           <p>
             <span></span>
           </p>
-          <ol start={7}>
+          <ol className='list-decimal' start={7}>
             <li>
               <h1
                 className='font-bold'
@@ -1388,7 +1380,7 @@ export default function PrivacyPolicy() {
           </p>
           <a id='id.vx1227'></a>
           <a id='id.41mghml'></a>
-          <ol start={8}>
+          <ol className='list-decimal' start={8}>
             <li>
               <h1
                 className='font-bold'
@@ -1415,7 +1407,7 @@ export default function PrivacyPolicy() {
           <p>
             <span></span>
           </p>
-          <ol start={9}>
+          <ol className='list-decimal' start={9}>
             <li>
               <h1
                 className='font-bold'
@@ -1472,7 +1464,7 @@ export default function PrivacyPolicy() {
               </p>
             </div>
             <div>
-              <ul>
+              <ul className='list-disc'>
                 <li>
                   <span>Service providers</span>
                 </li>
@@ -1493,7 +1485,7 @@ export default function PrivacyPolicy() {
               </p>
             </div>
             <div>
-              <ul>
+              <ul className='list-disc'>
                 <li>
                   <span>Service providers</span>
                 </li>
@@ -1516,7 +1508,7 @@ export default function PrivacyPolicy() {
               </p>
             </div>
             <div>
-              <ul>
+              <ul className='list-disc'>
                 <li>
                   <span>Service providers</span>
                 </li>
@@ -1540,7 +1532,7 @@ export default function PrivacyPolicy() {
               </p>
             </div>
             <div>
-              <ul>
+              <ul className='list-disc'>
                 <li>
                   <span>Service providers</span>
                 </li>
@@ -1673,7 +1665,7 @@ export default function PrivacyPolicy() {
           <p>
             <span></span>
           </p>
-          <ol start={10}>
+          <ol className='list-decimal' start={10}>
             <li>
               <h1
                 className='font-bold'
@@ -1704,7 +1696,7 @@ export default function PrivacyPolicy() {
           <p id='h.4f1mdlm'>
             <span></span>
           </p>
-          <ol start={11}>
+          <ol className='list-decimal' start={11}>
             <li>
               <h1
                 className='font-bold'
@@ -1726,7 +1718,7 @@ export default function PrivacyPolicy() {
           <p>
             <span></span>
           </p>
-          <ol start={12}>
+          <ol className='list-decimal' start={12}>
             <li>
               <h1
                 className='font-bold'
@@ -1776,7 +1768,7 @@ export default function PrivacyPolicy() {
           <p>
             <span></span>
           </p>
-          <ul>
+          <ul className='list-disc'>
             <li>
               <span>
                 <a
@@ -1823,7 +1815,7 @@ export default function PrivacyPolicy() {
             <span></span>
           </p>
           <a id='id.37m2jsg'></a>
-          <ol start={13}>
+          <ol className='list-decimal' start={13}>
             <li>
               <h1
                 className='font-bold'
@@ -1857,19 +1849,21 @@ export default function PrivacyPolicy() {
           <p>
             <span></span>
           </p>
-          <p>
-            <span>Solana Technology Services LLC</span>
-          </p>
-          <p>
-            <span>Attn: Realms Customer Support </span>
-          </p>
-          <p>
-            <span>530 Divisadero St. PMB 722 San Francisco, CA 94117 </span>
-          </p>
-          <p id='h.46r0co2'>
-            <span>Realms@Solana.com</span>
-            <a id='id.2lwamvv'></a>
-          </p>
+          <div>
+            <p>
+              <span>Solana Technology Services LLC</span>
+            </p>
+            <p>
+              <span>Attn: Realms Customer Support </span>
+            </p>
+            <p>
+              <span>530 Divisadero St. PMB 722 San Francisco, CA 94117 </span>
+            </p>
+            <p id='h.46r0co2'>
+              <span>Realms@Solana.com</span>
+              <a id='id.2lwamvv'></a>
+            </p>
+          </div>
         </div>
       </CenteredContent>
     </div>
