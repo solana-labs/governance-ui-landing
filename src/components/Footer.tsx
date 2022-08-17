@@ -5,7 +5,6 @@ import trackClick from '@/lib/trackClick';
 
 import * as Anchor from '@/components/Anchor';
 import Icon from '@/components/Icon';
-import Logo from '@/components/Logo';
 import SocialIcons from '@/components/SocialIcons';
 
 interface Props {
@@ -28,7 +27,7 @@ export default function Footer(props: Props) {
           'md:max-w-[1548px]'
         )}
       >
-        <Logo />
+        <div />
         <div
           className={clsxm(
             'absolute',
