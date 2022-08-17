@@ -42,8 +42,9 @@ export default function Footer(props: Props) {
             'top-1/2',
             '-translate-x-1/2',
             'translate-y-[60px]',
-            'sm:pb-0',
-            'sm:-translate-y-1/2'
+            'md:pb-0',
+            'md:-translate-y-1/2',
+            'w-fit'
           )}
         >
           <div
@@ -65,8 +66,18 @@ export default function Footer(props: Props) {
                * <a href='https://solana.com/disclaimer'>Your Privacy</a>
                */}
               <span>|</span>
-              <Link href='/terms' passHref>
+              <Link className='whitespace-nowrap' href='/terms' passHref>
                 <a onClick={() => trackClick('terms', 'footer')}>Terms</a>
+              </Link>
+              <span>|</span>
+              <Link
+                className='whitespace-nowrap'
+                href='/privacy-policy'
+                passHref
+              >
+                <a onClick={() => trackClick('privacy', 'footer')}>
+                  Privacy Policy
+                </a>
               </Link>
             </div>
           </div>
