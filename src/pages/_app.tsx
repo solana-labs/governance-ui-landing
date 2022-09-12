@@ -1,16 +1,37 @@
 import { AppProps } from 'next/app';
+import Script from 'next/script';
+import React from 'react';
 
 import '@/styles/globals.css';
 import '@/styles/stylesheet-family-support.css';
-// !STARTERCONF This is for demo purposes, remove @/styles/colors.css import immediately
 
-/**
- * !STARTERCONF info
- * ? `Layout` component is called in every page using `np` snippets. If you have consistent layout across all page, you can add it here too
- */
+const GoogleTag = React.memo(
+  function GoogleTag() {
+    return (
+      <React.Fragment>
+        <Script
+          async
+          src='https://www.googletagmanager.com/gtag/js?id=G-TG90SK6TGB'
+        />
+        <Script id='gta'>{`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-TG90SK6TGB');
+        `}</Script>
+      </React.Fragment>
+    );
+  },
+  () => true
+);
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+  return (
+    <>
+      <GoogleTag />
+      <Component {...pageProps} />
+    </>
+  );
 }
 
 export default MyApp;

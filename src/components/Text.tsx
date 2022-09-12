@@ -32,5 +32,5 @@ export default function Text({
     classNames += ` opacity-70`;
   }
 
-  return createElement(as, { className: classNames }, children);
+  return createElement('div', { className: classNames }, children);
 }
