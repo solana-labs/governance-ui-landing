@@ -10,8 +10,6 @@ const INTEGRATIONS = [
   { src: '/assets/dao/integration-marinade.png', title: 'Marinade' },
   { src: '/assets/dao/integration-solend.png', title: 'Solend' },
   { src: '/assets/dao/integration-cardinal.png', title: 'Cardinal' },
-  { src: '/assets/dao/integration-serum.png', title: 'Serum' },
-  { src: '/assets/dao/integration-friktion.png', title: 'Friktion' },
   { src: '/assets/dao/integration-notifi.png', title: 'Notifi' },
   { src: '/assets/dao/integration-dialect.png', title: 'Dialect' },
 ] as const;
