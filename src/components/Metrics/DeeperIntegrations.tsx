@@ -8,6 +8,7 @@ import Section from './Section';
 const INTEGRATIONS = [
   { src: '/assets/dao/integration-mango.png', title: 'Mango' },
   { src: '/assets/dao/integration-marinade.png', title: 'Marinade' },
+  { src: '/assets/dao/integration-helium.png', title: 'Helium' },
   { src: '/assets/dao/integration-solend.png', title: 'Solend' },
   { src: '/assets/dao/integration-cardinal.png', title: 'Cardinal' },
   { src: '/assets/dao/integration-notifi.png', title: 'Notifi' },
