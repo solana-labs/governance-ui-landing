@@ -6,8 +6,8 @@ import Content from './Content';
 import Section from './Section';
 
 const DAOS = [
-  { src: '/assets/dao/blue-mango.png', title: 'Mango DAO' },
   { src: '/assets/dao/blue-uxd.png', title: 'UXDProtocol' },
+  { src: '/assets/dao/blue-mango.png', title: 'Mango DAO' },
   { src: '/assets/dao/blue-helium.png', title: 'Helium' },
   { src: '/assets/dao/blue-dual.png', title: 'DUAL' },
   { src: '/assets/dao/blue-psy.png', title: 'PsyFinance' },
@@ -56,7 +56,7 @@ export default function CommunitiesThriving(props: Props) {
           ))}
         </div>
       </Content>
-      <Text>Grape, UXD, Mango, Monkes & 800+ more DAOs</Text>
+      <Text>UXD, Mango, Helium & 800+ more DAOs</Text>
     </Section>
   );
 }
