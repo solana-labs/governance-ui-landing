@@ -58,7 +58,7 @@ const CONFIG = [
           {[
             { src: '/assets/dao/integration-mango.png', title: 'Mango' },
             { src: '/assets/dao/integration-marinade.png', title: 'Marinade' },
-            { src: '/assets/dao/integration-serum.png', title: 'Serum' },
+            { src: '/assets/dao/integration-cardinal.png', title: 'Cardinal' },
           ].map((integration) => (
             <Tooltip text={integration.title} key={integration.src}>
               {/* Tooltips rely on :before and :after pseudo-elements to
@@ -75,7 +75,7 @@ const CONFIG = [
           ))}
         </div>
         <div className='max-w-[202px] text-xs opacity-70'>
-          Integrations include Cardinal, Marinade, Friktion, Solend & more
+          Integrations include Mango, Marinade, Cardinal & more
         </div>
       </div>
     ),

@@ -28,14 +28,9 @@ const ALLOCATE_TREASURY: Omit<Props, 'alignment' | 'className' | 'index'> = {
           className='h-[50px] w-[50px]'
           src='/assets/dao/integration-solend.png'
         />
-        <img
-          alt='Friktion'
-          className='h-[50px] w-[50px]'
-          src='/assets/dao/integration-friktion.png'
-        />
       </div>
       <div className='max-w-[245px] text-xs opacity-50'>
-        Integrations include Mango, Marinade, Friktion, and Solend
+        Integrations include Mango, Marinade, Solend & more
       </div>
     </div>
   ),
