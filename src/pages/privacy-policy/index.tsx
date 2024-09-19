@@ -39,7 +39,7 @@ export default function PrivacyPolicy() {
           </p>
           <p>
             <span className='font-bold'>Last Updated:</span>
-            <span>&nbsp;August 17, 2022</span>
+            <span>&nbsp;September 20, 2024</span>
           </p>
           <p>
             <span>
@@ -1851,7 +1851,7 @@ export default function PrivacyPolicy() {
           </p>
           <div>
             <p>
-              <span>Solana Technology Services LLC</span>
+              <span>The Realms Today Trust</span>
             </p>
             <p>
               <span>Attn: Realms Customer Support </span>
