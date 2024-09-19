@@ -38,7 +38,7 @@ export default function Terms() {
               <strong>Terms of Service</strong>
             </p>
             <p className='text-center'>
-              <strong>Last Updated: July 25, 2022</strong>
+              <strong>Last Updated: September 20, 2024</strong>
             </p>
           </div>
           <p>
@@ -59,7 +59,7 @@ export default function Terms() {
             <strong>
               <em>Site</em>
             </strong>
-            &rdquo;). The Site, made available by Solana Technology Services LLC
+            &rdquo;). The Site, made available by The Trustees of the Realms Today Trust
             (the &ldquo;
             <strong>
               <em>Site Operator</em>
