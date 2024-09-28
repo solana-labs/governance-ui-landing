@@ -37,9 +37,6 @@ export default function Terms() {
             <p className='text-center'>
               <strong>Terms of Service</strong>
             </p>
-            <p className='text-center'>
-              <strong>Last Updated: September 20, 2024</strong>
-            </p>
           </div>
           <p>
             Please read these Terms of Service (the &ldquo;
@@ -47,28 +44,27 @@ export default function Terms() {
               <em>Terms</em>
             </strong>
             &rdquo;) carefully because they govern your use of the website
-            located at{' '}
-            <a
-              href='http://www.solanapay.com'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              <span className='underline'>www.realms.today</span>
-            </a>{' '}
-            (the &ldquo;
+            located at www.realms.today (the &ldquo;
             <strong>
               <em>Site</em>
             </strong>
-            &rdquo;). The Site, made available by The Trustees of the Realms Today Trust
-            (the &ldquo;
+            &rdquo;). These terms and conditions create a contract between you
+            and Realms Today Ltd (the &ldquo;
+            <strong>
+              <em>Agreement</em>
+            </strong>
+            &rdquo;).
+          </p>
+          <p>
+            The Site, made available by Realms Today Ltd (the &ldquo;
             <strong>
               <em>Site Operator</em>
             </strong>
-            &rdquo;, &ldquo;
+            &rdquo; &ldquo;
             <strong>
               <em>we</em>
             </strong>
-            &rdquo;, &ldquo;
+            &rdquo;
             <strong>
               <em>us</em>
             </strong>
@@ -76,11 +72,11 @@ export default function Terms() {
             decentralized SPL Governance protocol and for the Realms Open Source
             Code. This Site is one, but not the exclusive, means of accessing
             the SPL Governance Protocol. To make these Terms easier to read, the
-            Site and our services are collectively called the &ldquo;
+            Site and our services are collectively called (the &ldquo;
             <strong>
               <em>Interface</em>
             </strong>
-            .&rdquo;
+            &rdquo;).
           </p>
           <p>
             <strong>
@@ -112,26 +108,33 @@ export default function Terms() {
           <p>
             <strong>
               WHEN YOU AGREE TO THESE TERMS, YOU ARE AGREEING (WITH LIMITED
-              EXCEPTION) TO RESOLVE ANY DISPUTE BETWEEN YOU AND{' '}
+              EXCEPTION) TO RESOLVE ANY DISPUTE BETWEEN YOU AND THE SITE
+              OPERATOR THROUGH BINDING, INDIVIDUAL ARBITRATION RATHER THAN IN A
+              COURT OF LAW. PLEASE REVIEW CAREFULLY SECTIONS 17 “DISPUTE
+              RESOLUTION” BELOW FOR DETAILS REGARDING ARBITRATION. HOWEVER, IF
+              YOU ARE A RESIDENT OF A JURISDICTION WHERE APPLICABLE LAW
+              PROHIBITS THE RESOLUTION OF DISPUTES BY ARBITRATION, THE AGREEMENT
+              TO ARBITRATE IN SECTION 17 WILL NOT APPLY TO YOU BUT THE
+              PROVISIONS OF SECTION 16 (GOVERNING LAW) WILL APPLY INSTEAD.
             </strong>
-            <strong>THE SITE OPERATOR</strong>
+          </p>
+          <p>
+            FOR THE PURPOSES OF THE TERMS, &ldquo;
             <strong>
-              {' '}
-              THROUGH BINDING, INDIVIDUAL ARBITRATION RATHER THAN IN COURT.
-              PLEASE REVIEW CAREFULLY SECTIONS 16 &ldquo;DISPUTE
-              RESOLUTION&rdquo; BELOW FOR DETAILS REGARDING ARBITRATION.
+              <em>RESTRICTED TERRITORY</em>
             </strong>
-            <strong>
-              HOWEVER, IF YOU ARE A RESIDENT OF A JURISDICTION WHERE APPLICABLE
-              LAW PROHIBITS ARBITRATION OF DISPUTES, THE AGREEMENT TO ARBITRATE
-              IN SECTION 16 WILL NOT APPLY TO YOU BUT THE PROVISIONS OF SECTION
-              15 (GOVERNING LAW) WILL APPLY INSTEAD.
-            </strong>
+            &rdquo; MEANS OF BELARUS, BURMA (MYANMAR), BURUNDI, CENTRAL AFRICAN
+            REPUBLIC, CRIMEA AND SEVASTOPOL, CUBA, DEMOCRATIC REPUBLIC OF CONGO,
+            DONETSK, IRAN, LUHANSK, MALI, NICARAGUA, NORTH KOREA, RUSSIA,
+            SOMALIA, SOUTH SUDAN, SUDAN, SYRIA, VENEZUELA, YEMEN, ZIMBABWE OR
+            ANY OTHER COUNTRY TO WHICH CANADA, PANAMA, THE UNITED STATES, THE
+            UNITED KINGDOM OR THE EUROPEAN UNION EMBARGOES GOODS OR IMPOSES
+            SIMILAR SANCTIONS.
           </p>
           <ol className='list-decimal space-y-8'>
             <li>
               <strong>Agreement to Terms.</strong>&ensp;By using our Interface,
-              you (&ldquo;
+              (&ldquo;
               <strong>
                 <em>you</em>
               </strong>
@@ -154,17 +157,18 @@ export default function Terms() {
             </li>
             <li>
               <strong>Changes to these Terms or the Interface.</strong>&ensp;We
-              may update the Terms from time to time in our sole discretion. If
-              we do, we&rsquo;ll let you know by posting the updated Terms on
-              the Site and/or may also send other communications. It&rsquo;s
-              important that you review the Terms whenever we update them or you
-              use the Interface. If you continue to use the Interface after we
-              have posted updated Terms, it means that you accept and agree to
-              the changes. If you don&rsquo;t agree to be bound by the changes,
-              you may not use the Interface anymore. Because our Interface are
-              evolving over time we may change or discontinue all or any part of
-              the Interface, at any time and without notice, at our sole
-              discretion.
+              reserve the right to update the Terms from time to time in our
+              sole discretion. If we do, we&rsquo;ll let you know by posting the
+              updated Terms on the Site and/or may also send other
+              communications. It&rsquo;s important that you review the Terms
+              whenever we update them or you use the Interface. Continued use of
+              the Interface after we have posted updated Terms will be deemed by
+              us as consent, acceptance and agreement to the changes made to the
+              Terms. Continued use of the Interface without consent to the
+              Terms, as updated from time to time, is unauthorized. Because our
+              Interface is evolving over time we reserve the right to change or
+              discontinue all or any part of the Interface, at any time and
+              without notice, at our sole discretion.
             </li>
             <li>
               <strong>Who May Use the Interface?</strong>&ensp;You may use the
@@ -174,18 +178,7 @@ export default function Terms() {
               using the Interface under applicable law. In order to protect the
               integrity of the Interface, we reserve the right, at any time, in
               our sole discretion, to block access to the Interface from certain
-              IP addresses and unique device identifiers. For the purposes of
-              the Terms, &ldquo;
-              <strong>
-                <em>Restricted Territory</em>
-              </strong>
-              &rdquo; means of Algeria, Bangladesh, Bolivia, Belarus, Burundi,
-              Burma (Myanmar), Cote D&apos;Ivoire (Ivory Coast), Crimea and
-              Sevastopol, Cuba, Democratic Republic of Congo, Ecuador, Iran,
-              Iraq, Liberia, Libya, Mali, Morocco, Nepal, North Korea, Somalia,
-              Sudan, Syria, Venezuela, Yemen, Zimbabwe or any other country to
-              which Canada, Panama, the United States, the United Kingdom or the
-              European Union embargoes goods or imposes similar sanctions.
+              IP addresses and unique device identifiers.
             </li>
             <li>
               <strong>About the Interface.</strong>
@@ -208,18 +201,22 @@ export default function Terms() {
                   application or device, any user may record the results of the
                   SPL Governance Protocol in accordance with the user&rsquo;s
                   instructions, thus effectuating token transactions on the
-                  Solana blockchain.
+                  Solana blockchain. You agree and acknowledge that the Site
+                  Operator is not and will not be responsible or liable to you
+                  for any loss and takes no responsibility for and will not be
+                  liable to you in connection with the SPL Governance Protocol
+                  or your use of it or in relation to any issue arising under
+                  the terms of the Apache 2.0 license.
                 </li>
                 <li>
                   <span className='underline'>
                     Access to the Realms Open Source Code.
                   </span>
                   &nbsp;The Interface also provides you with one access point to
-                  the Realms Open Source Code.{' '}
-                  <span className='underline'>The Realms Open Source Code</span>{' '}
-                  is software source code licensed to the public under the
-                  Apache 2.0 license. The Realms Open Source Code is made
-                  available at{' '}
+                  the Realms Open Source Code. The Realms Open Source Code is
+                  software source code licensed to the public under the Apache
+                  2.0 license, which is incorporated herein by reference. The
+                  Realms Open Source Code is made available at{' '}
                   <a
                     href='https://github.com/solana-labs/governance-ui'
                     target='_blank'
@@ -272,33 +269,39 @@ export default function Terms() {
                 <li>
                   <span className='underline'>Disputes Between Users.</span>
                   &nbsp;The Site Operator is not a party to any relationship
-                  between any users, including any DAO, on the Interface. In the
-                  event that you have a dispute with any user of the Interface,
-                  you agree to address such dispute directly with such user. If
-                  permitted in your jurisdiction, you release the Site Operator
-                  (and the Site Operator&rsquo;s officers, directors, agents,
-                  investors, subsidiaries, and employees) (collectively &ldquo;
-                  <strong>Releasees</strong>&rdquo;) from, and covenant not to
-                  sue Releasees for any and all claims, demands, or damages
-                  (actual or consequential) of any kind and nature, known and
-                  unknown, suspected and unsuspected, disclosed and undisclosed,
-                  arising out of or in any way connected with such dispute.
+                  between any of its users, including any DAO, on the Interface.
+                  In the event of a user dispute, you agree to address such
+                  dispute directly with such user. If permitted in your
+                  jurisdiction, you release the Site Operator (and the Site
+                  Operator&rsquo;s officers, directors, agents, investors,
+                  subsidiaries, consultants and employees) (collectively &ldquo;
+                  <strong>
+                    <em>Releasees</em>
+                  </strong>
+                  &rdquo;) from, and covenant not to sue Releasees for any and
+                  all responsibility, claims, demands, or damages (actual or
+                  consequential) of any kind and nature, known and unknown,
+                  suspected and unsuspected, disclosed and undisclosed, arising
+                  out of or in any way connected with such dispute.
                 </li>
                 <li>
                   <span className='underline'>
                     Regulatory and Compliance Suspensions or Terminations.
                   </span>
-                  &nbsp;We may suspend or terminate your access to the Interface
-                  at any time in connection with any transaction as required by
-                  applicable law, any governmental authority, or if we in our
-                  sole and reasonable discretion determine you are violating
-                  these Terms or the terms of any third-party service
-                  provider.&nbsp; Such suspension or termination shall not be
-                  constituted a breach of these Terms by the Site Operator. In
-                  accordance with its anti-money laundering, anti-terrorism,
-                  anti-fraud, and other compliance policies and practices, we
-                  may impose reasonable limitations and controls on the ability
-                  of you or any beneficiary to utilize the Interface.
+                  &nbsp;We reserve the right to suspend or terminate your access
+                  to the Interface at any time in connection with any
+                  transaction as required by applicable law, any governmental
+                  authority, or if we in our sole and reasonable discretion
+                  determine you are violating these Terms or the terms of any
+                  third-party service provider. Such suspension or termination
+                  shall not constitute a breach of these Terms by the Site
+                  Operator. We may impose reasonable limitations and controls on
+                  the ability of the users or any beneficiary to utilize the
+                  Interface to address or implement policies reasonably designed
+                  to enable compliance with anti-money laundering,
+                  anti-terrorism, anti-fraud, and other compliance laws and
+                  regulations. We will not be liable to you or to any third
+                  party should we exercise the aforementioned rights.
                 </li>
               </ol>
             </li>
@@ -306,7 +309,7 @@ export default function Terms() {
               <strong>Your Content.</strong>
               <ol className='list-[lower-alpha] space-y-8 pl-4 pt-4'>
                 <li>
-                  <span className='underline'>Posting Content.</span>&nbsp;Our
+                  <span className='underline'>Posting Content.</span>&nbsp; Our
                   Interface may allow you to store or share content such as text
                   (in posts or communications with others), files, documents,
                   graphics, images, music, software, audio and video. Anything
@@ -315,9 +318,10 @@ export default function Terms() {
                   <strong>
                     <em>User Content</em>
                   </strong>
-                  &rdquo;. The Site Operator does not claim any ownership rights
-                  in any User Content and nothing in these Terms will be deemed
-                  to restrict any rights that you may have to your User Content.
+                  &rdquo; . The Site Operator does not claim any ownership
+                  rights in anything deemed as User Content and nothing in these
+                  Terms will be deemed to restrict any rights that you may have
+                  to your User Content.
                 </li>
                 <li>
                   <span className='underline'>
@@ -377,20 +381,19 @@ export default function Terms() {
                 <ol className='list-[lower-alpha] space-y-8 pl-4 pt-4'>
                   <li>
                     Post, upload, publish, submit or transmit any User Content
-                    that: (i)&nbsp;infringes, misappropriates or violates a
-                    third party&rsquo;s patent, copyright, trademark, trade
-                    secret, moral rights or other intellectual property rights,
-                    or rights of publicity or privacy; (ii)&nbsp;violates, or
-                    encourages any conduct that would violate, any applicable
-                    law or regulation or would give rise to civil liability;
-                    (iii)&nbsp;is fraudulent, false, misleading or deceptive;
-                    (iv) is defamatory, obscene, pornographic, vulgar or
-                    offensive; (v)&nbsp;promotes discrimination, bigotry,
-                    racism, hatred, harassment or harm against any individual or
-                    group; (vi)&nbsp;is violent or threatening or promotes
-                    violence or actions that are threatening to any person or
-                    entity; or (vii)&nbsp;promotes illegal or harmful activities
-                    or substances;
+                    that: (i) infringes, misappropriates or violates a third
+                    party&rsquo;s patent, copyright, trademark, trade secret,
+                    moral rights or any other intellectual property rights, or
+                    rights of publicity or privacy; (ii) violates, or encourages
+                    any conduct that would violate, any applicable law or
+                    regulation or would give rise to civil liability; (iii) is
+                    fraudulent, false, misleading or deceptive; (iv) is
+                    defamatory, obscene, pornographic, vulgar or offensive; (v)
+                    promotes discrimination, bigotry, racism, hatred, harassment
+                    or harm against any individual or group; (vi) is violent or
+                    threatening or promotes violence or actions that are
+                    threatening to any person or entity; or (vii) promotes
+                    illegal or harmful activities or substances;
                   </li>
                   <li>
                     Use, display, mirror or frame the Interface or any
@@ -439,13 +442,13 @@ export default function Terms() {
                   <li>
                     Use the Interface, or any portion thereof, for any
                     commercial purpose or for the benefit of any third party or
-                    in any manner not permitted by these Terms;&nbsp;
+                    in any manner not expressly permitted by these Terms;&nbsp;
                   </li>
                   <li>
                     Forge any TCP/IP packet header or any part of the header
                     information in any email or newsgroup posting, or in any way
-                    use the Interface to send altered, deceptive or false
-                    source-identifying information;&nbsp;
+                    use the Interface to send altered, deceptive, misleading or
+                    false source-identifying information;&nbsp;
                   </li>
                   <li>
                     Attempt to decipher, decompile, disassemble or reverse
@@ -468,6 +471,14 @@ export default function Terms() {
                     or entity;&nbsp;
                   </li>
                   <li>
+                    Facilitate or enable any transactions, transfers, or
+                    exchanges of funds which are designed to evade or circumvent
+                    applicable anti-money laundering (AML) laws, regulations, or
+                    sanctioned programs. This includes using the Interface to
+                    establish or operate DAOs for the purpose of circumventing
+                    AML compliance requirements as mandated by law.
+                  </li>
+                  <li>
                     Violate any applicable law, rule, or regulation concerning
                     the integrity of trading markets, including (but not limited
                     to) the manipulative tactics commonly known as spoofing and
@@ -482,7 +493,7 @@ export default function Terms() {
                 <p className='mt-4'>
                   &emsp;The Site Operator is not obligated to monitor access to
                   or use of the Interface or to review or edit any content.
-                  However, we have the right to do so for the purpose of
+                  However, we reserve the right to do so for the purpose of
                   operating the Interface, to ensure compliance with these Terms
                   and to comply with applicable law or other legal requirements.
                   We reserve the right, but are not obligated, to remove or
@@ -491,23 +502,24 @@ export default function Terms() {
                   at our sole discretion, consider it objectionable or in
                   violation of these Terms.&nbsp; We have the right to
                   investigate violations of these Terms or conduct that affects
-                  the Interface. We may also consult and cooperate with law
-                  enforcement authorities to prosecute users who violate the
-                  law.
+                  the Interface and we will not be liable to you or to any third
+                  party should we exercise such rights. We may also consult and
+                  cooperate with law enforcement authorities to prosecute users
+                  who violate the law.
                 </p>
               </div>
             </li>
             <li>
-              <strong>No Fiduciary Duties.</strong>&ensp;The Interface are not
-              intended to, and do not, create or impose any fiduciary duties on
-              the Site Operator. To the fullest extent permitted by law, any
+              <strong>No Fiduciary Duties.</strong>&ensp;The Interface is not
+              intended to, and does not, create or impose any fiduciary duties
+              on the Site Operator. To the fullest extent permitted by law, any
               user of the Interface acknowledges and agrees that the Site
-              Operator owes no fiduciary duties or liabilities it or any other
-              party, and that to the extent any such duties or liabilities may
-              exist at law or in equity, those duties and liabilities are hereby
-              irrevocably disclaimed, waived, and eliminated. Any user of the
-              Interface further agrees that the only duties and obligations that
-              the Site Operator may owe are those set out expressly herein.
+              Operator owes no fiduciary duties or liabilities to it or any
+              other party, and that to the extent any such duties or liabilities
+              may exist at law or in equity, those duties and liabilities are
+              hereby irrevocably disclaimed, waived, and eliminated. Any user of
+              the Interface further agrees that the only duties and obligations
+              that the Site Operator may owe are those set out expressly herein
             </li>
             <li>
               <strong>Copyright Policy.</strong>&ensp;The Site Operator respects
@@ -526,14 +538,60 @@ export default function Terms() {
               arising from, your use of any third-party resources.
             </li>
             <li>
+              <strong>Fees.</strong>&ensp; The interface reserves the right to
+              charge transaction fees to the user, such fees will be variable
+              and determined by the interface by factors such as the differing
+              levels of complexity, data size, and urgency. All fees, including
+              but not limited to gas fees and anti-spam fees, as well as any
+              other costs associated with the use of accounts on Realms, shall
+              be the sole responsibility of the user.
+              <ol className='list-[lower-alpha] space-y-8 pl-4 pt-4'>
+                <li>
+                  By using the interface you agree to pay all fees. The
+                  interface reserves the right to adjust its pricing and fees
+                  and any applicable waivers at any time. We will also notify
+                  you of the final price of each transaction, inclusive of
+                  pricing and fees, when you authorize the transaction and in
+                  each receipt we issue to you.{' '}
+                </li>
+                <li>
+                  We reserve the right to charge network fees (anti-spam fees)
+                  to process a digital asset transaction on your behalf.{' '}
+                </li>
+                <li>
+                  We will calculate the aforementioned fees at our discretion
+                  based on the foregoing, and notify you of the network fee at
+                  or before the time you authorize the digital asset
+                  transaction.
+                </li>
+                <li>
+                  Gas fees, account rent and any other fee charged shall become
+                  the property of Realms upon payment. You shall have no right
+                  to a refund or return of any prepaid fees under any
+                  circumstances.{' '}
+                </li>
+                <li>
+                  All fees, including but not limited to gas fees and anti-spam
+                  fees, must be paid in advance. Failure to pay any fees in
+                  advance will result in your transactions not being processed.
+                </li>
+                <li>
+                  By using the platform and agreeing to these terms you
+                  expressly waive the right to initiate any legal action or
+                  claim of any kind in relation to the fees or costs associated
+                  with the use of the interface.
+                </li>
+              </ol>
+            </li>
+            <li>
               <strong>Termination.</strong>&ensp;We may suspend or terminate
               your access to and use of the Interface, including suspending
               access to the Interface, at our sole discretion, at any time and
               without notice to you. Upon any termination, discontinuation or
               cancellation of the Interface or your account, the following
-              Sections will survive: 5(c)(i), 5(c)(ii) (only for payments due
-              and owing to the Site Operator prior to the termination), 6(b),
-              6(c), 6(e), 7, 11, 12, 13, 14, 15, 16, and 17.
+              Sections will survive: 5(a), 5(f), 5(g), 6(b), the last paragraph
+              of 7, 11 (only for payments due and owing to the Site Operator
+              prior to the termination), 13 to 18, inclusive.
             </li>
             <li>
               <div className='space-y-8'>
@@ -553,17 +611,17 @@ export default function Terms() {
                 </p>
                 <p>
                   &emsp;THE SITE OPERATOR WILL NOT BE RESPONSIBLE OR LIABLE TO
-                  YOU FOR ANY LOSS AND TAKES NO RESPONSIBILITY FOR, AND WILL NOT
-                  BE LIABLE TO YOU FOR, ANY USE OF THE INTERFACE, INCLUDING BUT
-                  NOT LIMITED TO ANY LOSSES, DAMAGES OR CLAIMS ARISING FROM: (I)
-                  USER ERROR SUCH AS FORGOTTEN PASSWORDS, INCORRECTLY
+                  YOU FOR ANY LOSS, AND TAKES NO RESPONSIBILITY FOR, AND WILL
+                  NOT BE LIABLE TO YOU FOR, ANY USE OF THE INTERFACE, INCLUDING
+                  BUT NOT LIMITED TO ANY LOSSES, DAMAGES OR CLAIMS ARISING FROM:
+                  (I) USER ERROR SUCH AS FORGOTTEN PASSWORDS, INCORRECTLY
                   CONSTRUCTED TRANSACTIONS, OR MISTYPED WALLET ADDRESSES; (II)
                   SERVER FAILURE OR DATA LOSS; (III) CRYPTOCURRENCY WALLETS OR
-                  CORRUPT FILES; (IV) UNAUTHORIZED ACCESS TO INTERFACE; (V)
+                  CORRUPT FILES; (IV) UNAUTHORIZED ACCESS TO THE INTERFACE; (V)
                   ERRORS IN THE PROPOSAL CONVERTER, OR (VI) ANY THIRD PARTY
                   ACTIVITIES, INCLUDING WITHOUT LIMITATION THE USE OF VIRUSES,
-                  PHISHING, BRUTEFORCING OR OTHER MEANS OF ATTACK AGAINST ANY
-                  BLOCKCHAIN NETWORK UNDERLYING THE INTERFACE.
+                  PHISHING, BRUTEFORCING OR ANY OTHER MEANS OF ATTACK AGAINST
+                  ANY BLOCKCHAIN NETWORK UNDERLYING THE INTERFACE.
                 </p>
                 <p>
                   &emsp;TOKENS, INCLUDING ANY GOVERNANCE TOKENS TRANSACTED IN
@@ -602,19 +660,24 @@ export default function Terms() {
                   for any resulting losses that you experience while accessing
                   Interface. Accordingly, you understand and agree to assume
                   full responsibility for all of the risks of accessing and
-                  using and interacting with the Interface.
+                  using and interacting with the Interface therefore waiving
+                  your right to take any legal action including but not limited
+                  to claims, disputes, demands, liabilities, damages, losses,
+                  and costs and expenses against the Site Operator and its
+                  officers, directors, employees and agents for any of the
+                  aforementioned risks and scenarios.
                 </p>
               </div>
             </li>
             <li>
               <strong>Indemnity.</strong>&ensp;You will indemnify and hold the
-              Site Operator and its officers, directors, employees and agents,
-              harmless from and against any claims, disputes, demands,
-              liabilities, damages, losses, and costs and expenses, including,
-              without limitation, reasonable legal and accounting fees arising
-              out of or in any way connected with (a) your access to or use of
-              the Interface, (b) your User Content, or (c) your violation of
-              these Terms.
+              Site Operator and its officers, directors, consultants under
+              contract and employees and agents, harmless from and against any
+              claims, disputes, demands, liabilities, damages, losses, and costs
+              and expenses, including, without limitation, reasonable legal and
+              accounting fees arising out of or in any way connected with (a)
+              your access to or use of the Interface, (b) your User Content, or
+              (c) your violation of these Terms.
             </li>
             <li>
               <strong>Limitation of Liability.</strong>
@@ -654,135 +717,73 @@ export default function Terms() {
               </ol>
             </li>
             <li>
-              <strong>Governing Law and Forum Choice.</strong>&ensp;These Terms
-              and any action related thereto will be governed by the laws of
-              California, without regard to its conflict of laws provisions.
-              Except as otherwise expressly set forth in Section 16
-              &ldquo;Dispute Resolution,&rdquo; the exclusive jurisdiction for
-              all Disputes (defined below) that you and the Site Operator are
-              required to arbitrate will be the courts located in California,
-              and you and the Site Operator each waive any objection to
-              jurisdiction and venue in such courts.
+              <strong>Governing Law and Jurisdiction.</strong>&ensp;These Terms
+              and any action related thereto will be governed by and construed
+              in accordance with the laws of England and Wales, without regard
+              to its conflict of law principles. Any disputes arising out of or
+              in connection with these Terms shall be subject to the exclusive
+              jurisdiction of the courts of England and Wales, and both you and
+              the Site Operator agree to submit to the jurisdiction of these
+              courts.
             </li>
             <li>
-              <strong>Dispute Resolution.</strong>
+              <strong>Dispute Resolution and Arbitration.</strong>
               <ol className='list-[lower-alpha] space-y-8 pl-4 pt-4'>
                 <li>
                   <span className='underline'>
                     Mandatory Arbitration of Disputes.
                   </span>
-                  &ensp;We each agree that any dispute, claim or controversy
-                  arising out of or relating to these Terms or the breach,
-                  termination, enforcement, interpretation or validity thereof
-                  or the use of the Interface (collectively, &ldquo;
+                  &ensp;Any dispute, controversy, or claim arising out of or
+                  relating to these Terms, or the breach, termination, or
+                  validity thereof, including any question regarding the
+                  existence, validity, or termination of these Terms (a, &ldquo;
                   <strong>
-                    <em>Disputes</em>
+                    <em>Dispute</em>
                   </strong>
-                  &rdquo;) will be resolved{' '}
-                  <strong>
-                    solely by binding, individual arbitration and not in a
-                    class, representative or consolidated action or proceeding
-                  </strong>
-                  . You and the Site Operator agree that the laws of the state
-                  of California govern the interpretation and enforcement of
-                  these Terms, and that you and the Site Operator are each
-                  waiving the right to a trial by jury or to participate in a
-                  class action. This arbitration provision shall survive
-                  termination of these Terms.
+                  &rdquo;), shall be referred to and finally resolved by
+                  arbitration under the Arbitration Rules of the London Court of
+                  International Arbitration (LCIA), which are deemed to be
+                  incorporated by reference into this clause
                 </li>
                 <li>
-                  <span className='underline'>Exceptions.</span>&ensp;As limited
-                  exceptions to Section 16(a) above: (i)&nbsp;we both may seek
-                  to resolve a Dispute in small claims court if it qualifies;
-                  and (ii) we each retain the right to seek injunctive or other
-                  equitable relief from a court to prevent (or enjoin) the
-                  infringement or misappropriation of our intellectual property
-                  rights.
-                </li>
-                <li>
-                  <span className='underline'>
-                    Conducting Arbitration and Arbitration Rules.
-                  </span>
-                  &ensp;The arbitration will be conducted by JAMS under its JAMS
-                  Comprehensive Arbitration Rules and Procedures (the &ldquo;
-                  <strong>
-                    <em>JAMS Rules</em>
-                  </strong>
-                  &rdquo;) then in effect, except as modified by these Terms.
-                  The JAMS Rules are available at https://www.jamsadr.com/. A
-                  party who wishes to start arbitration must submit a written
-                  Demand for Arbitration to JAMS and give notice to the other
-                  party as specified in the JAMS Rules. JAMS provides a form
-                  Demand for Arbitration at https://www.jamsadr.com/.
-                  <p className='mt-4'>
-                    &emsp;Any arbitration hearings will take place in the county
-                    (or parish) where you live, unless we both agree to a
-                    different location, but will be conducted remotely to the
-                    extent permitted by the JAMS Rules. The parties agree that
-                    the arbitrator shall have exclusive authority to decide all
-                    issues relating to the interpretation, applicability,
-                    enforceability and scope of this arbitration agreement.
-                  </p>
+                  <span className='underline'>Conducting Arbitration.</span>
+                  &ensp;The number of arbitrators shall be one. The seat or
+                  legal place of arbitration shall be London, England. The
+                  language to be used in the arbitral proceedings shall be
+                  English. The governing law of the contract shall be the
+                  substantive law of England and Wales.
                 </li>
                 <li>
                   <span className='underline'>Arbitration Costs.</span>
-                  &ensp;Payment of all filing, administration and arbitrator
-                  fees will be governed by the JAMS Rules, and we won&rsquo;t
-                  seek to recover the administration and arbitrator fees we are
-                  responsible for paying, unless the arbitrator finds your
-                  Dispute frivolous. If we prevail in arbitration we&rsquo;ll
-                  pay all of our attorneys&rsquo; fees and costs and won&rsquo;t
-                  seek to recover them from you. If you prevail in arbitration
-                  you will be entitled to an award of attorneys&rsquo; fees and
-                  expenses to the extent provided under applicable law.
+                  &ensp;The costs of the arbitration, including the fees of the
+                  arbitrator, shall be borne equally by both parties unless the
+                  arbitrator decides otherwise in their award. Each party shall
+                  bear its own legal costs.
                 </li>
                 <li>
                   <span className='underline'>
                     Injunctive and Declaratory Relief.
                   </span>
-                  &ensp;Except as provided in Section 16(b) above, the
-                  arbitrator shall determine all issues of liability on the
-                  merits of any claim asserted by either party and may award
-                  declaratory or injunctive relief only in favor of the
-                  individual party seeking relief and only to the extent
-                  necessary to provide relief warranted by that party&rsquo;s
-                  individual claim. To the extent that you or we prevail on a
-                  claim and seek public injunctive relief (that is, injunctive
-                  relief that has the primary purpose and effect of prohibiting
-                  unlawful acts that threaten future injury to the public), the
-                  entitlement to and extent of such relief must be litigated in
-                  a civil court of competent jurisdiction and not in
-                  arbitration. The parties agree that litigation of any issues
-                  of public injunctive relief shall be stayed pending the
-                  outcome of the merits of any individual claims in arbitration.
+                  &ensp;Notwithstanding the arbitration clause, either party
+                  retains the right to seek injunctive or other equitable relief
+                  in the courts of England and Wales for any breach or
+                  threatened breach of intellectual property or confidentiality
+                  obligations under these Terms.
                 </li>
                 <li>
                   <span className='underline'>Class Action Waiver.</span>&ensp;
-                  <strong>
-                    YOU AND THE SITE OPERATOR AGREE THAT EACH MAY BRING CLAIMS
-                    AGAINST THE OTHER ONLY IN YOUR OR ITS INDIVIDUAL CAPACITY,
-                    AND NOT AS A PLAINTIFF OR CLASS MEMBER IN ANY PURPORTED
-                    CLASS OR REPRESENTATIVE PROCEEDING.
-                  </strong>{' '}
-                  Further, if the parties&rsquo; Dispute is resolved through
-                  arbitration, the arbitrator may not consolidate another
-                  person&rsquo;s claims with your claims, and may not otherwise
-                  preside over any form of a representative or class proceeding.
-                  If this specific provision is found to be unenforceable, then
-                  the entirety of this Dispute Resolution section shall be null
-                  and void.
+                  You and the Site Operator agree that any Dispute shall be
+                  resolved on an individual basis, and neither party shall be
+                  entitled to join or consolidate claims by or against other
+                  users, or to pursue any Dispute as a representative or class
+                  action, or in a private attorney general capacity.
                 </li>
                 <li>
-                  <span className='underline'>Severability.</span>&ensp;With the
-                  exception of any of the provisions in Section 16(f) of these
-                  Terms (&ldquo;
-                  <strong>
-                    <em>Class Action Waiver</em>
-                  </strong>
-                  &rdquo;), if an arbitrator or court of competent jurisdiction
-                  decides that any part of these Terms is invalid or
-                  unenforceable, the other parts of these Terms will still
-                  apply.
+                  <span className='underline'>Severability.</span>&ensp;If any
+                  provision of this Dispute Resolution and Arbitration clause is
+                  found to be unenforceable or invalid, that provision shall be
+                  severed, and the remainder of this clause shall remain in full
+                  force and effect.
                 </li>
               </ol>
             </li>
@@ -840,14 +841,31 @@ export default function Terms() {
                   prejudice to its other remedies under these Terms or
                   otherwise.
                 </li>
+                <li>
+                  You hereby grant The Site Operator the right to take steps The
+                  Site Operator believes are reasonably necessary or appropriate
+                  to enforce and/or verify compliance with any part of this
+                  terms. You agree that The Site Operator has the right, without
+                  liability to you, to disclose any data and/or information to
+                  law enforcement authorities, government officials, and/or a
+                  third party, as The Site Operator believes is reasonably
+                  necessary or appropriate to enforce and/or verify compliance
+                  with any part of this Agreement (including but not limited to
+                  The Site Operator&lsquo;s right to cooperate with any legal
+                  process relating to your use of the Services and/or Content,
+                  and/or a third-party claim that your use of the Services
+                  and/or Content is unlawful and/or infringes such third
+                  party&rsquo;s rights).
+                </li>
               </ol>
             </li>
             <li>
               <strong>Contact Information.</strong>&ensp;If you have any
               questions about these Terms or the Interface, please contact the
-              Site Operator at Realms@solana.com.
+              Site Operator at admin@realms.today.
             </li>
           </ol>
+          <p>Last Updated September 2024</p>
         </div>
       </CenteredContent>
     </div>
