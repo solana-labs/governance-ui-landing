@@ -33,32 +33,17 @@ export default function PrivacyPolicy() {
       </div>
       <CenteredContent className='px-5 pt-52 pb-6'>
         <div className='mx-auto max-w-4xl space-y-8 text-white/80'>
-          <p>
+          <p className='font-bold'>
             <span>Realms Platform Privacy </span>
             <span>Notice</span>
           </p>
           <p>
-            <span className='font-bold'>Last Updated:</span>
-            <span>&nbsp;September 20, 2024</span>
-          </p>
-          <p>
             <span>
-              This Privacy Notice is designed to help you understand how Solana
-              Technology Services LLC (&ldquo;
-            </span>
-            <span className='font-bold'>STS</span>
-            <span>,&rdquo; &ldquo;</span>
-            <span className='font-bold'>we</span>
-            <span>,&rdquo; &ldquo;</span>
-            <span className='font-bold'>us</span>
-            <span>,&rdquo;or</span>
-            <span>&nbsp;</span>
-            <span>&ldquo;</span>
-            <span className='font-bold'>our</span>
-            <span>
-              &rdquo;) collects, uses, processes, and shares your personal
-              information on the Realms Platform (https://realms.today/realms),
-              and to help you understand and exercise your privacy rights.{' '}
+              This Privacy Notice is designed to help you understand how Realms
+              Today Ltd (“RT,” “we,” “us,”or “our”) collects, uses, processes,
+              and shares your personal information on the Realms Platform
+              (https://realms.today/realms), and to help you understand and
+              exercise your privacy rights.
             </span>
           </p>
           <p>
@@ -113,14 +98,7 @@ export default function PrivacyPolicy() {
             <li>
               <span>
                 <a href='#h.3fwokq0'>
-                  SUPPLEMENTAL NOTICE FOR CALIFORNIA RESIDENTS
-                </a>
-              </span>
-            </li>
-            <li>
-              <span>
-                <a href='#h.1v1yuxt'>
-                  SUPPLEMENTAL NOTICE FOR NEVADA RESIDENTS
+                  SUPPLEMENTAL NOTICE FOR UK AND EU RESIDENTS
                 </a>
               </span>
             </li>
@@ -1414,7 +1392,7 @@ export default function PrivacyPolicy() {
                 id='h.3fwokq0'
                 style={{ display: 'inline' }}
               >
-                <span>SUPPLEMENTAL NOTICE FOR CALIFORNIA RESIDENTS</span>
+                <span>SUPPLEMENTAL INFORMATION FOR UK AND EU RESIDENTS</span>
               </h1>
             </li>
           </ol>
@@ -1423,280 +1401,144 @@ export default function PrivacyPolicy() {
           </p>
           <p>
             <span>
-              This Supplemental Notice for California Residents only applies to
-              our processing of personal information that is subject to the
-              California Consumer Privacy Act of 2018 (&ldquo;
-            </span>
-            <span className='font-bold'>CCPA</span>
-            <span>
-              &rdquo;). The CCPA provides California residents with the right to
-              know what categories of personal information STS has collected
-              about them, and whether STS disclosed that personal information
-              for a business purpose (e.g., to a service provider) in the
-              preceding twelve months. California residents can find this
-              information below:
+              We will take all necessary steps to ensure that your personal
+              information is treated securely and in accordance with this
+              Privacy Policy. For any transfers of data outside the EEA or the
+              UK, the data transfer will be under the European Commission’s
+              model contracts for the transfer of personal information to third
+              countries (i.e., the standard contractual clauses) (the “Model
+              Clauses”), or any equivalent contracts issued by the relevant
+              competent authority of the UK.
             </span>
           </p>
           <p>
             <span></span>
           </p>
-          <a id='t.25839b308b18ccc55642b8861050cefdedcfaccf'></a>
-          <a id='t.0'></a>
-          <div className='grid grid-cols-2 gap-4'>
-            <div>
-              <p>
-                <span className='font-bold'>
-                  Category of Personal Information Collected by STS
-                </span>
-              </p>
-            </div>
-            <div>
-              <p>
-                <span className='font-bold'>
-                  Category of Third Parties Personal Information is Disclosed to
-                  for a Business Purpose
-                </span>
-              </p>
-            </div>
-            <div>
-              <p>
-                <span className='font-bold'>Identifiers. </span>
-              </p>
-            </div>
-            <div>
-              <ul className='list-disc'>
+          <p>
+            <span></span>
+          </p>
+
+          <p>
+            <span className='font-bold'>DATA PROTECTION RIGHTS</span>
+            <p>
+              <ul className='ml-8 list-disc'>
                 <li>
-                  <span>Service providers</span>
+                  <span>
+                    You are entitled to a certain number of legal rights
+                    concerning the personal information we may hold about you.
+                    These rights can be exercised at any time by contacting
+                    us.These rights are not absolute and may be limited by law.
+                  </span>
                 </li>
                 <li>
-                  <span>Business partners</span>
-                </li>
-                <li>
-                  <span>Affiliates </span>
-                </li>
-                <li>
-                  <span>Advertising Partners</span>
+                  <span>
+                    The following rights apply regarding the collection of your
+                    personal information:
+                  </span>
+                  <ol className='ml-8 list-decimal'>
+                    <li>
+                      <span>
+                        <span className='font-bold'>Right to Access:</span> you
+                        have the right to access your personal information
+                        stored with us, how we use it, and who we share it with
+                      </span>
+                    </li>
+                    <li>
+                      <span>
+                        <span className='font-bold'>Right of Portability:</span>
+                        you have the right to receive a copy of all your
+                        personal information stored by us in a structured,
+                        commonly used and machine-readable format and/or request
+                        transfer of the same to a third party, in certain
+                        circumstances and with certain exceptions.
+                      </span>
+                    </li>
+                    <li>
+                      <span>
+                        <span className='font-bold'>
+                          Right to Rectification:
+                        </span>
+                        you have the right to correct any inaccurate personal
+                        information.
+                      </span>
+                    </li>
+                    <li>
+                      <span>
+                        <span className='font-bold'>Right to Erasure:</span>
+                      </span>
+                      In certain circumstances, you have the right to delete
+                      your personal information stored with us. There may be
+                      circumstances where you ask us to erase personal
+                      information, but we are legally entitled to retain it; in
+                      such circumstances, the same shall not be erased.
+                    </li>
+                    <li>
+                      <span>
+                        <span className='font-bold'>
+                          Right to restrict processing:
+                        </span>
+                        you have the right to require us to stop processing the
+                        personal information we hold about you, other than for
+                        storage purposes, in certain circumstances.
+                      </span>
+                    </li>
+                    <li>
+                      <span>
+                        <span className='font-bold'>Right to Objection:</span>
+                      </span>
+                      you have the right to object to our processing of your
+                      personal information. There may be circumstances where you
+                      object to or asks us to restrict the processing of
+                      personal information, but we are legally entitled to
+                      refuse that request.
+                    </li>
+                    <li>
+                      <span>
+                        <span className='font-bold'>
+                          Objection to marketing:
+                        </span>
+                        you can object to marketing at any time by opting out
+                        using the unsubscribe/opt-out function displayed in our
+                        communications to you.
+                      </span>
+                    </li>
+                    <li>
+                      <span>
+                        <span className='font-bold'>
+                          Withdrawal of consent:
+                        </span>
+                        Where we rely on consent to process your personal
+                        information, you have the right to withdraw this consent
+                        at any time In certain circumstances it may be lawful
+                        for us to continue processing without consent if we have
+                        a legitimate reason (other than consent) for doing so.
+                      </span>
+                    </li>
+                  </ol>
                 </li>
               </ul>
-            </div>
-            <div>
-              <p>
-                <span className='font-bold'>Commercial information</span>
-              </p>
-            </div>
-            <div>
-              <ul className='list-disc'>
-                <li>
-                  <span>Service providers</span>
-                </li>
-                <li>
-                  <span>Business partners </span>
-                </li>
-                <li>
-                  <span>Affiliates</span>
-                </li>
-                <li>
-                  <span>Advertising Partners</span>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <p>
-                <span className='font-bold'>
-                  Internet or other electronic network activity
-                </span>
-              </p>
-            </div>
-            <div>
-              <ul className='list-disc'>
-                <li>
-                  <span>Service providers</span>
-                </li>
-                <li>
-                  <span>Business partners </span>
-                </li>
-                <li>
-                  <span>Affiliates </span>
-                </li>
-                <li>
-                  <span>Advertising Partners</span>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <p>
-                <span className='font-bold'>
-                  Inferences drawn from other personal information to create a
-                  profile about a consumer
-                </span>
-              </p>
-            </div>
-            <div>
-              <ul className='list-disc'>
-                <li>
-                  <span>Service providers</span>
-                </li>
-                <li>
-                  <span>Affiliates</span>
-                </li>
-                <li>
-                  <span>Advertising Partners</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <p>
-            <span></span>
+            </p>
           </p>
           <p>
-            <span>
-              The categories of sources from which we collect personal
-              information and our business and commercial purposes for using
-              personal information are set forth in &ldquo;
-            </span>
-            <span>
-              <a className='text-blue-400' href='#h.1fob9te'>
-                Personal Information We Collect
-              </a>
-            </span>
-            <span>&rdquo; and &ldquo;</span>
-            <span>
-              <a className='text-blue-400' href='#id.1t3h5sf'>
-                How We Use Your Personal Information
-              </a>
-            </span>
-            <span>&rdquo; above, respectively. </span>
+            <h3 className='font-bold'>REQUESTS AND COMPLAINTS</h3>
+            <p>
+              If you have complaints about how we process your personal
+              information, please contact us at{' '}
+              <span className='font-bold'>admin@realms.today</span> and we will
+              respond to your request as soon as possible. If you think we have
+              infringed data protection laws, you may file a claim with the data
+              protection supervisory authority in the EEA country of your
+              residence.
+            </p>
           </p>
           <p>
             <span></span>
           </p>
-          <p>
-            <span className='font-bold'>
-              &ldquo;Sales&rdquo; of Personal Information under the CCPA
-            </span>
-          </p>
-          <p>
-            <span></span>
-          </p>
-          <p>
-            <span>
-              For purposes of the CCPA, STS does not &ldquo;sell&rdquo; personal
-              information, nor do we have actual knowledge of any
-              &ldquo;sale&rdquo; of personal information of minors under 16
-              years of age.
-            </span>
-          </p>
-          <p>
-            <span></span>
-          </p>
-          <p>
-            <span className='font-bold'>
-              Additional Privacy Rights for California Residents
-            </span>
-          </p>
-          <p>
-            <span></span>
-          </p>
-          <p>
-            <span className='font-bold'>Non-Discrimination</span>
-            <span>
-              . California residents have the right not to receive
-              discriminatory treatment by us for the exercise of their rights
-              conferred by the CCPA.
-            </span>
-            <span>&nbsp;</span>
-          </p>
-          <p>
-            <span></span>
-          </p>
-          <p>
-            <span className='font-bold'>Authorized Agent</span>
-            <span>.</span>
-            <span>&nbsp;</span>
-            <span>
-              Only you, or someone legally authorized to act on your behalf, may
-              make a verifiable consumer request related to your personal
-              information. You may also make a verifiable consumer request on
-              behalf of your minor child. To authorize an agent, provide written
-              authorization signed by you and your designated agent and contact
-              us as set forth in &ldquo;
-            </span>
-            <span>
-              <a className='text-blue-400' href='#id.37m2jsg'>
-                Contact Us
-              </a>
-            </span>
-            <span>&rdquo; below for additional instructions.</span>
-          </p>
-          <p>
-            <span></span>
-          </p>
-          <p>
-            <span className='font-bold'>Verification</span>
-            <span>
-              . To protect your privacy, we will take steps to reasonably verify
-              your identity before fulfilling your request. These steps may
-              involve asking you to provide sufficient information that allows
-              us to reasonably verify you are the person about whom we collected
-              personal information or an authorized representative, or to answer
-              questions regarding your account and use of our Services
-            </span>
-            <span>.</span>
-          </p>
-          <p>
-            <span></span>
-          </p>
-          <p>
-            <span>
-              If you are a California resident and would like to exercise any of
-              your rights under the CCPA, please contact us as set forth in
-              &ldquo;
-            </span>
-            <span>
-              <a className='text-blue-400' href='#id.37m2jsg'>
-                Contact Us
-              </a>
-            </span>
-            <span>
-              &rdquo; below. We will process such requests in accordance with
-              applicable laws.{' '}
-            </span>
-          </p>
+
           <p>
             <span></span>
           </p>
           <ol className='list-decimal' start={10}>
-            <li>
-              <h1
-                className='font-bold'
-                id='h.1v1yuxt'
-                style={{ display: 'inline' }}
-              >
-                <span>SUPPLEMENTAL NOTICE FOR NEVADA RESIDENTS</span>
-              </h1>
-            </li>
-          </ol>
-          <p>
-            <span>
-              <br />
-              If you are a resident of Nevada, you have the right to opt-out of
-              the sale of certain personal information to third parties who
-              intend to license or sell that personal information. Please note
-              that we do not currently sell your personal information as sales
-              are defined in Nevada Revised Statutes Chapter 603A. If you have
-              any questions, please contact us as set forth in{' '}
-            </span>
-            <span>
-              <a className='text-blue-400' href='#id.37m2jsg'>
-                Contact Us
-              </a>
-            </span>
-            <span>&nbsp;below.</span>
-          </p>
-          <p id='h.4f1mdlm'>
-            <span></span>
-          </p>
-          <ol className='list-decimal' start={11}>
             <li>
               <h1
                 className='font-bold'
@@ -1709,7 +1551,6 @@ export default function PrivacyPolicy() {
           </ol>
           <p>
             <span>
-              <br />
               The Services are not directed to those under the age of 18 (or
               other age as required by local law), and we do not knowingly
               collect personal information from children.
@@ -1758,11 +1599,10 @@ export default function PrivacyPolicy() {
             <span>&nbsp;</span>
             <span>
               If your personal information is subject to the applicable data
-              protection laws of Brazil, the European Economic Area,
-              Switzerland, or the United Kingdom, you have the right to lodge a
-              complaint with the competent supervisory authority or attorney
-              general if you believe our processing of your personal information
-              violates applicable law.
+              protection laws of Brazil or Switzerland, you have the right to
+              lodge a complaint with the competent supervisory authority or
+              attorney general if you believe our processing of your personal
+              information violates applicable law.
             </span>
           </p>
           <p>
@@ -1783,30 +1623,10 @@ export default function PrivacyPolicy() {
               <span>
                 <a
                   className='text-blue-400'
-                  href='https://www.google.com/url?q=https://edpb.europa.eu/about-edpb/board/members_en&amp;sa=D&amp;source=editors&amp;ust=1660758789243132&amp;usg=AOvVaw1BuxqhyUCMionDxyW0dW5H'
-                >
-                  EEA Data Protection Authorities (DPAs)
-                </a>
-              </span>
-            </li>
-            <li>
-              <span>
-                <a
-                  className='text-blue-400'
                   href='https://www.google.com/url?q=https://www.edoeb.admin.ch/edoeb/en/home/the-fdpic/contact.html&amp;sa=D&amp;source=editors&amp;ust=1660758789243525&amp;usg=AOvVaw1ZTT3CUNKh9uq3ZrG794UD'
                 >
                   Swiss Federal Data Protection and Information Commissioner
                   (FDPIC)
-                </a>
-              </span>
-            </li>
-            <li>
-              <span>
-                <a
-                  className='text-blue-400'
-                  href='https://www.google.com/url?q=https://ico.org.uk/global/contact-us/&amp;sa=D&amp;source=editors&amp;ust=1660758789243884&amp;usg=AOvVaw1LggqvOfNAn5IEZqe8Cc8j'
-                >
-                  UK Information Commissioner&rsquo;s Office (ICO)
                 </a>
               </span>
             </li>
@@ -1832,8 +1652,8 @@ export default function PrivacyPolicy() {
           </p>
           <p>
             <span>
-              STS is the controller of the personal information we process under
-              this Privacy Notice.
+              Realms Today Ltd is the controller of the personal information we
+              process under this Privacy Notice.
             </span>
           </p>
           <p>
@@ -1851,17 +1671,20 @@ export default function PrivacyPolicy() {
           </p>
           <div>
             <p>
-              <span>The Realms Today Trust</span>
+              <span>Realms Today Ltd</span>
             </p>
             <p>
               <span>Attn: Realms Customer Support </span>
             </p>
             <p>
-              <span>530 Divisadero St. PMB 722 San Francisco, CA 94117 </span>
+              <span>31 Hengrave Road, London, SE 23 3NW, England</span>
             </p>
             <p id='h.46r0co2'>
-              <span>Realms@Solana.com</span>
+              <span>admin@realms.today</span>
               <a id='id.2lwamvv'></a>
+            </p>
+            <p className='mt-4'>
+              <span>Last Updated: September 2024</span>
             </p>
           </div>
         </div>
