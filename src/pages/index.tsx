@@ -1,3 +1,5 @@
+import { useRouter } from 'next/router';
+
 import usePageViewTracking from '@/hooks/usePageViewTracking';
 
 import DAOStructures from '@/components/DAOStructures';
@@ -10,8 +12,13 @@ import RealmsCommunity from '@/components/RealmsCommunity';
 import SolanaStandard from '@/components/SolanaStandard';
 import TrackViewportEnter from '@/components/TrackViewportEnter';
 
+import TermsPopupModal from '@/TermsPopupModal';
+
 const Index = () => {
   usePageViewTracking('index');
+  const { query } = useRouter();
+
+  const showPopup = query && query.terms && query.terms === 'rejected';
 
   return (
     <main>
@@ -37,6 +44,7 @@ const Index = () => {
       <TrackViewportEnter name='footer'>
         <Footer className='mt-12 mb-36 w-full px-[20px] sm:my-24 sm:gap-x-40 md:px-24 lg:px-24' />
       </TrackViewportEnter>
+      {showPopup ? <TermsPopupModal /> : ''}
     </main>
   );
 };

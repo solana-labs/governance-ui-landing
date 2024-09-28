@@ -27,6 +27,7 @@
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-icons": "^4.3.1",
+    "react-modal": "^3.16.1",
     "react-responsive": "^9.0.0-beta.8",
     "tailwind-merge": "^1.2.1"
   },
@@ -40,6 +41,7 @@
     "@types/lodash": "^4.14.182",
     "@types/mixpanel-browser": "^2.38.0",
     "@types/react": "^18.0.9",
+    "@types/react-modal": "^3.16.3",
     "@types/tailwindcss": "^3.0.10",
     "@typescript-eslint/eslint-plugin": "^5.25.0",
     "@typescript-eslint/parser": "^5.25.0",
