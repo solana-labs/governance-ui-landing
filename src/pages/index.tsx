@@ -10,9 +10,8 @@ import Metrics from '@/components/Metrics';
 import NavBar from '@/components/NavBar';
 import RealmsCommunity from '@/components/RealmsCommunity';
 import SolanaStandard from '@/components/SolanaStandard';
+import TermsPopupModal from '@/components/TermsPopupModal';
 import TrackViewportEnter from '@/components/TrackViewportEnter';
-
-import TermsPopupModal from '@/TermsPopupModal';
 
 const Index = () => {
   usePageViewTracking('index');
