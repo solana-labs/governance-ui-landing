@@ -1,3 +1,12 @@
+# governance-ui-landing
+
+This repo still exists in archived form, but the maintained version has now relocated to: https://github.com/Mythic-Project/governance-ui-landing
+
+
+
+
+
+
 <div align="center">
   <h1>🔋 ts-nextjs-tailwind-starter</h1>
   <p>Next.js + Tailwind CSS + TypeScript starter packed with useful development features.</p>
